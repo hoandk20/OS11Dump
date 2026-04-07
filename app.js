@@ -2,6 +2,7 @@
 
 const DATASET_URL = "index.json";
 const STORAGE_PREFIX = "techlead-os11";
+const THEME_KEY = `${STORAGE_PREFIX}:theme`;
 const EXAM_GROUPS = [
   {
     id: "outsystems-techlead",
@@ -28,6 +29,7 @@ const elements = {
   modeSelect: document.getElementById("mode-select"),
   shuffleQuestions: document.getElementById("shuffle-questions"),
   shuffleOptions: document.getElementById("shuffle-options"),
+  themeToggleButton: document.getElementById("theme-toggle-button"),
   backHomeButton: document.getElementById("back-home-button"),
   examTitle: document.getElementById("exam-title"),
   examDescription: document.getElementById("exam-description"),
@@ -59,6 +61,7 @@ const elements = {
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
+  applyTheme(readTheme());
   bindEvents();
 
   try {
@@ -75,6 +78,8 @@ async function init() {
 }
 
 function bindEvents() {
+  elements.themeToggleButton.addEventListener("click", toggleTheme);
+
   elements.backHomeButton.addEventListener("click", () => {
     state.session = null;
     state.review = null;
@@ -88,6 +93,21 @@ function bindEvents() {
   elements.submitExamButton.addEventListener("click", finishSession);
   elements.retryExamButton.addEventListener("click", retryCurrentExam);
   elements.retryResultButton.addEventListener("click", retryCurrentExam);
+}
+
+function readTheme() {
+  return localStorage.getItem(THEME_KEY) || "dark";
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  elements.themeToggleButton.textContent = theme === "light" ? "Dark mode" : "White mode";
+}
+
+function toggleTheme() {
+  const nextTheme = readTheme() === "light" ? "dark" : "light";
+  localStorage.setItem(THEME_KEY, nextTheme);
+  applyTheme(nextTheme);
 }
 
 async function fetchJson(url) {
