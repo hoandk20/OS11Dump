@@ -1,0 +1,1410 @@
+{
+  "id": "dump-01",
+  "title": "Dump 01",
+  "description": "50 questions extracted from Dump01.html. Explanations were not present in the source HTML.",
+  "questionCount": 50,
+  "categories": [
+    "Outsystems"
+  ],
+  "sourceFile": "raw/Dump01.html",
+  "questions": [
+    {
+      "id": "dump-01-q001",
+      "question": "When integrating with an ERP with hundreds of APIs, across several business areas, you should:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create a Driver module per functional area and an Integration Service on top to have a single endpoint to communicate with the ERP"
+        },
+        {
+          "id": "b",
+          "text": "Use the REST/SOAP API exposed by the ERP directly in your business rules"
+        },
+        {
+          "id": "c",
+          "text": "Create an Integration Service, per functional Area, with the correct granularity to fulfill different lifecycles and consumption needs"
+        },
+        {
+          "id": "d",
+          "text": "Create a single Integration Service to map concepts and hide integration complexity"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 1
+      }
+    },
+    {
+      "id": "dump-01-q002",
+      "question": "What is the consequence of having upward references?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allows the correct reuse of screen destinations in a menu"
+        },
+        {
+          "id": "b",
+          "text": "Reduces the number of indirect references, by shortcutting to an upper layer module"
+        },
+        {
+          "id": "c",
+          "text": "The footprint of the modules reduce drastically"
+        },
+        {
+          "id": "d",
+          "text": "Generates a lot of direct or indirect cyclic references"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 2
+      }
+    },
+    {
+      "id": "dump-01-q003",
+      "question": "What should not be done in the Stabilization process in the Solution Release?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hot bug fixing"
+        },
+        {
+          "id": "b",
+          "text": "Testing"
+        },
+        {
+          "id": "c",
+          "text": "Implement User Stories from backlog"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 3
+      }
+    },
+    {
+      "id": "dump-01-q004",
+      "question": "Consider the following statement: “In OutSystems 11, it is recommended to use business-related Screens in Foundation layer modules, since it does not break any Architecture validation rule.” Which of the following options is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sentence is false. Although all references to Screens are weak, only non-business related Screens should be used in Foundation layer modules."
+        },
+        {
+          "id": "b",
+          "text": "The sentence is true for all business-related Screens. All references to Screens are weak, so they can and should be used in Foundation Layer modules, without causing upward references."
+        },
+        {
+          "id": "c",
+          "text": "The sentence is false. Although all references to screens are weak, only business-related Screens that are not being consumed by other modules should be used in Foundation layer modules."
+        },
+        {
+          "id": "d",
+          "text": "The sentence is true for business-related Web Screens. References to Mobile Screens are still considered strong references, so they should not be used in Foundation Layer modules."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 4
+      }
+    },
+    {
+      "id": "dump-01-q005",
+      "question": "Select a valid reason to create a BL module",
+      "options": [
+        {
+          "id": "a",
+          "text": "To abstract different implementations in a Transparency pattern"
+        },
+        {
+          "id": "b",
+          "text": "To support reusable core widgets"
+        },
+        {
+          "id": "c",
+          "text": "To implement business rules by composition of base core modules"
+        },
+        {
+          "id": "d",
+          "text": "To support a concept with entities and CRUD edition"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 5
+      }
+    },
+    {
+      "id": "dump-01-q006",
+      "question": "What is the maximum amount of time environment logs are kept for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two weeks"
+        },
+        {
+          "id": "b",
+          "text": "Five weeks"
+        },
+        {
+          "id": "c",
+          "text": "In all cases the maximum retention period can be set from two to nine weeks"
+        },
+        {
+          "id": "d",
+          "text": "Nine weeks"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 6
+      }
+    },
+    {
+      "id": "dump-01-q007",
+      "question": "You're the tech lead and you're in the solution release phase and there are some hotfixes to do...",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schedule UAT tests on alternate days and fix the hotfixes in those deliveries"
+        },
+        {
+          "id": "b",
+          "text": "Fix and pass the release anyway"
+        },
+        {
+          "id": "c",
+          "text": "You register the bugs and propose to fix them in the next release in order not to delay the release"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 7
+      }
+    },
+    {
+      "id": "dump-01-q008",
+      "question": "Elements such as the menu and login can be shared across different apps. In a specific use case, both the menu and login are defined inside the theme. Which use case is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Intranet"
+        },
+        {
+          "id": "b",
+          "text": "Portal"
+        },
+        {
+          "id": "c",
+          "text": "Independent Apps"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 8
+      }
+    },
+    {
+      "id": "dump-01-q009",
+      "question": "What is the correct way to fix a side reference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify the consumed elements, excluding destinations, and move them to reusable core/library modules"
+        },
+        {
+          "id": "b",
+          "text": "Always move the consumed elements from the producer to the consumer to avoid the reference"
+        },
+        {
+          "id": "c",
+          "text": "Make sure the consumer is business agnostic and move consumed elements to reusable libraries"
+        },
+        {
+          "id": "d",
+          "text": "Replace destinations by external URLs and consume actions through restfull APIs"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 9
+      }
+    },
+    {
+      "id": "dump-01-q010",
+      "question": "The correct granularity of modules in the Canvas, promotes:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The segregation of reusable building blocks that minimizes impacts on consumers"
+        },
+        {
+          "id": "b",
+          "text": "The reusability of end-user modules by spliting business processes per module"
+        },
+        {
+          "id": "c",
+          "text": "The mandatory split of one concept into different modules, separating data, logic and presentation"
+        },
+        {
+          "id": "d",
+          "text": "The merge of two concepts on the same module whenever one depends on the other"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 10
+      }
+    },
+    {
+      "id": "dump-01-q011",
+      "question": "There is a doubt during the implementation of a user story, but the PO is unavailable. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wait for the PO to come back"
+        },
+        {
+          "id": "b",
+          "text": "Go ahead with the development assuming your idea"
+        },
+        {
+          "id": "c",
+          "text": "Ask the BA to clarify the doubt"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 11
+      }
+    },
+    {
+      "id": "dump-01-q012",
+      "question": "What's the first thing to do in Initiation workshop? (Welcome meeting or kick-off meeting)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prioritization of User Stories"
+        },
+        {
+          "id": "b",
+          "text": "Define team members"
+        },
+        {
+          "id": "c",
+          "text": "Define users and personas"
+        },
+        {
+          "id": "d",
+          "text": "Product vision document"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 12
+      }
+    },
+    {
+      "id": "dump-01-q013",
+      "question": "What is the nature of an Orchestration module?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provides non reusable functionality to support user stories"
+        },
+        {
+          "id": "b",
+          "text": "Orchestrates the synchronization of multiple entities from an external system of records"
+        },
+        {
+          "id": "c",
+          "text": "Manages cross-application processes and dashboards, providing access to different business applications"
+        },
+        {
+          "id": "d",
+          "text": "Provides reusable business processes but must not be consumed by other end-user modules"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 13
+      }
+    },
+    {
+      "id": "dump-01-q014",
+      "question": "Regarding roles in Lifetime, regarding the user in an infrastructure, how can you have roles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Per environment, application and teams"
+        },
+        {
+          "id": "b",
+          "text": "Per infrastructure"
+        },
+        {
+          "id": "c",
+          "text": "Per environment"
+        },
+        {
+          "id": "d",
+          "text": "Per infrastructure, per environment, application and teams"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 14
+      }
+    },
+    {
+      "id": "dump-01-q015",
+      "question": "During the Iteration Development Phase, when do the Shape, Build and Accept tracks occur in an iteration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shape and Build happen concurrently, taking around 70% of the iteration timeline. After both end, Accept takes the remaining 30% of the iteration."
+        },
+        {
+          "id": "b",
+          "text": "Consecutively. The iteration starts with the Shaping of the iteration, then Build, and finally Accept to close the iteration."
+        },
+        {
+          "id": "c",
+          "text": "Consecutively. The iteration should start with the Accept of the previous iteration, then Build and finally the Shaping of the next iteration is done."
+        },
+        {
+          "id": "d",
+          "text": "Concurrently. Build takes the whole iteration timeline, Shape starts half way through and Accept happens at the beginning or the end of the iteration."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 15
+      }
+    },
+    {
+      "id": "dump-01-q016",
+      "question": "Which functions are part of the developer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only implement"
+        },
+        {
+          "id": "b",
+          "text": "Write, implement, and test user stories"
+        },
+        {
+          "id": "c",
+          "text": "Implement and test user stories"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 16
+      }
+    },
+    {
+      "id": "dump-01-q017",
+      "question": "Why is reusability so important?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gives flexibility to create/update/delete entity records directly in a end-user module"
+        },
+        {
+          "id": "b",
+          "text": "Promotes cost savings by allowing the definition of a concept in multiple modules"
+        },
+        {
+          "id": "c",
+          "text": "It allows sharing screens between different end user modules"
+        },
+        {
+          "id": "d",
+          "text": "Promotes cost savings and avoid multiple definitions of concepts"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 17
+      }
+    },
+    {
+      "id": "dump-01-q018",
+      "question": "Transparency service is applicable when:",
+      "options": [
+        {
+          "id": "a",
+          "text": "To make a core service agnostic to the fact that the same type of Master data is coming from different external system of records"
+        },
+        {
+          "id": "b",
+          "text": "To compose several concepts into a single API"
+        },
+        {
+          "id": "c",
+          "text": "Abstracting several concepts in a single API"
+        },
+        {
+          "id": "d",
+          "text": "Integrating with an ERP supporting different functional areas"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 18
+      }
+    },
+    {
+      "id": "dump-01-q019",
+      "question": "What is the main reason, when refactoring, to freeze features before the refactored code hits production?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To make sure that all the focus goes to the refactoring"
+        },
+        {
+          "id": "b",
+          "text": "Because new definitions on elements being refactored, may not match what is in production, when trying to reconnect data"
+        },
+        {
+          "id": "c",
+          "text": "To avoid enlarging the code requiring refactoring"
+        },
+        {
+          "id": "d",
+          "text": "This assertion is false. Refactoring while changing/adding features is a way to dilute refactoring cost"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 19
+      }
+    },
+    {
+      "id": "dump-01-q020",
+      "question": "Which of the following options describes a benefit of adopting the Architecture Canvas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Canvas provides an automatic way to follow and fix architecture principles."
+        },
+        {
+          "id": "b",
+          "text": "The Canvas provides a way to easily promote the collaboration and understanding of the business users"
+        },
+        {
+          "id": "c",
+          "text": "The Canvas provides faster architecture design without validation needs."
+        },
+        {
+          "id": "d",
+          "text": "The Canvas provides a systematic approach to architecture design, supported by a validation tool"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 20
+      }
+    },
+    {
+      "id": "dump-01-q021",
+      "question": "What is the best way to compose applications in this example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "End user App 1: EU1 + Core A + Library A, End user App 2: EU2 + Core B + Core C + Library B + Library C"
+        },
+        {
+          "id": "b",
+          "text": "End user App: EU1 + EU2, Core App: Core A + Core B + Core C, Library APP: Library A + Library B + Library C"
+        },
+        {
+          "id": "c",
+          "text": "End user App 1: EU1, End user App 2: EU2, Core App: Core A + Core B + Core C, Library APP: Library A + Library B + Library C"
+        },
+        {
+          "id": "d",
+          "text": "End user App 1: EU1 + Core A + Library A, End user App 2 : EU2, Core APP Core B+ Core C + Library B + Library C"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 21
+      }
+    },
+    {
+      "id": "dump-01-q022",
+      "question": "When should you mix modules from different owners in the same application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To prevent different lifecycles"
+        },
+        {
+          "id": "b",
+          "text": "Never, each application must have clear accountability set to support deployment decisions"
+        },
+        {
+          "id": "c",
+          "text": "To simplify deployments"
+        },
+        {
+          "id": "d",
+          "text": "To make sure all modules get the same quality"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 22
+      }
+    },
+    {
+      "id": "dump-01-q023",
+      "question": "Should you join unrelated concepts in the same module?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, to avoid cyclic references and reduce the footprint of generated code"
+        },
+        {
+          "id": "b",
+          "text": "Yes, because it reduces the number of references, simplifying deployments"
+        },
+        {
+          "id": "c",
+          "text": "No, because it adds unnecessary complexity to consumers requiring both concepts"
+        },
+        {
+          "id": "d",
+          "text": "No, because it prevents lifecycle independency of concepts and add unnecessary impacts to consumers"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 23
+      }
+    },
+    {
+      "id": "dump-01-q024",
+      "question": "How to improve an External Core Service with local cache, when the whole database is too big and costly to synchronize and you need to list and search? (Details are only required for single entries)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid the local cache to remove the synchronization cost without performance impacts"
+        },
+        {
+          "id": "b",
+          "text": "Make sure the synchronization logic is separate from the core service to reduce impacts"
+        },
+        {
+          "id": "c",
+          "text": "Adopt a lazy load strategy, where the local cache is incrementally updated, whenever single records are requested from the external system"
+        },
+        {
+          "id": "d",
+          "text": "Sync only summary data that it's frequently listed, joined or searched and get full detail directly from the external systems when a single entry is selected"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 24
+      }
+    },
+    {
+      "id": "dump-01-q025",
+      "question": "Consider the following example of an External Core Service with local replica, where the Master of Customer is an external ERP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consumers of the Core Service are not able to compose customer information with aggregates"
+        },
+        {
+          "id": "b",
+          "text": "The ERP API must support a complex API to cover all use cases of searching and filtering customers"
+        },
+        {
+          "id": "c",
+          "text": "Optimizing the synchronization process has no impact on consumers of the core service"
+        },
+        {
+          "id": "d",
+          "text": "The ERP is protected from end user load since there is a synchronization process"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 25
+      }
+    },
+    {
+      "id": "dump-01-q026",
+      "question": "Which of the following options denotes the advantages of defining a Style Guide up front?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allows apps and the Style Guide to be deployed to Production."
+        },
+        {
+          "id": "b",
+          "text": "Speed up the development phase."
+        },
+        {
+          "id": "c",
+          "text": "Improve performance and maintainability."
+        },
+        {
+          "id": "d",
+          "text": "Security and scalability."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 26
+      }
+    },
+    {
+      "id": "dump-01-q027",
+      "question": "A Core module should...",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provide business or non business reusable services, and it can depend on other Core modules"
+        },
+        {
+          "id": "b",
+          "text": "Provide reusable services around a business concept, as long as it is not consumed by another Core module"
+        },
+        {
+          "id": "c",
+          "text": "Be exposed to external consumers through an Integration Service and reference external producers through an API module"
+        },
+        {
+          "id": "d",
+          "text": "Be isolated to avoid impacts from changes on external consumers and producers"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 27
+      }
+    },
+    {
+      "id": "dump-01-q028",
+      "question": "What is MoSCoW (Must-have, should-have, could-have, and won’t-have) used for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Writing user stories"
+        },
+        {
+          "id": "b",
+          "text": "Prioritizing user stories"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 28
+      }
+    },
+    {
+      "id": "dump-01-q029",
+      "question": "What is a good reason for joining concepts when assembling a module?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Concepts belong to the same functional area and a typical consumer exercise all the concepts"
+        },
+        {
+          "id": "b",
+          "text": "To accelerate development, by reducing the number of references"
+        },
+        {
+          "id": "c",
+          "text": "Concepts have the same lifecycle, even if not functionally related"
+        },
+        {
+          "id": "d",
+          "text": "To reduce the number of modules and references, simplifying the release cycle"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 29
+      }
+    },
+    {
+      "id": "dump-01-q030",
+      "question": "How many database tables compose the environment log system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nine tables"
+        },
+        {
+          "id": "b",
+          "text": "Twelve tables"
+        },
+        {
+          "id": "c",
+          "text": "Ten tables"
+        },
+        {
+          "id": "d",
+          "text": "Two tables"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 30
+      }
+    },
+    {
+      "id": "dump-01-q031",
+      "question": "What Not to do during the Initiation Workshop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Write User Stories."
+        },
+        {
+          "id": "b",
+          "text": "Define team members."
+        },
+        {
+          "id": "c",
+          "text": "Define the solution architecture."
+        },
+        {
+          "id": "d",
+          "text": "Design UI Mock-ups."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 31
+      }
+    },
+    {
+      "id": "dump-01-q032",
+      "question": "What is the main nature of an end-user module?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Designed by an end-user"
+        },
+        {
+          "id": "b",
+          "text": "Orchestrates cross-application end-user functionality"
+        },
+        {
+          "id": "c",
+          "text": "Provides reusable business processes but must not be consumed by other end-user modules"
+        },
+        {
+          "id": "d",
+          "text": "Provides functionality to support user stories, and must be independent of other end-user modules"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 32
+      }
+    },
+    {
+      "id": "dump-01-q033",
+      "question": "First thing to do in the Initiation Workshop",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock-ups"
+        },
+        {
+          "id": "b",
+          "text": "Define users e personas"
+        },
+        {
+          "id": "c",
+          "text": "Vision Document"
+        },
+        {
+          "id": "d",
+          "text": "Define User Stories"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 33
+      }
+    },
+    {
+      "id": "dump-01-q034",
+      "question": "What is APDEX?",
+      "options": [
+        {
+          "id": "a",
+          "text": "APDEX shows developers how the application is performing prior to the product roll out."
+        },
+        {
+          "id": "b",
+          "text": "Outsystems uses the APDEX (Application Performance Index) metric, to measure the user satisfaction with the performance of your applications."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 34
+      }
+    },
+    {
+      "id": "dump-01-q035",
+      "question": "Imagine you need to extract a core from an end user module. Why would you keep consumed elements on the original module (step 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To keep all screens and entities on the original eSpace, avoiding data migration"
+        },
+        {
+          "id": "b",
+          "text": "To reduce impacts on consumers and leave the original name to the clone of the end user module to keep URLS"
+        },
+        {
+          "id": "c",
+          "text": "To change the URLs and force consumers to refresh dependencies"
+        },
+        {
+          "id": "d",
+          "text": "To keep all screens and entities on the original eSpace, preventing consumers to refresh dependencies"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 35
+      }
+    },
+    {
+      "id": "dump-01-q036",
+      "question": "What is the effect of having a cyclic reference between two modules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Generates loops in the runtime code"
+        },
+        {
+          "id": "b",
+          "text": "Although modules involved in the cycle become tightly connected, it allows a better granularity without extra impacts on other consumers"
+        },
+        {
+          "id": "c",
+          "text": "It's the only way to generate indirect references to the consumers of those modules"
+        },
+        {
+          "id": "d",
+          "text": "One of the directions is conceptually undesirable, with hard-to-manage code"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 36
+      }
+    },
+    {
+      "id": "dump-01-q037",
+      "question": "What should be done in Post Production phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stabilization"
+        },
+        {
+          "id": "b",
+          "text": "Testing"
+        },
+        {
+          "id": "c",
+          "text": "User Guide Document"
+        },
+        {
+          "id": "d",
+          "text": "Tuning and Hot fixing"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 37
+      }
+    },
+    {
+      "id": "dump-01-q038",
+      "question": "In which of the following scenarios should you choose to clone a built-in Style Guide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is not possible to customize a built-in Style Guide, since it is part of OutSystems UI."
+        },
+        {
+          "id": "b",
+          "text": "When it is not possible to benefit from any existing theme and extensive changes are needed."
+        },
+        {
+          "id": "c",
+          "text": "When minor customizations to the base theme should be done inside the app theme."
+        },
+        {
+          "id": "d",
+          "text": "When you want to introduce extensive changes to an existing theme."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 38
+      }
+    },
+    {
+      "id": "dump-01-q039",
+      "question": "Adopting a module naming convention is important to",
+      "options": [
+        {
+          "id": "a",
+          "text": "Understand the mapping between modules and applications"
+        },
+        {
+          "id": "b",
+          "text": "Enforce a reference architecture and normalize patterns"
+        },
+        {
+          "id": "c",
+          "text": "Remove the need to validate the architecture"
+        },
+        {
+          "id": "d",
+          "text": "Reveal the nature of each module, without enforcing a reference architecture"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 39
+      }
+    },
+    {
+      "id": "dump-01-q040",
+      "question": "What is NOT part of Project Control in the Solution Release?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Go/no Go decision"
+        },
+        {
+          "id": "b",
+          "text": "UAT"
+        },
+        {
+          "id": "c",
+          "text": "Bug fixing"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 40
+      }
+    },
+    {
+      "id": "dump-01-q041",
+      "question": "Consider the following Discovery example, showing the consumers of End User application CRM and pick the solution that better improves applications lifetime",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isolate all the end user modules in different applications"
+        },
+        {
+          "id": "b",
+          "text": "Isolate modules CRM Biz and Policies Biz in a Core application"
+        },
+        {
+          "id": "c",
+          "text": "Move the consumed library modules to a library application"
+        },
+        {
+          "id": "d",
+          "text": "Move the consumed modules to a core application"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 41
+      }
+    },
+    {
+      "id": "dump-01-q042",
+      "question": "Check the following blueprint where a shared Style guide provides the menu in the template and the login flow on the theme. In this situation, what is the applicable scenario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Independent App"
+        },
+        {
+          "id": "b",
+          "text": "There is no applicable scenario"
+        },
+        {
+          "id": "c",
+          "text": "Portal"
+        },
+        {
+          "id": "d",
+          "text": "Intranet"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 42
+      }
+    },
+    {
+      "id": "dump-01-q043",
+      "question": "What is important to understand, when disclosing concepts for an architecture design",
+      "options": [
+        {
+          "id": "a",
+          "text": "End user processes, business concepts, integration needs and NFRs"
+        },
+        {
+          "id": "b",
+          "text": "The availability of different teams involved in systems to integrate"
+        },
+        {
+          "id": "c",
+          "text": "Detailed user stories and signatures of all the required APIs"
+        },
+        {
+          "id": "d",
+          "text": "The major project risks"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 43
+      }
+    },
+    {
+      "id": "dump-01-q044",
+      "question": "What is the consequence of having side references?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No lifecycle independence between end user modules"
+        },
+        {
+          "id": "b",
+          "text": "Always generates cyclic references"
+        },
+        {
+          "id": "c",
+          "text": "Lack of isolation between core modules"
+        },
+        {
+          "id": "d",
+          "text": "Allows the reuse of destinations between end user modules"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 44
+      }
+    },
+    {
+      "id": "dump-01-q045",
+      "question": "What is the best approach to fix a cyclic reference between two modules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always merge them in a single module"
+        },
+        {
+          "id": "b",
+          "text": "Remove the composition logic to a third module that consumes these two modules"
+        },
+        {
+          "id": "c",
+          "text": "Make the module independent, by replicating the common code required in both modules"
+        },
+        {
+          "id": "d",
+          "text": "Identify the undesirable direction and replace action references by a REST API reference"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 45
+      }
+    },
+    {
+      "id": "dump-01-q046",
+      "question": "Consider the common style guide scenarios presented in this course. Which of the following statements is True?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Build-your-own Style Guide should be used when the changes in the theme are not extensive."
+        },
+        {
+          "id": "b",
+          "text": "The \"specialize a built-in Style Guide\" scenario should be used when the changes to the base theme are not extensive."
+        },
+        {
+          "id": "c",
+          "text": "The \"clone a built-in Style Guide\" should be used when you want to extend an existing theme."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 46
+      }
+    },
+    {
+      "id": "dump-01-q047",
+      "question": "Can you customize the retention period of logs in the OutSystems cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the retention period can vary from two to nine weeks"
+        },
+        {
+          "id": "b",
+          "text": "No, the retention period is fixed at nine weeks"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 47
+      }
+    },
+    {
+      "id": "dump-01-q048",
+      "question": "Consider the following scenario: You have multiple applications with the same look and feel as an existing built-in style guide. All applications reuse the same federated authentication.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Style guide is an specialization of the built-in and the Login flow is in the theme"
+        },
+        {
+          "id": "b",
+          "text": "The Style guide is a clone of the built-in and the login flow is in the template"
+        },
+        {
+          "id": "c",
+          "text": "The Style guide is a clone of the built-in and the Menu is in the theme"
+        },
+        {
+          "id": "d",
+          "text": "The Style guide is an specialization of the built-in and the Login flow is in the template"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 48
+      }
+    },
+    {
+      "id": "dump-01-q049",
+      "question": "What is the benefit of a good Architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduces risk by avoiding Service Abstraction"
+        },
+        {
+          "id": "b",
+          "text": "Abstracts business concepts, making unnecessary to worry with non functional requirements"
+        },
+        {
+          "id": "c",
+          "text": "Makes dependencies manageable and solutions flexible to evolve"
+        },
+        {
+          "id": "d",
+          "text": "Manages complexity and reduces costs, removing the need to plan"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 49
+      }
+    },
+    {
+      "id": "dump-01-q050",
+      "question": "Assume that you are deploying an application from Dev to QA in Lifetime. What can NOT you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abort the deployment"
+        },
+        {
+          "id": "b",
+          "text": "Create a new deployment plan with different environments"
+        },
+        {
+          "id": "c",
+          "text": "Consult the deployment plan status with a different user"
+        },
+        {
+          "id": "d",
+          "text": "Create a new deployment plan with the same environments"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump01.html",
+        "questionNumber": 50
+      }
+    }
+  ]
+}

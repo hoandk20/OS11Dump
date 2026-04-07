@@ -1,0 +1,1172 @@
+{
+  "id": "dump-03",
+  "title": "Dump 03",
+  "description": "40 questions extracted from Dump03.html. Explanations were not present in the source HTML.",
+  "questionCount": 40,
+  "categories": [
+    "Outsystems"
+  ],
+  "sourceFile": "raw/Dump03.html",
+  "questions": [
+    {
+      "id": "dump-03-q001",
+      "question": "Regarding Stabilization, which of these statements is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "This activity happens in the post-production phase."
+        },
+        {
+          "id": "b",
+          "text": "It is the activity performed after a user story is considered done."
+        },
+        {
+          "id": "c",
+          "text": "The tech lead and a subset of developers perform this activity."
+        },
+        {
+          "id": "d",
+          "text": "It is where a decision is made about whether the functionality that still needs to be accepted will finally be accepted or rejected."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 1
+      }
+    },
+    {
+      "id": "dump-03-q002",
+      "question": "Consider the application architecture diagram with 2 end-user applications (applications A and B) and 1 core component (application core C) that abstracts some reusable services. Dependencies occur because App A needs to reuse some logic from App B, and both are using a business concept implemented in C. Comment on the architecture problems and alternatives.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The logic from Mod B that is being used in Mod A should be moved to a new core module Mod AB. Mod A and Mod B can reference this new module avoiding the side reference."
+        },
+        {
+          "id": "b",
+          "text": "The diagram has no architecture problems, as there are no circular dependencies."
+        },
+        {
+          "id": "c",
+          "text": "The diagram has no architecture problems, as there are only side references in the end-user layer or downward references."
+        },
+        {
+          "id": "d",
+          "text": "The logic from Mod B that is being used in Mod A should be moved to Mod C. Mod A and Mod B can reference this module avoiding the circular dependency."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 2
+      }
+    },
+    {
+      "id": "dump-03-q003",
+      "question": "Abstraction is one of the benefits of good architecture design that allows Developers to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Build blocks that can be more easily reused in other parts of the architecture structure."
+        },
+        {
+          "id": "b",
+          "text": "Have general control and autonomy to combine different components and reuse parts of lower layer elements in the End-User layer."
+        },
+        {
+          "id": "c",
+          "text": "Avoid code duplication and UI elements that consumers can reuse when the Public property of Producers is set to 'Yes'."
+        },
+        {
+          "id": "d",
+          "text": "Hide complex information, exposing, for example, only the Core Business logic that needs to be consumed by other modules."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 3
+      }
+    },
+    {
+      "id": "dump-03-q004",
+      "question": "Which of the following statements about the Project Timebox is NOT TRUE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a pre-agreed period of time during which a person or team works steadily to achieve some goal."
+        },
+        {
+          "id": "b",
+          "text": "Timeboxing forces us to prioritize and do the small work that matters most."
+        },
+        {
+          "id": "c",
+          "text": "It is a flexible period with the following phases: Initiation, Iteration Development, Solution Release and Post-Production."
+        },
+        {
+          "id": "d",
+          "text": "A Project Timebox aims to define and limit the time dedicated to the project."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 4
+      }
+    },
+    {
+      "id": "dump-03-q005",
+      "question": "What activities belong to the Iteration Development phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iteration planning, training and stabilization."
+        },
+        {
+          "id": "b",
+          "text": "Write the backlog, plan the iteration and react to feedback."
+        },
+        {
+          "id": "c",
+          "text": "Demonstration, monitoring, development and testing."
+        },
+        {
+          "id": "d",
+          "text": "Initial workshop, internal demonstration and final demonstration."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 5
+      }
+    },
+    {
+      "id": "dump-03-q006",
+      "question": "To eliminate cycles between modules when architecting your applications, you can:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Break the cycles using Web Services instead of Server Actions."
+        },
+        {
+          "id": "b",
+          "text": "There is no need to eliminate cycles because you can always publish a solution with all modules."
+        },
+        {
+          "id": "c",
+          "text": "Move all elements responsible for the cycle to the same module."
+        },
+        {
+          "id": "d",
+          "text": "Have all modules that have cycles between them within the same application. This way, all application rules will be valid."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 6
+      }
+    },
+    {
+      "id": "dump-03-q007",
+      "question": "What are some of the objectives of the Initiation phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Meet everyone on the team and prepare the foundations for the first iteration."
+        },
+        {
+          "id": "b",
+          "text": "Start development with a subset of the development team to collect stakeholder feedback as quickly as possible."
+        },
+        {
+          "id": "c",
+          "text": "Accurately determine what will be achieved at the end of the project during the Solution Release phase."
+        },
+        {
+          "id": "d",
+          "text": "Detail high-level user stories into final user stories."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 7
+      }
+    },
+    {
+      "id": "dump-03-q008",
+      "question": "Regarding the Definition of Done (DoD), choose the statement that is NOT TRUE.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Definition of Done (DoD) acts as a gatekeeper between the development phase and receiving feedback."
+        },
+        {
+          "id": "b",
+          "text": "The Definition of Done (DoD) checklist is defined in initiation."
+        },
+        {
+          "id": "c",
+          "text": "It checks if a user story is ready for demonstration."
+        },
+        {
+          "id": "d",
+          "text": "The Definition of Done (DoD) checklist also includes the tests that need to be done."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 8
+      }
+    },
+    {
+      "id": "dump-03-q009",
+      "question": "The screenshot below shows two applications. Application #1 has three modules: modules A and B are end-user modules and module C is a core business module. Application #2 has two modules: Module D is an end-user module and Module E is a core business module. The arrows show dependencies between modules. From the available information, select the correct option.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architecture is not correct from the applications' point of view. As more end-user modules in Application #1 depend on Module E than in Application #2, Module E should be moved to Application #1."
+        },
+        {
+          "id": "b",
+          "text": "The architecture is incorrect because both applications are end-user applications. Thus, it violates the rule that there should be no side references in the two top layers of the architecture screen. To fix, move modules D and E to Application #1 and delete the empty Application #2."
+        },
+        {
+          "id": "c",
+          "text": "The architecture is not correct from the application point of view. To solve the problems, create a new application and move module E to this new Core application."
+        },
+        {
+          "id": "d",
+          "text": "The architecture is correct and the rules are valid."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 9
+      }
+    },
+    {
+      "id": "dump-03-q010",
+      "question": "What activities take place in the Post-Production phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Final demonstration and training."
+        },
+        {
+          "id": "b",
+          "text": "Tuning and final retrospective."
+        },
+        {
+          "id": "c",
+          "text": "Monitoring and Stabilization."
+        },
+        {
+          "id": "d",
+          "text": "Development and testing."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 10
+      }
+    },
+    {
+      "id": "dump-03-q011",
+      "question": "Internal demonstrations happen in which phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Monitoring phase."
+        },
+        {
+          "id": "b",
+          "text": "The Shape phase."
+        },
+        {
+          "id": "c",
+          "text": "The Acceptance phase."
+        },
+        {
+          "id": "d",
+          "text": "The Build phase."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 11
+      }
+    },
+    {
+      "id": "dump-03-q012",
+      "question": "What is Information Architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is the relevant documentation to understand the application's architecture in relation to modules."
+        },
+        {
+          "id": "b",
+          "text": "It is the application's navigation map."
+        },
+        {
+          "id": "c",
+          "text": "It is the name given to the documentation referring to the application's data model."
+        },
+        {
+          "id": "d",
+          "text": "It is a set of low and high fidelity models that helps developers design the UI."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 12
+      }
+    },
+    {
+      "id": "dump-03-q013",
+      "question": "Related to Scrum Meetings, during the Iteration phase, select the correct option.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The questions: “What did I do yesterday?, What do I intend to do today? and What blockers or impediments am I facing?” need to be answered during Scrum meetings."
+        },
+        {
+          "id": "b",
+          "text": "At least developers and the tech lead need to be present during scrum meetings during the build phase."
+        },
+        {
+          "id": "c",
+          "text": "Scrum Meetings occur daily during the Iteration Development phase."
+        },
+        {
+          "id": "d",
+          "text": "All options are correct."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 13
+      }
+    },
+    {
+      "id": "dump-03-q014",
+      "question": "What is APDEX?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is the name given to the final documentation."
+        },
+        {
+          "id": "b",
+          "text": "It is a method to estimate user stories."
+        },
+        {
+          "id": "c",
+          "text": "It is a method to prioritize user stories."
+        },
+        {
+          "id": "d",
+          "text": "It is a measure of user satisfaction."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 14
+      }
+    },
+    {
+      "id": "dump-03-q015",
+      "question": "When the application needs to collect information from several different external systems:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each system has a specific integration and all provide normalized data. A separate timer synchronizes the normalized data in the application's core entities."
+        },
+        {
+          "id": "b",
+          "text": "All external systems must be integrated with each other outside the platform, and only then can we integrate them into our application."
+        },
+        {
+          "id": "c",
+          "text": "For each external system, different core entities store the information."
+        },
+        {
+          "id": "d",
+          "text": "All external systems must provide a common web services API to perform integrations. The application will call this API dynamically in each system."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 15
+      }
+    },
+    {
+      "id": "dump-03-q016",
+      "question": "Consider that you want to represent a book in OutSystems. A book must include basic details like title (up to 150 characters), publication date, publisher (up to 100 characters), authors (up to 250 characters) and a brief synopsis (up to 1000 characters). Still, it should also include the cover (in image form) and a content preview (first 10,000 characters of the book). There cannot be two books with the same title in this simplified model. Which of the following data models would be the best to represent the book-related concepts:",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Book entity with a Publication Date date attribute; Title, Publisher, Authors and Synopsis text attributes. A Preview entity with an Id attribute of type Book Identifier data and a Preview text attribute. A Cover entity with an Id attribute of type Book Identifier and a Cover BinaryData attribute."
+        },
+        {
+          "id": "b",
+          "text": "A single Book entity with all attributes."
+        },
+        {
+          "id": "c",
+          "text": "A Book entity with a Publication Date date attribute; Title, Publisher, Authors and Synopsis text attributes; and a Cover BinaryData attribute. A Preview entity with an Id attribute of type Book Identifier and a Preview text attribute."
+        },
+        {
+          "id": "d",
+          "text": "A Book entity with a PublicationDate date attribute; Title, publisher, authors, synopsis and preview text attributes. A Cover entity with an Id attribute of type Book Identifier and a Cover BinaryData attribute."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 16
+      }
+    },
+    {
+      "id": "dump-03-q017",
+      "question": "Regarding the extract to core refactoring method, select the FALSE statement:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only after removing unnecessary elements in each module do we reference the elements of the original module from the cloned module."
+        },
+        {
+          "id": "b",
+          "text": "After the process, the original module will keep all its entities."
+        },
+        {
+          "id": "c",
+          "text": "After cloning and renaming the original module, we remove the UI elements from the clone."
+        },
+        {
+          "id": "d",
+          "text": "The end-user module should keep the original module name, while the core module can have the name we choose."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 17
+      }
+    },
+    {
+      "id": "dump-03-q018",
+      "question": "Which of the following statements is NOT true about entity attribute indexes:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The performance of read queries using indexed attributes will be significantly improved."
+        },
+        {
+          "id": "b",
+          "text": "The performance of insert and update queries will be slightly improved."
+        },
+        {
+          "id": "c",
+          "text": "All reference attributes in an entity have indexes automatically created for them."
+        },
+        {
+          "id": "d",
+          "text": "When an index is marked as unique, two records cannot have the same value for the index."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 18
+      }
+    },
+    {
+      "id": "dump-03-q019",
+      "question": "When configuring users and their permissions in LifeTime, which of the following alternatives is FALSE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "You need to assign roles to the user per environment."
+        },
+        {
+          "id": "b",
+          "text": "Users can receive application-specific permissions."
+        },
+        {
+          "id": "c",
+          "text": "Users can have different roles in different teams."
+        },
+        {
+          "id": "d",
+          "text": "You use Roles to assign permissions to a user."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 19
+      }
+    },
+    {
+      "id": "dump-03-q020",
+      "question": "Regarding making configurations after a deployment, select the true statement.",
+      "options": [
+        {
+          "id": "a",
+          "text": "When configuring a Site Property, we need to open the respective module in Service Studio and change the value of that site property."
+        },
+        {
+          "id": "b",
+          "text": "When you have an extension that uses an External Database, it is not necessary to create the connection before deployment because, during deployment, it will interrupt the deployment for you to create it."
+        },
+        {
+          "id": "c",
+          "text": "A user can only configure Web service endpoints with Change and Deploy access level or higher in the default role."
+        },
+        {
+          "id": "d",
+          "text": "There is no downtime during configurations."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 20
+      }
+    },
+    {
+      "id": "dump-03-q021",
+      "question": "Which of these is NOT an agile development principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The total value of the work is known in advance."
+        },
+        {
+          "id": "b",
+          "text": "Working software is the primary measure of progress."
+        },
+        {
+          "id": "c",
+          "text": "Accept changes in requirements, even late in development."
+        },
+        {
+          "id": "d",
+          "text": "Sustainable constant pace indefinitely."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 21
+      }
+    },
+    {
+      "id": "dump-03-q022",
+      "question": "Consider a developer with the default Developer role (with \"Change and deploy applications\" permissions in Dev and QA). Can they add an application to the deployment plan from Dev to QA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the developer has \"Change and deploy applications\" permission in quality assurance."
+        },
+        {
+          "id": "b",
+          "text": "No, because the developer needs at least \"Open and debug applications\" permission in quality assurance."
+        },
+        {
+          "id": "c",
+          "text": "Yes, because the developer has \"Change and deploy applications\" permission in Dev."
+        },
+        {
+          "id": "d",
+          "text": "No, because the developer cannot have \"Change and deploy applications\" in quality assurance."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 22
+      }
+    },
+    {
+      "id": "dump-03-q023",
+      "question": "In the architecture screen for OutSystems applications, what factor determines the layer in which an application resides?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The number of screens within the application"
+        },
+        {
+          "id": "b",
+          "text": "The amount of data managed or processed by the application"
+        },
+        {
+          "id": "c",
+          "text": "The highest layer occupied by any module within the application"
+        },
+        {
+          "id": "d",
+          "text": "The complexity of the logic implemented in the application's modules"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 23
+      }
+    },
+    {
+      "id": "dump-03-q024",
+      "question": "Which of the steps do NOT belong to the Deployment Plan Anatomy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distribute compiled applications to front-end servers."
+        },
+        {
+          "id": "b",
+          "text": "All steps are part of the deployment plan execution."
+        },
+        {
+          "id": "c",
+          "text": "Synchronize the environment."
+        },
+        {
+          "id": "d",
+          "text": "Generate and compile ASP.NET C# code."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 24
+      }
+    },
+    {
+      "id": "dump-03-q025",
+      "question": "Which team members are 100% involved in the Post-Production phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The tech lead and a subset of developers."
+        },
+        {
+          "id": "b",
+          "text": "The tech lead, the tester and the developers."
+        },
+        {
+          "id": "c",
+          "text": "The tech lead, the business analyst and the developers."
+        },
+        {
+          "id": "d",
+          "text": "Everyone participates fully in this phase."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 25
+      }
+    },
+    {
+      "id": "dump-03-q026",
+      "question": "What activities are performed in the Solution Release?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Train the trainer and do demonstrations."
+        },
+        {
+          "id": "b",
+          "text": "Project control and stress testing."
+        },
+        {
+          "id": "c",
+          "text": "Stabilization and tuning."
+        },
+        {
+          "id": "d",
+          "text": "Documentation production and monitoring."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 26
+      }
+    },
+    {
+      "id": "dump-03-q027",
+      "question": "What do developers need to do during the build process of the iteration phase if the Product Owner is not available to clarify a user story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Developers need to continue the User Story build process and, after the Demo, redefine the work according to the feedback received."
+        },
+        {
+          "id": "b",
+          "text": "Developers need to contact the Product Manager directly to clarify the doubt related to that User Story."
+        },
+        {
+          "id": "c",
+          "text": "Developers need to stop the build process of that user story and wait for the Product Owner's return."
+        },
+        {
+          "id": "d",
+          "text": "Developers need to request support from the Tech Lead, who can talk to the Business Analyst to clarify the User Story."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 27
+      }
+    },
+    {
+      "id": "dump-03-q028",
+      "question": "What are some of the values that guide the Scrum methodology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transparency, leadership, commitment."
+        },
+        {
+          "id": "b",
+          "text": "Agreement, respect, collaboration."
+        },
+        {
+          "id": "c",
+          "text": "Commitment, respect, focus."
+        },
+        {
+          "id": "d",
+          "text": "Courage, leadership, focus."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 28
+      }
+    },
+    {
+      "id": "dump-03-q029",
+      "question": "What is the MoSCoW method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a method to assess the product's risk level in terms of cost and time to market."
+        },
+        {
+          "id": "b",
+          "text": "It is a method used to do Project Sizing to estimate needs in terms of resources."
+        },
+        {
+          "id": "c",
+          "text": "It is a method to assess product quality."
+        },
+        {
+          "id": "d",
+          "text": "It is a method used to assess the priority of each User Story."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 29
+      }
+    },
+    {
+      "id": "dump-03-q030",
+      "question": "Regarding the Retrospective, select the correct option:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Tech Lead conducts the Retrospective session, including only the Development Team."
+        },
+        {
+          "id": "b",
+          "text": "The Retrospective aims to understand what went well and what did not go so well and improve teamwork."
+        },
+        {
+          "id": "c",
+          "text": "The goal of the Retrospective is to review the implemented User Stories and confirm if they respect the Definition of Done."
+        },
+        {
+          "id": "d",
+          "text": "The Retrospective session will occur in parallel with the Stabilization phase."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 30
+      }
+    },
+    {
+      "id": "dump-03-q031",
+      "question": "Even with correct module architecture, incorrect application composition can result in the following:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Applications that impact each other unnecessarily."
+        },
+        {
+          "id": "b",
+          "text": "All options can be a result of wrong application composition."
+        },
+        {
+          "id": "c",
+          "text": "Deploying an application to Production results in the need to take all other applications with it."
+        },
+        {
+          "id": "d",
+          "text": "Applications that cannot evolve independently."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 31
+      }
+    },
+    {
+      "id": "dump-03-q032",
+      "question": "Which of the following options are part of the developer's role in the iteration phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Participate in transforming high-level user stories into final user stories."
+        },
+        {
+          "id": "b",
+          "text": "Check if User Stories are ready to be developed."
+        },
+        {
+          "id": "c",
+          "text": "Participate in demonstrations."
+        },
+        {
+          "id": "d",
+          "text": "Development during the stabilization phase."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 32
+      }
+    },
+    {
+      "id": "dump-03-q033",
+      "question": "When are user stories detailed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only during the Iteration preparation phase."
+        },
+        {
+          "id": "b",
+          "text": "User stories are detailed when inserted into the product backlog."
+        },
+        {
+          "id": "c",
+          "text": "In Initiation all User Stories are detailed because that is when the entire project planning is done."
+        },
+        {
+          "id": "d",
+          "text": "In Initiation and in the Iteration preparation phase."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 33
+      }
+    },
+    {
+      "id": "dump-03-q034",
+      "question": "What are some of the values that guide agile development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Processes and tools, customer collaboration and self-organized teams."
+        },
+        {
+          "id": "b",
+          "text": "Working software, following a plan and self-organized teams."
+        },
+        {
+          "id": "c",
+          "text": "Individuals and interactions, responding to changes and working software."
+        },
+        {
+          "id": "d",
+          "text": "Responding to changes, processes and tools and well-crafted software."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 34
+      }
+    },
+    {
+      "id": "dump-03-q035",
+      "question": "When applications have performance problems, what should be the starting point of tuning efforts:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use Service Center logs and reports to identify the slowest operations."
+        },
+        {
+          "id": "b",
+          "text": "Debug your applications and execute step-by-step business logic execution."
+        },
+        {
+          "id": "c",
+          "text": "Use Service Studio analysis to identify performance bottlenecks."
+        },
+        {
+          "id": "d",
+          "text": "Add application logs to measure time spent in each relevant part of business logic."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 35
+      }
+    },
+    {
+      "id": "dump-03-q036",
+      "question": "Suppose a user has the access level Monitor and Add Dependencies in the default role in Development. This user is also part of Team A with a role that gives them Change and Deployment access level in Development for that team (application A is part of Team A). This user is also part of Team B with a role that gives them List Applications access level in Development for that team (applications B and C are part of Team B). In addition, the user has an application-specific role for Application B with No access level. Regarding the Development environment, select the true statement.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The user can open a module of application A in Service Studio, add references to modules of application C and then publish that module."
+        },
+        {
+          "id": "b",
+          "text": "The user can see the version of application C, but cannot see any information of application B."
+        },
+        {
+          "id": "c",
+          "text": "The user cannot open application B, but can monitor all other applications in the environment."
+        },
+        {
+          "id": "d",
+          "text": "The user can create new applications, but only if those applications belong to Team A."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 36
+      }
+    },
+    {
+      "id": "dump-03-q037",
+      "question": "If you have a Customer_CS module with timer to regularly synchronize information through the Integration Service, but the synchronization process is very complex and constantly tuned, what is the best solution to resolve this situation, thus improving application performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Define a transparency service."
+        },
+        {
+          "id": "b",
+          "text": "Use a Lazy Load Details pattern."
+        },
+        {
+          "id": "c",
+          "text": "Isolate the synchronization logic."
+        },
+        {
+          "id": "d",
+          "text": "Apply a Cold Cache with Batch Sync."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 37
+      }
+    },
+    {
+      "id": "dump-03-q038",
+      "question": "If you have a synchronization process to save data from an external database in your OutSystems entities and want to save the date and time corresponding to the last synchronization run to improve data search performance, which option is NOT a good solution to save this synchronization information?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Save the synchronization date and time in a client variable."
+        },
+        {
+          "id": "b",
+          "text": "Save the synchronization date and time in a site property."
+        },
+        {
+          "id": "c",
+          "text": "Save the synchronization date and time in a global Javascript variable."
+        },
+        {
+          "id": "d",
+          "text": "All these options go against OutSystems recommendations."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 38
+      }
+    },
+    {
+      "id": "dump-03-q039",
+      "question": "When deploying applications with dependencies from Lifetime, which of the options is NOT true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The application version in the plan is also important because if the producers' versions are different in the destination, it is necessary to send the updated applications as well."
+        },
+        {
+          "id": "b",
+          "text": "Red highlights inform if dependencies do not exist or are not updated in the target environment."
+        },
+        {
+          "id": "c",
+          "text": "It is not necessary to solve any errors before proceeding because Lifetime has an automatic troubleshooting service."
+        },
+        {
+          "id": "d",
+          "text": "It is possible to open an application's dependency information and check what the error is."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 39
+      }
+    },
+    {
+      "id": "dump-03-q040",
+      "question": "Which of the following alternatives are some of the main personas 100% involved in the Initiation Phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Product owner, product manager and testers."
+        },
+        {
+          "id": "b",
+          "text": "Project Manager, Product Owner and Tech Lead."
+        },
+        {
+          "id": "c",
+          "text": "Tech lead, testers and developers."
+        },
+        {
+          "id": "d",
+          "text": "Business analyst, tech lead and key users."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump03.html",
+        "questionNumber": 40
+      }
+    }
+  ]
+}

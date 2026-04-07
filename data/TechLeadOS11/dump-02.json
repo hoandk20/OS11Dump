@@ -1,0 +1,1438 @@
+{
+  "id": "dump-02",
+  "title": "Dump 02",
+  "description": "50 questions extracted from Dump02.html. Explanations were not present in the source HTML.",
+  "questionCount": 50,
+  "categories": [
+    "Outsystems"
+  ],
+  "sourceFile": "raw/Dump02.html",
+  "questions": [
+    {
+      "id": "dump-02-q001",
+      "question": "Which of the following options is not an output of Project Initiation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Definition of Ready and Definition of Done checklists."
+        },
+        {
+          "id": "b",
+          "text": "Delivery Practice Alignment."
+        },
+        {
+          "id": "c",
+          "text": "Vision Document."
+        },
+        {
+          "id": "d",
+          "text": "Detail of what will be delivered in each iteration."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 1
+      }
+    },
+    {
+      "id": "dump-02-q002",
+      "question": "What are some of the values that guide the Scrum methodology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agreement, respect, collaboration."
+        },
+        {
+          "id": "b",
+          "text": "Transparency, leadership, commitment."
+        },
+        {
+          "id": "c",
+          "text": "Commitment, respect, focus."
+        },
+        {
+          "id": "d",
+          "text": "Courage, leadership, focus."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 2
+      }
+    },
+    {
+      "id": "dump-02-q003",
+      "question": "Which logs are NOT recorded by the platform by default?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All errors"
+        },
+        {
+          "id": "b",
+          "text": "General Logs created by action Log"
+        },
+        {
+          "id": "c",
+          "text": "Extensions methods call..."
+        },
+        {
+          "id": "d",
+          "text": "SOAP and REST calls"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 3
+      }
+    },
+    {
+      "id": "dump-02-q004",
+      "question": "Considering the Solution Release phase, which of the following options is true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A rule of thumb for the duration of the Solution Release Phase is: one week of Solution Release, for two weeks of Iteration Development."
+        },
+        {
+          "id": "b",
+          "text": "Training is the responsibility of the Tech Lead, or when unavailable, of the Delivery Specialist."
+        },
+        {
+          "id": "c",
+          "text": "No new developments or any other major tasks should take place in this phase."
+        },
+        {
+          "id": "d",
+          "text": "The rollout plan exclusively focuses on a step by step technical deployment script."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 4
+      }
+    },
+    {
+      "id": "dump-02-q005",
+      "question": "What is a good reason to split a core module in two?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To separate unrelated concepts with different lifecycles"
+        },
+        {
+          "id": "b",
+          "text": "To make sure that entities are isolated from business logic"
+        },
+        {
+          "id": "c",
+          "text": "To avoid upward references"
+        },
+        {
+          "id": "d",
+          "text": "To increase development speed"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 5
+      }
+    },
+    {
+      "id": "dump-02-q006",
+      "question": "Abstraction is key to promote:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The development of logic and data around business concepts directly in an end-user module, if those concepts are only used in that module"
+        },
+        {
+          "id": "b",
+          "text": "The split of a concept into different modules to separate data, logic and presentation layers"
+        },
+        {
+          "id": "c",
+          "text": "The capacity to create/update/delete entity records directly in a end-user module"
+        },
+        {
+          "id": "d",
+          "text": "Information hiding to easy the reuse of functional and non functional concepts"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 6
+      }
+    },
+    {
+      "id": "dump-02-q007",
+      "question": "In which of the following scenarios should a custom Style Guide be implemented?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always. Every project / application should have their own custom Style Guide"
+        },
+        {
+          "id": "b",
+          "text": "Whenever an application needs to have independent deployments and low-level of interdependence among other applications."
+        },
+        {
+          "id": "c",
+          "text": "Whenever applications cannot benefit from any existing theme. The Style Guide should be implemented by cloning the most complex template available, to leverage the Blocks and Actions from the original template and accelerate developments."
+        },
+        {
+          "id": "d",
+          "text": "Whenever applications cannot benefit from any existing theme. The Style Guide should be implemented by starting from the most basic template possible, since it only contains the minimum required structure to start."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 7
+      }
+    },
+    {
+      "id": "dump-02-q008",
+      "question": "During refactor, which prioritization should be checked after End-users modules are ok?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cycles among end users"
+        },
+        {
+          "id": "b",
+          "text": "Cycles among cores"
+        },
+        {
+          "id": "c",
+          "text": "Cycles among libraries"
+        },
+        {
+          "id": "d",
+          "text": "Upward references to cores"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 8
+      }
+    },
+    {
+      "id": "dump-02-q009",
+      "question": "Regarding Stabilization, which of these statements is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is the activity performed after a user story is considered done."
+        },
+        {
+          "id": "b",
+          "text": "The tech lead and a subset of developers perform this activity."
+        },
+        {
+          "id": "c",
+          "text": "This activity happens in the post-production phase."
+        },
+        {
+          "id": "d",
+          "text": "It is where a decision is made about whether the functionality that still needs to be accepted will finally be accepted or rejected."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 9
+      }
+    },
+    {
+      "id": "dump-02-q010",
+      "question": "What is the the goal of a correct application composition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimize impacts between modules"
+        },
+        {
+          "id": "b",
+          "text": "Allow different paces in modules of the same Application"
+        },
+        {
+          "id": "c",
+          "text": "Aggregate modules of same functional area, for different sponsors"
+        },
+        {
+          "id": "d",
+          "text": "Simplify deployments"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 10
+      }
+    },
+    {
+      "id": "dump-02-q011",
+      "question": "Which of the following is an Assembling principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disclose business concepts and integration needs"
+        },
+        {
+          "id": "b",
+          "text": "Isolate all business concepts"
+        },
+        {
+          "id": "c",
+          "text": "Join all integrations into a single Module"
+        },
+        {
+          "id": "d",
+          "text": "Keep concepts with different lifecycles apart"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 11
+      }
+    },
+    {
+      "id": "dump-02-q012",
+      "question": "Consider the following example of a basic External Core Service, where the Master of Customer is an external ERP",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ERP is protected from end user load since there is no synchronization process"
+        },
+        {
+          "id": "b",
+          "text": "The integration service only needs to support the retrieval of customer updates since the last sync"
+        },
+        {
+          "id": "c",
+          "text": "Consumers of the Core Service will be able to compose customer information with aggregates"
+        },
+        {
+          "id": "d",
+          "text": "The ERP API must support all customer info retrieval needs, since there is no local replica in the core service"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 12
+      }
+    },
+    {
+      "id": "dump-02-q013",
+      "question": "Why is it so important to have a multi-layer framework to support Architecture Design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To optimize lifecycle independence."
+        },
+        {
+          "id": "b",
+          "text": "To minimize impact of changes."
+        },
+        {
+          "id": "c",
+          "text": "To promote a correct abstraction of reusable services."
+        },
+        {
+          "id": "d",
+          "text": "All the options are correct."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 13
+      }
+    },
+    {
+      "id": "dump-02-q014",
+      "question": "Consider a developer with the default Developer role (with \"Change and deploy applications\" permissions in Dev and QA). Can they add an application to the deployment plan from Dev to QA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the developer has \"Change and deploy applications\" permission in Dev."
+        },
+        {
+          "id": "b",
+          "text": "No, because the developer needs at least \"Open and debug applications\" permission in quality assurance."
+        },
+        {
+          "id": "c",
+          "text": "Yes, because the developer has \"Change and deploy applications\" permission in quality assurance."
+        },
+        {
+          "id": "d",
+          "text": "No, because the developer cannot have \"Change and deploy applications\" in quality assurance."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 14
+      }
+    },
+    {
+      "id": "dump-02-q015",
+      "question": "When are user stories detailed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only during the Iteration preparation phase."
+        },
+        {
+          "id": "b",
+          "text": "User stories are detailed when inserted into the product backlog."
+        },
+        {
+          "id": "c",
+          "text": "In Initiation and in the Iteration preparation phase."
+        },
+        {
+          "id": "d",
+          "text": "In Initiation all User Stories are detailed because that is when the entire project planning is done."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 15
+      }
+    },
+    {
+      "id": "dump-02-q016",
+      "question": "One of the most important tasks of the Iteration Development phase is to write and prioritize the backlog for an Iteration X. When should this task be done?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In the previous iteration (X-1)."
+        },
+        {
+          "id": "b",
+          "text": "During iteration X."
+        },
+        {
+          "id": "c",
+          "text": "At the beginning of iteration X."
+        },
+        {
+          "id": "d",
+          "text": "At the end of iteration X."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 16
+      }
+    },
+    {
+      "id": "dump-02-q017",
+      "question": "What is the impact of having so many violations in this application canvas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unmanageable deployments in lifetime"
+        },
+        {
+          "id": "b",
+          "text": "Unbalanced proportion of core applications, but still a reasonable lifecycle independence among end user / Orchestration applications"
+        },
+        {
+          "id": "c",
+          "text": "The only way to solve all the upward references is by refactoring the modules inside each application"
+        },
+        {
+          "id": "d",
+          "text": "It is impossible to move modules between applications"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 17
+      }
+    },
+    {
+      "id": "dump-02-q018",
+      "question": "What is the first thing to ensure to correctly compose applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No cycles among applications"
+        },
+        {
+          "id": "b",
+          "text": "Applications must be manually positioned in a layer"
+        },
+        {
+          "id": "c",
+          "text": "Application of a certain layer should only contain modules of that layer"
+        },
+        {
+          "id": "d",
+          "text": "Modules correctly layered with no violations"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 18
+      }
+    },
+    {
+      "id": "dump-02-q019",
+      "question": "Check the following blueprint where a shared Style guide provides the menu and the Login flow in the theme. In this situation, what is the applicable scenario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Independent App"
+        },
+        {
+          "id": "b",
+          "text": "Portal"
+        },
+        {
+          "id": "c",
+          "text": "There is no applicable scenario"
+        },
+        {
+          "id": "d",
+          "text": "Intranet"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 19
+      }
+    },
+    {
+      "id": "dump-02-q020",
+      "question": "What should be done in Post Production phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tuning and Hot fixing"
+        },
+        {
+          "id": "b",
+          "text": "Stabilization"
+        },
+        {
+          "id": "c",
+          "text": "User Guide Document"
+        },
+        {
+          "id": "d",
+          "text": "Testing"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 20
+      }
+    },
+    {
+      "id": "dump-02-q021",
+      "question": "What is important to understand, when disclosing concepts for an architecture design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "End user processes, business concepts, integration needs and NFRs"
+        },
+        {
+          "id": "b",
+          "text": "The major project risks"
+        },
+        {
+          "id": "c",
+          "text": "The availability of different teams involved in systems to integrate"
+        },
+        {
+          "id": "d",
+          "text": "Detailed user stories and signatures of all the required APIs"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 21
+      }
+    },
+    {
+      "id": "dump-02-q022",
+      "question": "Which of the following is NOT a benefit of having well-defined application architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supports planning"
+        },
+        {
+          "id": "b",
+          "text": "Reduces risks"
+        },
+        {
+          "id": "c",
+          "text": "Reduces costs"
+        },
+        {
+          "id": "d",
+          "text": "Poor service abstraction"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 22
+      }
+    },
+    {
+      "id": "dump-02-q023",
+      "question": "Which role best describes the following: \"Is selected from the Key Users to ensure representation and consensus of the end-users, being the go to person for question and problems for their area of expertise?\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Developer"
+        },
+        {
+          "id": "b",
+          "text": "Business Sponsor"
+        },
+        {
+          "id": "c",
+          "text": "Subject Matter Expert"
+        },
+        {
+          "id": "d",
+          "text": "Tech Lead"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 23
+      }
+    },
+    {
+      "id": "dump-02-q024",
+      "question": "How can you fix an upward reference from a library?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always move the consumed elements from the producer to the consumer to avoid the reference"
+        },
+        {
+          "id": "b",
+          "text": "Simply remove the references to the elements of the upper layer module"
+        },
+        {
+          "id": "c",
+          "text": "Make sure the library is business agnostic and move consumed elements to reusable libraries"
+        },
+        {
+          "id": "d",
+          "text": "Identify the consumed elements and move them to a reusable core module"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 24
+      }
+    },
+    {
+      "id": "dump-02-q025",
+      "question": "When deploying applications with dependencies from Lifetime, which of the options is NOT true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Red highlights inform if dependencies do not exist or are not updated in the target environment."
+        },
+        {
+          "id": "b",
+          "text": "It is not necessary to solve any errors before proceeding because Lifetime has an automatic troubleshooting service."
+        },
+        {
+          "id": "c",
+          "text": "The application version in the plan is also important because if the producers' versions are different in the destination, it is necessary to send the updated applications as well."
+        },
+        {
+          "id": "d",
+          "text": "It is possible to open an application's dependency information and check what the error is."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 25
+      }
+    },
+    {
+      "id": "dump-02-q026",
+      "question": "How can you fix an upward reference from a library?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify the consumed elements and move them to a reusable core module"
+        },
+        {
+          "id": "b",
+          "text": "Always move the consumed elements from the producer to the consumer to avoid the reference"
+        },
+        {
+          "id": "c",
+          "text": "Simply remove the references to the elements of the upper layer module"
+        },
+        {
+          "id": "d",
+          "text": "Make sure the library is business agnostic and move consumed elements to reusable libraries"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 26
+      }
+    },
+    {
+      "id": "dump-02-q027",
+      "question": "In which of the following scenarios should you choose to clone a built-in Style Guide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is not possible to customize a built-in Style Guide, since it is part of OutSystems UI"
+        },
+        {
+          "id": "b",
+          "text": "When minor customizations to the base theme should be done inside the app theme."
+        },
+        {
+          "id": "c",
+          "text": "When it is not possible to benefit from any existing theme and extensive changes are needed."
+        },
+        {
+          "id": "d",
+          "text": "When you want to introduce extensive changes to an existing theme."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 27
+      }
+    },
+    {
+      "id": "dump-02-q028",
+      "question": "What is NOT expected from a Tech Lead during iterations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ensure solution architecture compliance and code maintainability principles"
+        },
+        {
+          "id": "b",
+          "text": "Lead development team and keep it focused on delivering on time, with quality, while following best practices"
+        },
+        {
+          "id": "c",
+          "text": "Together with the PO, protect the development team from disruptions"
+        },
+        {
+          "id": "d",
+          "text": "Negotiate with BA and remove user stories if there are time/resource constraints"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 28
+      }
+    },
+    {
+      "id": "dump-02-q029",
+      "question": "When applications have performance problems, what should be the starting point of tuning efforts:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use Service Center logs and reports to identify the slowest operations."
+        },
+        {
+          "id": "b",
+          "text": "Use Service Studio analysis to identify performance bottlenecks."
+        },
+        {
+          "id": "c",
+          "text": "Add application logs to measure time spent in each relevant part of business logic."
+        },
+        {
+          "id": "d",
+          "text": "Debug your applications and execute step-by-step business logic execution."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 29
+      }
+    },
+    {
+      "id": "dump-02-q030",
+      "question": "Developer is expected to have a Developer mindset, which are NOT part of the Developer mindset?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delivery - Develop the technical solution following best practices"
+        },
+        {
+          "id": "b",
+          "text": "Solution Architect - Analyze, integrate and design"
+        },
+        {
+          "id": "c",
+          "text": "Be the User - Impersonate the user to focus on business value"
+        },
+        {
+          "id": "d",
+          "text": "UI/UX - Ensure user friendly design to give maximum value"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 30
+      }
+    },
+    {
+      "id": "dump-02-q031",
+      "question": "Inside the service center in the Monitoring tab how old can be the logs presented?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two weeks or less"
+        },
+        {
+          "id": "b",
+          "text": "Nine weeks or less"
+        },
+        {
+          "id": "c",
+          "text": "Three weeks or less"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 31
+      }
+    },
+    {
+      "id": "dump-02-q032",
+      "question": "What are the goals of the solution delivery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In the initiation phase writing extensive documentation then following that plan in order to deliver the product"
+        },
+        {
+          "id": "b",
+          "text": "Time to market, Response to change, Value to end user"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 32
+      }
+    },
+    {
+      "id": "dump-02-q033",
+      "question": "Which of the below is NOT a reason why Business Vision workshop is done in person?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All of the above is a reason workshop is done in person"
+        },
+        {
+          "id": "b",
+          "text": "Due to short timeframe of 2 weeks"
+        },
+        {
+          "id": "c",
+          "text": "Key stakeholders, the business, and the users"
+        },
+        {
+          "id": "d",
+          "text": "Understand the journey and the environment"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 33
+      }
+    },
+    {
+      "id": "dump-02-q034",
+      "question": "What is NOT expected from a Business Analyst (During Iteration)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collaborate with team to prepare iteration"
+        },
+        {
+          "id": "b",
+          "text": "Protect the development team and commit to Iteration"
+        },
+        {
+          "id": "c",
+          "text": "Help development team on clarifications and feedback to ensure development is aligned with business needs"
+        },
+        {
+          "id": "d",
+          "text": "Groom and prioritise user stories"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 34
+      }
+    },
+    {
+      "id": "dump-02-q035",
+      "question": "Which role best describes the following: \"Responsible to for the project. Manages and mitigates risks. Manages timeline. Coordinates budget and resources\"?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Product Owner"
+        },
+        {
+          "id": "b",
+          "text": "Testers/ QA Coordinator"
+        },
+        {
+          "id": "c",
+          "text": "Project Manager"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 35
+      }
+    },
+    {
+      "id": "dump-02-q036",
+      "question": "Which method is Plan driven over Value Driven?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waterfall"
+        },
+        {
+          "id": "b",
+          "text": "Kanban"
+        },
+        {
+          "id": "c",
+          "text": "Agile"
+        },
+        {
+          "id": "d",
+          "text": "Extreme GoHorse"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 36
+      }
+    },
+    {
+      "id": "dump-02-q037",
+      "question": "What is NOT expected from a Tech Lead before iteration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Negotiate with End Users on requirements and prioritize user-stories"
+        },
+        {
+          "id": "b",
+          "text": "Design scalable and high performance architectures"
+        },
+        {
+          "id": "c",
+          "text": "Drill-down of requirements into well-defined tasks"
+        },
+        {
+          "id": "d",
+          "text": "Responsible for technical solution and non-functional requirements"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 37
+      }
+    },
+    {
+      "id": "dump-02-q038",
+      "question": "When deploying an application... what permissions should the user have have?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Change and deploy on source"
+        },
+        {
+          "id": "b",
+          "text": "Change and deploy on target"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 38
+      }
+    },
+    {
+      "id": "dump-02-q039",
+      "question": "What is NOT the responsibility of the Tech Lead?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Best practices (Lead development team and keep it focused on delivering on time, with quality, while following best practices)"
+        },
+        {
+          "id": "b",
+          "text": "Protect dev team from disruptions (alongside PO)"
+        },
+        {
+          "id": "c",
+          "text": "Be the user"
+        },
+        {
+          "id": "d",
+          "text": "Technical solution"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 39
+      }
+    },
+    {
+      "id": "dump-02-q040",
+      "question": "What are the 3 cycles that occur within of an Iteration Development:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Initiation, Shape and Build"
+        },
+        {
+          "id": "b",
+          "text": "Initiation, Build and Release"
+        },
+        {
+          "id": "c",
+          "text": "Shape, Build and Accept"
+        },
+        {
+          "id": "d",
+          "text": "Build, Accept and Release"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 40
+      }
+    },
+    {
+      "id": "dump-02-q041",
+      "question": "How to improve an External Core Service with local cache, when the whole database is too big and costly to synchronize and you need to list and search? (Details are only required for single entries)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make sure the synchronization logic is separate from the core service to reduce impacts"
+        },
+        {
+          "id": "b",
+          "text": "Sync only summary data that it's frequently listed, joined or searched and get full detail directly from the external systems when a single entry is selected"
+        },
+        {
+          "id": "c",
+          "text": "Adopt a lazy load strategy, where the local cache is incrementally updated, whenever single records are requested from the external system"
+        },
+        {
+          "id": "d",
+          "text": "Avoid the local cache to remove the synchronization cost without performance impacts"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 41
+      }
+    },
+    {
+      "id": "dump-02-q042",
+      "question": "What is the the goal of a correct application composition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aggregate modules of same functional area, for different sponsors"
+        },
+        {
+          "id": "b",
+          "text": "Allow different paces in modules of the same Application"
+        },
+        {
+          "id": "c",
+          "text": "Minimize impacts between modules"
+        },
+        {
+          "id": "d",
+          "text": "Simplify deployments"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 42
+      }
+    },
+    {
+      "id": "dump-02-q043",
+      "question": "Adoption of the 3-layer canvas provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "An automatic way to follow and fix architecture principles"
+        },
+        {
+          "id": "b",
+          "text": "A systematic approach to architecture design, supported by a validation tool"
+        },
+        {
+          "id": "c",
+          "text": "Faster architecture design without validation need"
+        },
+        {
+          "id": "d",
+          "text": "A common understanding between business users"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 43
+      }
+    },
+    {
+      "id": "dump-02-q044",
+      "question": "Which of the below is NOT part of Business Vision Workshop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Around a strategic business concept ..."
+        },
+        {
+          "id": "b",
+          "text": "A short 2 week workshop that happens ..."
+        },
+        {
+          "id": "c",
+          "text": "Using UI/UX promotion ..."
+        },
+        {
+          "id": "d",
+          "text": "Before an Agile Project ..."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 44
+      }
+    },
+    {
+      "id": "dump-02-q045",
+      "question": "Which of the following is NOT TRUE about the result of the wrong application composition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Applications that impact each other unnecessarily."
+        },
+        {
+          "id": "b",
+          "text": "None of the above."
+        },
+        {
+          "id": "c",
+          "text": "Applications not being able to evolve independently."
+        },
+        {
+          "id": "d",
+          "text": "Deploying one application may result in having to take all other applications with it to Production."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 45
+      }
+    },
+    {
+      "id": "dump-02-q046",
+      "question": "Which of the below is NOT part of the deliverables of the Business Vision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architecture Design - Describes technical foundation guidelines"
+        },
+        {
+          "id": "b",
+          "text": "Kick off Presentation - Describes Goals and expectations, Teams availability, Activities alignment and Deliverables"
+        },
+        {
+          "id": "c",
+          "text": "UX & UI Concept - Describes information architecture and user's journey"
+        },
+        {
+          "id": "d",
+          "text": "Vision Document - Describes Business Context, Drivers, User Stories, and top processes"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 46
+      }
+    },
+    {
+      "id": "dump-02-q047",
+      "question": "What Not to do during the Initiation Workshop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design UI Mock-ups"
+        },
+        {
+          "id": "b",
+          "text": "Define team members"
+        },
+        {
+          "id": "c",
+          "text": "Define the solution architecture"
+        },
+        {
+          "id": "d",
+          "text": "Write User Stories"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 47
+      }
+    },
+    {
+      "id": "dump-02-q048",
+      "question": "Which of the following options describes a valid reason to create a Calculation Engine (_Eng) module?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To support complex calculations (e.g. an insurance simulator)."
+        },
+        {
+          "id": "b",
+          "text": "To support reusable Actions from Core Widget modules."
+        },
+        {
+          "id": "c",
+          "text": "To support a concept with entities and CRUD edition."
+        },
+        {
+          "id": "d",
+          "text": "To abstract different complex logic implemented in several Business Logic modules."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 48
+      }
+    },
+    {
+      "id": "dump-02-q049",
+      "question": "A Business Vision is similar to Project Initiation. What is the difference between a business Vision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project Initiation focus on the details, Business Vision focus on the high-level needs"
+        },
+        {
+          "id": "b",
+          "text": "Project Initiation is Project Oriented, Business Vision is Business Oriented"
+        },
+        {
+          "id": "c",
+          "text": "Project Initiation is about preparing the iteration, and what needs to be done, and this starts rightaway, Business Vision is about focusing on the business goals, and this is a long term focus"
+        },
+        {
+          "id": "d",
+          "text": "All of the above are differences"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 49
+      }
+    },
+    {
+      "id": "dump-02-q050",
+      "question": "Consider the following scenario: You have multiple applications with the same look and feel as an existing built-in style guide. All applications reuse the same federated authentication.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Style guide is an specialization of the built-in and the Login flow is in the template"
+        },
+        {
+          "id": "b",
+          "text": "The Style guide is a clone of the built-in and the login flow is in the template"
+        },
+        {
+          "id": "c",
+          "text": "The Style guide is an specialization of the built-in and the Login flow is in the theme"
+        },
+        {
+          "id": "d",
+          "text": "The Style guide is a clone of the built-in and the Menu is in the theme"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": "Outsystems",
+      "source": {
+        "rawFile": "raw/Dump02.html",
+        "questionNumber": 50
+      }
+    }
+  ]
+}

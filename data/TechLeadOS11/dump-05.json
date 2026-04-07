@@ -1,0 +1,1388 @@
+{
+  "id": "dump-05",
+  "title": "Dump 05",
+  "description": "50 questions extracted from Dump05.html. Explanations were not present in the source HTML.",
+  "questionCount": 50,
+  "categories": [],
+  "sourceFile": "raw/Dump05.html",
+  "questions": [
+    {
+      "id": "dump-05-q001",
+      "question": "What is not part of the UX Approach in creating a UX Concept?",
+      "options": [
+        {
+          "id": "a",
+          "text": "User Testing"
+        },
+        {
+          "id": "b",
+          "text": "Visual Design"
+        },
+        {
+          "id": "c",
+          "text": "Process Diagram"
+        },
+        {
+          "id": "d",
+          "text": "Wireframes"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 1
+      }
+    },
+    {
+      "id": "dump-05-q002",
+      "question": "In which Service Studio layer can Timers be found?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Logic"
+        },
+        {
+          "id": "b",
+          "text": "Interface"
+        },
+        {
+          "id": "c",
+          "text": "Data"
+        },
+        {
+          "id": "d",
+          "text": "Processes"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 2
+      }
+    },
+    {
+      "id": "dump-05-q003",
+      "question": "Considering Discovery, which of the following sentences is FALSE",
+      "options": [
+        {
+          "id": "a",
+          "text": "Discovery only validates architecture rules at the module level"
+        },
+        {
+          "id": "b",
+          "text": "Discovery allows you to determine for every module, which elements are being consumed by other modules"
+        },
+        {
+          "id": "c",
+          "text": "Discovery automatically assigns a module to an Architecture Canvas layer, following the module's naming convention"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 3
+      }
+    },
+    {
+      "id": "dump-05-q004",
+      "question": "Which of the below services is responsible to notify Front-End Server to invalidate and clear the cache? (Cache Invalidation Service)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Code Generator"
+        },
+        {
+          "id": "b",
+          "text": "Deployment Service"
+        },
+        {
+          "id": "c",
+          "text": "Cache Invalidation Service - using RabbitMQ"
+        },
+        {
+          "id": "d",
+          "text": "Application Services"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 4
+      }
+    },
+    {
+      "id": "dump-05-q005",
+      "question": "You can have multiple Front-End Server in one Platform Server.",
+      "options": [
+        {
+          "id": "a",
+          "text": "FALSE"
+        },
+        {
+          "id": "b",
+          "text": "TRUE"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 5
+      }
+    },
+    {
+      "id": "dump-05-q006",
+      "question": "The Scheduler service also helps to run business logic and monitors the completeness of the job",
+      "options": [
+        {
+          "id": "a",
+          "text": "FALSE"
+        },
+        {
+          "id": "b",
+          "text": "TRUE"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 6
+      }
+    },
+    {
+      "id": "dump-05-q007",
+      "question": "You have integrated a code using Integration Studio, what file is then uploaded to the Platform Server?",
+      "options": [
+        {
+          "id": "a",
+          "text": "XLS File"
+        },
+        {
+          "id": "b",
+          "text": "ODLL File/Binary File"
+        },
+        {
+          "id": "c",
+          "text": "XML File"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 7
+      }
+    },
+    {
+      "id": "dump-05-q008",
+      "question": "Business Analyst role and Product Owner overlap each other a lot. Product Owner also acts more as a Communication Hub that Business Analyst do not. What is the one thing that a Business Analyst mindset have that Product Owner do not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project Steering - Plan and deliver towards the goals, focusing on what users really need"
+        },
+        {
+          "id": "b",
+          "text": "Quality assurance - Design, build, validate and deliver with a focus on quality"
+        },
+        {
+          "id": "c",
+          "text": "Be the User - Impersonate the user to focus on business value"
+        },
+        {
+          "id": "d",
+          "text": "Business Alignment - Constantly challenge decision against the real business vision"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 8
+      }
+    },
+    {
+      "id": "dump-05-q009",
+      "question": "There may be multiple Iteration in a Iteration Development Phase. Which is not part of an Iteration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Daily Scrum"
+        },
+        {
+          "id": "b",
+          "text": "Analysis - Features for next iteration"
+        },
+        {
+          "id": "c",
+          "text": "Iteration Review/Demo - Gather user feedback. Add new requirement to backlog"
+        },
+        {
+          "id": "d",
+          "text": "Tuning Creating CRS based on Stabilization Tests"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 9
+      }
+    },
+    {
+      "id": "dump-05-q010",
+      "question": "A common scenario is having 3 environments (Dev, QA and Prod). Which of the below statements is TRUE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lifetime can control multiple environments"
+        },
+        {
+          "id": "b",
+          "text": "You need to have a Lifetime installation for each environment"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 10
+      }
+    },
+    {
+      "id": "dump-05-q011",
+      "question": "Regarding Service Center which of the following options is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service Center is a tool to manage the operational aspect of a single environment"
+        },
+        {
+          "id": "b",
+          "text": "Service Center is a tool to only monitor services in the platform server"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 11
+      }
+    },
+    {
+      "id": "dump-05-q012",
+      "question": "In which Architecture Canvas layer do you expect to have a higher reusability rate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Core layer"
+        },
+        {
+          "id": "b",
+          "text": "End-User layer"
+        },
+        {
+          "id": "c",
+          "text": "Foundation layer"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 12
+      }
+    },
+    {
+      "id": "dump-05-q013",
+      "question": "Tech Lead is expected to have a Tech Lead mindset, which are NOT part of the Tech Lead mindset?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Communication Hub - Put the right people in touch without being a bottleneck"
+        },
+        {
+          "id": "b",
+          "text": "Project Steering - Plan and deliver towards the goals, focusing on what users really need"
+        },
+        {
+          "id": "c",
+          "text": "Quality assurance - Design, build, validate and deliver with a focus on quality"
+        },
+        {
+          "id": "d",
+          "text": "Be The User - Impersonate the user to focus on business value"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 13
+      }
+    },
+    {
+      "id": "dump-05-q014",
+      "question": "In Outsystem Environment, a Platform Server has many components in it. Which are not part of the components?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Front-End Server"
+        },
+        {
+          "id": "b",
+          "text": "Scheduler"
+        },
+        {
+          "id": "c",
+          "text": "Database"
+        },
+        {
+          "id": "d",
+          "text": "Platform Services"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 14
+      }
+    },
+    {
+      "id": "dump-05-q015",
+      "question": "Which is Not part of Avoiding Fragile?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Well-crafted software over Comprehensive documentation but Centered around clearly written User Stories"
+        },
+        {
+          "id": "b",
+          "text": "A community of professionals over Processes and Tools but Closely following a well structured process"
+        },
+        {
+          "id": "c",
+          "text": "Steadily adding value over Following a Plan but There is a plan and the iteration scope is sacred"
+        },
+        {
+          "id": "d",
+          "text": "Customer collaboration over Contract Negotiation but Ensure value driven and documented Business Vision"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 15
+      }
+    },
+    {
+      "id": "dump-05-q016",
+      "question": "Which role best describes the following \"Define Test Cases based on User Story acceptance criteri",
+      "options": [
+        {
+          "id": "a",
+          "text": "Testers/ QA Coordinator"
+        },
+        {
+          "id": "b",
+          "text": "Coordinate UAT. Perform Tests"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 16
+      }
+    },
+    {
+      "id": "dump-05-q017",
+      "question": "Consider the common style guide scenarios presented in this course. Which of the following statements is true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The \"clone a built-in Style Guide\" should be used when you want to extend an exisiting theme"
+        },
+        {
+          "id": "b",
+          "text": "The \"specialize a built-in Style Guide\" scenario should be used when the changes to the base theme are not extensive"
+        },
+        {
+          "id": "c",
+          "text": "Build-your-own Style Guide should be used when the changes in the theme are not extensive"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 17
+      }
+    },
+    {
+      "id": "dump-05-q018",
+      "question": "Which of the below is NOT a part of the Business Vision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "around a Strategic Business Concept that meets Businesses Needs"
+        },
+        {
+          "id": "b",
+          "text": "define an Amazing Digital Experience"
+        },
+        {
+          "id": "c",
+          "text": "Business Vision is a set of analysis, documents, plans and descriptions and its Time to Value"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 18
+      }
+    },
+    {
+      "id": "dump-05-q019",
+      "question": "Which outsystem tool allows you to grant user permissions, set roles and teams, IT users authentication and manage environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service Center"
+        },
+        {
+          "id": "b",
+          "text": "Lifetime"
+        },
+        {
+          "id": "c",
+          "text": "Service Studio"
+        },
+        {
+          "id": "d",
+          "text": "Integration Studio"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 19
+      }
+    },
+    {
+      "id": "dump-05-q020",
+      "question": "What is NOT part of the responsibility of Product Owner",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource Management"
+        },
+        {
+          "id": "b",
+          "text": "The Solution - (includes vision and aligning solution to the vision, represent the business, own the functional design, deliver max value)"
+        },
+        {
+          "id": "c",
+          "text": "Change Management"
+        },
+        {
+          "id": "d",
+          "text": "Backlog Management"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 20
+      }
+    },
+    {
+      "id": "dump-05-q021",
+      "question": "In which Service Studio layer can Entities be found?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Processes"
+        },
+        {
+          "id": "b",
+          "text": "Data"
+        },
+        {
+          "id": "c",
+          "text": "Interface"
+        },
+        {
+          "id": "d",
+          "text": "Logic"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 21
+      }
+    },
+    {
+      "id": "dump-05-q022",
+      "question": "In Outsystems, a Foundation Application can NOT contain",
+      "options": [
+        {
+          "id": "a",
+          "text": "End-User and Foundation Modules"
+        },
+        {
+          "id": "b",
+          "text": "Core Modules and Foundation Modules"
+        },
+        {
+          "id": "c",
+          "text": "End-User and Core Modules"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 22
+      }
+    },
+    {
+      "id": "dump-05-q023",
+      "question": "Of the options below, which one is a benefit of adopting the Architecture Canvas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It promotes the business users' collaboration and understanding"
+        },
+        {
+          "id": "b",
+          "text": "It's an automatic way to find and fix architecture issues"
+        },
+        {
+          "id": "c",
+          "text": "It's a faster architecture design"
+        },
+        {
+          "id": "d",
+          "text": "It's a systematic approach to architecture design"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 23
+      }
+    },
+    {
+      "id": "dump-05-q024",
+      "question": "Which is NOT part of the Manifesto for Agile Software Development (aka Core Concepts)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Working software over comprehensive documentation"
+        },
+        {
+          "id": "b",
+          "text": "Responding to change over following a plan"
+        },
+        {
+          "id": "c",
+          "text": "Customer collaboration over contract negotiation"
+        },
+        {
+          "id": "d",
+          "text": "Flexibility and fit over completeness and capabilty"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 24
+      }
+    },
+    {
+      "id": "dump-05-q025",
+      "question": "What is NOT part of the 4 Layer Canvas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Core Business - Core Business processes and concepts. Example: Reusable UI, Service APIs, Customer Services, Employee Services, Timesheet Services, Billing Services, Organization Services. Also contains Service API that may be consumed by other external systems. Example: External Sales system, external HR system"
+        },
+        {
+          "id": "b",
+          "text": "End User - Work Admin Module, Customers Module, Employees Module, Timesheets Module, Billing Module, Config"
+        },
+        {
+          "id": "c",
+          "text": "Orchestration - Work Admin Backoffice App"
+        },
+        {
+          "id": "d",
+          "text": "Database - External database that may or may not use Integration services. Example: S3 bucket, Alibaba, Amazon"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 25
+      }
+    },
+    {
+      "id": "dump-05-q026",
+      "question": "In Outsystems, a Core Application can contain... (Hint: the topmost layer for the Modules inside an application defines the layer of the application",
+      "options": [
+        {
+          "id": "a",
+          "text": "Foundation and Core Modules"
+        },
+        {
+          "id": "b",
+          "text": "End-User, Core and Founation Modules"
+        },
+        {
+          "id": "c",
+          "text": "End-User and Core Modules"
+        },
+        {
+          "id": "d",
+          "text": "Only Foundation Modules"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 26
+      }
+    },
+    {
+      "id": "dump-05-q027",
+      "question": "What is NOT part of Project Preparation Checklist in Outsystems Method",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project Management tool bootstrapping"
+        },
+        {
+          "id": "b",
+          "text": "All of the above is part of Project Preparation Checklist"
+        },
+        {
+          "id": "c",
+          "text": "Handover from the Sales Team"
+        },
+        {
+          "id": "d",
+          "text": "Initiation Workshop plan"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 27
+      }
+    },
+    {
+      "id": "dump-05-q028",
+      "question": "Which of the below is NOT part of the Present the Business Vision in the 3 stage of Business Vision Workshop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Define Project Plan"
+        },
+        {
+          "id": "b",
+          "text": "All of the above is part of Present the Business Vision"
+        },
+        {
+          "id": "c",
+          "text": "Define initial development plan"
+        },
+        {
+          "id": "d",
+          "text": "Validate plan with sponsors and stakeholders"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 28
+      }
+    },
+    {
+      "id": "dump-05-q029",
+      "question": "Regarding Validation Rules for application composition, which of the following sentences is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Owners of the Application should not be mixed, but mixing Sponsors has no direct impact on the release"
+        },
+        {
+          "id": "b",
+          "text": "Common modules and services should be isolated in a separate app that can be referenced by other apps"
+        },
+        {
+          "id": "c",
+          "text": "Applications in the Foundation layer can reference Applications in the End-user layer"
+        },
+        {
+          "id": "d",
+          "text": "If you follow all the rules for validating modules, your application composition will be sound, and easy to maintain and deploy"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 29
+      }
+    },
+    {
+      "id": "dump-05-q030",
+      "question": "Which is NOT the reason Outsystems prefers Agile over Waterfall method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Value to the end user"
+        },
+        {
+          "id": "b",
+          "text": "Time to market"
+        },
+        {
+          "id": "c",
+          "text": "Complete documentation and structure"
+        },
+        {
+          "id": "d",
+          "text": "Response to change"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 30
+      }
+    },
+    {
+      "id": "dump-05-q031",
+      "question": "Considering the Solution Release phase, which of the following options is true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Training is the responsibility of the Tech Lead, or when unavailable, of the Delivery Specialist"
+        },
+        {
+          "id": "b",
+          "text": "The rollout plan exclusively focuses on a step by step technical deployment script"
+        },
+        {
+          "id": "c",
+          "text": "A rule of thumb for the duration of the Solution Release Phase is; one week of Solution Release, for two weeks of Iteration Development"
+        },
+        {
+          "id": "d",
+          "text": "No new developments or any other major tasks should take place in this phase"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 31
+      }
+    },
+    {
+      "id": "dump-05-q032",
+      "question": "Mary Jane has App Specific Developer access to the DialogsPlugin application, but she only has List Access in the Development environment. DialogsPlugin application is inside the Development Environment. She is also assigned to the Marvel's reserve bench team and the Marvel's bench team only has view permission to the DialogsPlugin application. Will she be able to edit the code in DialogsPlugin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because Thanos came over and snaps Mary Jane's permission into thin air. Spiderman is sitting traumatized in the corner of the room. (My sanity is waning. I have been creating this question bank for a full day and not even close to completing. Please grant me some sanity by answering this.)"
+        },
+        {
+          "id": "b",
+          "text": "Yes, Mary Jane will be able to change the code in DialogsPlugin. Application Specific permissions overrides Infrastructure and Team Specific Permission. Team Specific Permission overrides Infrastructure Level Permission"
+        },
+        {
+          "id": "c",
+          "text": "No, Mary Jane will NOT be able to change the code in DialogsPlugin. Infrastructure Level permissions overrides Application and Team Specific Permission. Team Specific Permission overrides Application Specific Permission"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 32
+      }
+    },
+    {
+      "id": "dump-05-q033",
+      "question": "During the Iteration Development Phase, when do the Shape, Build and Accept tracks occur in an iteration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consecutively. The iteration should start with the Accept of the previous iteration, then Build and finally the Shaping of the next iteration is done"
+        },
+        {
+          "id": "b",
+          "text": "Accept takes the remaining 30% of the iteration"
+        },
+        {
+          "id": "c",
+          "text": ". Shape and Build happen concurrently, taking around 70% of the iteration timeline. After both end"
+        },
+        {
+          "id": "d",
+          "text": "Consecutively. The iteration starts with the Shaping of the iteration, then Build, and finally Accept to close the iteration"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 33
+      }
+    },
+    {
+      "id": "dump-05-q034",
+      "question": "During the one click publish and in the MABS sandbox, which are not a step of the build process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All of the above is part of the build process"
+        },
+        {
+          "id": "b",
+          "text": "Create a new project with an Outsystems Template (base natuve app structure and default capabilities)"
+        },
+        {
+          "id": "c",
+          "text": "After all above is done, Outsystems deletes all information and app package becomes available for download by the developer"
+        },
+        {
+          "id": "d",
+          "text": "Build mobile app package (ipa or apk)"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 34
+      }
+    },
+    {
+      "id": "dump-05-q035",
+      "question": "Which role best describes the following: \"Primary Person responsible for the functional solution. This role bridge the business and development team, ensure alignment between Business Vision and the project. Understand business impact of the solution. Have organization awareness. Ensure business value is provided. Help business ensure the preparation of individuals, teams and organization for the new processes and tools\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Product Owner"
+        },
+        {
+          "id": "b",
+          "text": "Tech Lead"
+        },
+        {
+          "id": "c",
+          "text": "Business Analyst"
+        },
+        {
+          "id": "d",
+          "text": "Subject Matter Expert"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 35
+      }
+    },
+    {
+      "id": "dump-05-q036",
+      "question": "Which role best describes the following \"has the lead technical vision and direction of the solution. Specify high level architectural definitions and constraints. (Example: responsibilities, dependencies between systems)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Developer"
+        },
+        {
+          "id": "b",
+          "text": "Enterprise Architect"
+        },
+        {
+          "id": "c",
+          "text": "Tech Lead"
+        },
+        {
+          "id": "d",
+          "text": "IT Manager"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 36
+      }
+    },
+    {
+      "id": "dump-05-q037",
+      "question": "Which of the below is NOT part of the Gather Context in the 3 stage of Business Vision Workshop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Think beyond the frontiers - remove roadblock"
+        },
+        {
+          "id": "b",
+          "text": "All of the above is part of Gather Context"
+        },
+        {
+          "id": "c",
+          "text": "The workshop outcome should provide maximum value to the business"
+        },
+        {
+          "id": "d",
+          "text": "Start with high level - The timeframe is very short!"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 37
+      }
+    },
+    {
+      "id": "dump-05-q038",
+      "question": "In which of the following scenarios shoudl you choose to clone a built-in Style Guide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is not possible to customize a built-in Style Guide, since it is part of the Outsystems UI"
+        },
+        {
+          "id": "b",
+          "text": "When it is not possible to benefit from any existing theme and extensive changes are needed"
+        },
+        {
+          "id": "c",
+          "text": "When minor customizations to the base theme should be done inside the app theme"
+        },
+        {
+          "id": "d",
+          "text": "When you want to introduce extensive changes to an existing theme"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 38
+      }
+    },
+    {
+      "id": "dump-05-q039",
+      "question": "Which of the following options is NOT a validation rule for Modules",
+      "options": [
+        {
+          "id": "a",
+          "text": "No side references between end-user modules"
+        },
+        {
+          "id": "b",
+          "text": "No downward references"
+        },
+        {
+          "id": "c",
+          "text": "No circular references"
+        },
+        {
+          "id": "d",
+          "text": "No upward references"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 39
+      }
+    },
+    {
+      "id": "dump-05-q040",
+      "question": "What else may NOT be expected from a Business Analyst?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Product Owner (in case of mastering the business needs for the project)"
+        },
+        {
+          "id": "b",
+          "text": "Quality Control (in the absence of - or shared with - a Tester / QA coordinator)"
+        },
+        {
+          "id": "c",
+          "text": "Delivery Process Ownership (in absence or an Agile Coach or related)"
+        },
+        {
+          "id": "d",
+          "text": "UX Promotion (in the absence of - or shared with - an UX Expert)"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 40
+      }
+    },
+    {
+      "id": "dump-05-q041",
+      "question": "Which role best describes the following: \"Implements the technical solution and perform iteration tests. Must follow existing best practices and implement solution in a way that is consistent with architecture defined by the Tech Lead\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Developer"
+        },
+        {
+          "id": "b",
+          "text": "Subject Matter Expert"
+        },
+        {
+          "id": "c",
+          "text": "Product Owner"
+        },
+        {
+          "id": "d",
+          "text": "Business Analyst"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 41
+      }
+    },
+    {
+      "id": "dump-05-q042",
+      "question": "Consider the following Module names and the suggested naming conventions for Modules. Which of these is a mobile Module?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mobile_API"
+        },
+        {
+          "id": "b",
+          "text": "Customer_CW"
+        },
+        {
+          "id": "c",
+          "text": "Pricing_MBL"
+        },
+        {
+          "id": "d",
+          "text": "Service_CS"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 42
+      }
+    },
+    {
+      "id": "dump-05-q043",
+      "question": "Which of the below services flags the query to be removed if the result of a query is never used in the application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Services (Scheduler Service and Log Mechanism)"
+        },
+        {
+          "id": "b",
+          "text": "Code Generator"
+        },
+        {
+          "id": "c",
+          "text": "Deployment Service"
+        },
+        {
+          "id": "d",
+          "text": "Deployment controller Service"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 43
+      }
+    },
+    {
+      "id": "dump-05-q044",
+      "question": "In Outsystem Environment, which are not part of the Platform Service?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deployment controller Service"
+        },
+        {
+          "id": "b",
+          "text": "Code Generator"
+        },
+        {
+          "id": "c",
+          "text": "Application Services"
+        },
+        {
+          "id": "d",
+          "text": "Deployment Service"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 44
+      }
+    },
+    {
+      "id": "dump-05-q045",
+      "question": "Which of the following is a benefit of having good architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Slow-moving legacy systems"
+        },
+        {
+          "id": "b",
+          "text": "Unmanageable dependencies"
+        },
+        {
+          "id": "c",
+          "text": "Poor service abstraction"
+        },
+        {
+          "id": "d",
+          "text": "Manages complexit"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 45
+      }
+    },
+    {
+      "id": "dump-05-q046",
+      "question": "Adopting a naming convention can have some benefits. Of the sentences below, which one is NOT a benefit of adopting a naming convention",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enforce the reference architecture"
+        },
+        {
+          "id": "b",
+          "text": "Avoid error code"
+        },
+        {
+          "id": "c",
+          "text": "Reveal the nature of each Module"
+        },
+        {
+          "id": "d",
+          "text": "Normalize patterns"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 46
+      }
+    },
+    {
+      "id": "dump-05-q047",
+      "question": "During one click publish in Service Studio, what file is uploaded from Service Studio to the Platform Server (Code Generator)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "XML File"
+        },
+        {
+          "id": "b",
+          "text": "DLL File/Binary File"
+        },
+        {
+          "id": "c",
+          "text": "XLS File"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 47
+      }
+    },
+    {
+      "id": "dump-05-q048",
+      "question": "What is NOT expected from a Developer (during iterations)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Implement solution complying to architecture"
+        },
+        {
+          "id": "b",
+          "text": "Ensure performance"
+        },
+        {
+          "id": "c",
+          "text": "Receive feedback from users and edit user stories"
+        },
+        {
+          "id": "d",
+          "text": "Comprehensively test and troubleshoot code"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 48
+      }
+    },
+    {
+      "id": "dump-05-q049",
+      "question": "One of the following Tools allows you to manage the application's lifecycle across an infrastructure. Which one?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service Center"
+        },
+        {
+          "id": "b",
+          "text": "Integration Studio"
+        },
+        {
+          "id": "c",
+          "text": "Service Studio"
+        },
+        {
+          "id": "d",
+          "text": "Lifetime"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 49
+      }
+    },
+    {
+      "id": "dump-05-q050",
+      "question": "What is NOT expected from a Business Analyst (During Iteration)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Groom and prioritise user stories"
+        },
+        {
+          "id": "b",
+          "text": "Help development team on clarifications and feedback to ensure development is aligned with business needs"
+        },
+        {
+          "id": "c",
+          "text": "Protect the development team and commit to Iteration"
+        },
+        {
+          "id": "d",
+          "text": "Collaborate with team to prepare iteration"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": null,
+      "category": null,
+      "source": {
+        "rawFile": "raw/Dump05.html",
+        "questionNumber": 50
+      }
+    }
+  ]
+}

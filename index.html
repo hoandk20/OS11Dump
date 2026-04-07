@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechLead OS11 Exam Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div>
+          <h1>OS dump</h1>
+        </div>
+        <div class="hero-actions">
+          <button id="back-home-button" class="ghost-button hidden" type="button">Back to home</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="message-banner" class="message-banner hidden" aria-live="polite"></section>
+
+        <section id="home-screen" class="screen active">
+          <div class="panel settings-panel">
+            <div>
+              <h2>Session settings</h2>
+              <p class="muted">These settings are applied when you start an exam.</p>
+            </div>
+
+            <div class="settings-grid">
+              <label class="field">
+                <span>Mode</span>
+                <select id="mode-select">
+                  <option value="exam">Exam mode</option>
+                  <option value="practice">Practice mode</option>
+                </select>
+              </label>
+
+              <label class="checkbox-field">
+                <input id="shuffle-questions" type="checkbox" />
+                <span>Randomize question order</span>
+              </label>
+
+              <label class="checkbox-field">
+                <input id="shuffle-options" type="checkbox" />
+                <span>Randomize answer choices</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="section-header">
+            <div>
+              <h2>Available exam sets</h2>
+            </div>
+            <div id="dataset-summary" class="summary-chip"></div>
+          </div>
+
+          <div id="exam-list" class="exam-list"></div>
+        </section>
+
+        <section id="exam-screen" class="screen">
+          <div class="exam-layout">
+            <aside class="panel sidebar">
+              <div class="sidebar-header">
+                <h2 id="exam-title">Exam</h2>
+                <p id="exam-description" class="muted"></p>
+              </div>
+
+              <div class="status-stack">
+                <div class="status-card">
+                  <span class="status-label">Mode</span>
+                  <strong id="mode-pill">Exam mode</strong>
+                </div>
+                <div class="status-card">
+                  <span class="status-label">Progress</span>
+                  <strong id="progress-label">0 / 0 answered</strong>
+                </div>
+                <div class="status-card">
+                  <span class="status-label">Current</span>
+                  <strong id="current-label">Question 1</strong>
+                </div>
+              </div>
+
+              <div class="progress-bar" aria-hidden="true">
+                <div id="progress-fill" class="progress-fill"></div>
+              </div>
+
+              <div id="question-nav" class="question-nav"></div>
+
+              <div class="sidebar-actions">
+                <button id="submit-exam-button" class="primary-button" type="button">Submit exam</button>
+                <button id="retry-exam-button" class="ghost-button" type="button">Retry</button>
+              </div>
+            </aside>
+
+            <section class="panel question-panel">
+              <div class="question-topbar">
+                <span id="question-badge" class="badge">Question 1</span>
+                <span id="question-category" class="badge subtle hidden"></span>
+              </div>
+
+              <h3 id="question-text" class="question-text"></h3>
+              <form id="options-form" class="options-list"></form>
+
+              <div id="feedback-panel" class="feedback-panel hidden"></div>
+
+              <div class="question-actions">
+                <button id="previous-button" class="ghost-button" type="button">Previous</button>
+                <div class="inline-actions">
+                  <button id="check-answer-button" class="secondary-button hidden" type="button">Check answer</button>
+                  <button id="next-button" class="primary-button" type="button">Next</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section id="result-screen" class="screen">
+          <div class="panel">
+            <div class="section-header">
+              <div>
+                <h2 id="result-title">Results</h2>
+                <p id="result-subtitle" class="muted"></p>
+              </div>
+              <button id="retry-result-button" class="primary-button" type="button">Retry exam</button>
+            </div>
+
+            <div class="results-grid">
+              <article class="metric-card">
+                <span>Total score</span>
+                <strong id="score-value">0%</strong>
+              </article>
+              <article class="metric-card">
+                <span>Correct</span>
+                <strong id="correct-value">0</strong>
+              </article>
+              <article class="metric-card">
+                <span>Incorrect</span>
+                <strong id="incorrect-value">0</strong>
+              </article>
+              <article class="metric-card">
+                <span>Unanswered</span>
+                <strong id="unanswered-value">0</strong>
+              </article>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="section-header">
+              <div>
+                <h2>Answer review</h2>
+                <p class="muted">Correct answers are always shown. Explanations are shown when present in the source data.</p>
+              </div>
+            </div>
+            <div id="review-list" class="review-list"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

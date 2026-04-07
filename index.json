@@ -1,0 +1,62 @@
+{
+  "id": "techlead-os11",
+  "title": "TechLead OS11 Exam Practice",
+  "generatedAt": "2026-04-07T04:46:17.651510+00:00",
+  "examCount": 6,
+  "exams": [
+    {
+      "id": "dump-01",
+      "title": "Dump 01",
+      "description": "50 questions extracted from Dump01.html. Explanations were not present in the source HTML.",
+      "questionCount": 50,
+      "categories": [
+        "Outsystems"
+      ],
+      "file": "data/TechLeadOS11/dump-01.json"
+    },
+    {
+      "id": "dump-02",
+      "title": "Dump 02",
+      "description": "50 questions extracted from Dump02.html. Explanations were not present in the source HTML.",
+      "questionCount": 50,
+      "categories": [
+        "Outsystems"
+      ],
+      "file": "data/TechLeadOS11/dump-02.json"
+    },
+    {
+      "id": "dump-03",
+      "title": "Dump 03",
+      "description": "40 questions extracted from Dump03.html. Explanations were not present in the source HTML.",
+      "questionCount": 40,
+      "categories": [
+        "Outsystems"
+      ],
+      "file": "data/TechLeadOS11/dump-03.json"
+    },
+    {
+      "id": "dump-04",
+      "title": "Dump 04",
+      "description": "50 questions extracted from Dump04.html. Explanations were not present in the source HTML.",
+      "questionCount": 50,
+      "categories": [],
+      "file": "data/TechLeadOS11/dump-04.json"
+    },
+    {
+      "id": "dump-05",
+      "title": "Dump 05",
+      "description": "50 questions extracted from Dump05.html. Explanations were not present in the source HTML.",
+      "questionCount": 50,
+      "categories": [],
+      "file": "data/TechLeadOS11/dump-05.json"
+    },
+    {
+      "id": "dump-06",
+      "title": "Dump 06",
+      "description": "60 questions extracted from Dump06.html. Explanations were not present in the source HTML.",
+      "questionCount": 60,
+      "categories": [],
+      "file": "data/TechLeadOS11/dump-06.json"
+    }
+  ]
+}
