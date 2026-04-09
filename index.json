@@ -1,13 +1,13 @@
 {
   "id": "techlead-os11",
   "title": "Course Practice Website",
-  "generatedAt": "2026-04-09T04:32:28.501171+00:00",
-  "examCount": 7,
+  "generatedAt": "2026-04-09T07:23:12.972722+00:00",
+  "examCount": 9,
   "exams": [
     {
       "id": "dump-01",
       "title": "Dump 01",
-      "description": "50 questions extracted from Dump01.html. Explanations were not present in the source HTML.",
+      "description": "50 questions normalized from data/TechLeadOS11/TechLead1.json.",
       "questionCount": 50,
       "categories": [
         "Outsystems"
@@ -21,7 +21,7 @@
     {
       "id": "dump-02",
       "title": "Dump 02",
-      "description": "50 questions extracted from Dump02.html. Explanations were not present in the source HTML.",
+      "description": "50 questions normalized from data/TechLeadOS11/techlead2.json.",
       "questionCount": 50,
       "categories": [
         "Outsystems"
@@ -35,7 +35,7 @@
     {
       "id": "dump-03",
       "title": "Dump 03",
-      "description": "40 questions extracted from Dump03.html. Explanations were not present in the source HTML.",
+      "description": "40 questions normalized from data/TechLeadOS11/techlead3.json.",
       "questionCount": 40,
       "categories": [
         "Outsystems"
@@ -49,9 +49,11 @@
     {
       "id": "dump-04",
       "title": "Dump 04",
-      "description": "50 questions extracted from Dump04.html. Explanations were not present in the source HTML.",
+      "description": "50 questions normalized from data/TechLeadOS11/techlead4.json.",
       "questionCount": 50,
-      "categories": [],
+      "categories": [
+        "Outsystems"
+      ],
       "file": "data/TechLeadOS11/dump-04.json",
       "course": {
         "id": "outsystems-techlead",
@@ -61,9 +63,11 @@
     {
       "id": "dump-05",
       "title": "Dump 05",
-      "description": "50 questions extracted from Dump05.html. Explanations were not present in the source HTML.",
+      "description": "50 questions normalized from data/TechLeadOS11/techlead5.json.",
       "questionCount": 50,
-      "categories": [],
+      "categories": [
+        "Outsystems"
+      ],
       "file": "data/TechLeadOS11/dump-05.json",
       "course": {
         "id": "outsystems-techlead",
@@ -73,9 +77,11 @@
     {
       "id": "dump-06",
       "title": "Dump 06",
-      "description": "60 questions extracted from Dump06.html. Explanations were not present in the source HTML.",
+      "description": "60 questions normalized from data/TechLeadOS11/techlead6.json.",
       "questionCount": 60,
-      "categories": [],
+      "categories": [
+        "Outsystems"
+      ],
       "file": "data/TechLeadOS11/dump-06.json",
       "course": {
         "id": "outsystems-techlead",
@@ -85,8 +91,8 @@
     {
       "id": "web-developers-special-list",
       "title": "Special List",
-      "description": "208 questions extracted from data/Web developers/data.txt.",
-      "questionCount": 208,
+      "description": "90 questions extracted from data/Web developers/Web- developer-specialList.json.",
+      "questionCount": 90,
       "categories": [
         "Web developers"
       ],
@@ -94,6 +100,34 @@
       "course": {
         "id": "web-developers",
         "title": "Web developers"
+      }
+    },
+    {
+      "id": "architecture-os11-question-bank",
+      "title": "Question Bank",
+      "description": "84 questions extracted from data/Architecture OS11/Architecture Special List 011.json.",
+      "questionCount": 84,
+      "categories": [
+        "Architecture OS11"
+      ],
+      "file": "data/Architecture OS11/architecture-os11-question-bank.json",
+      "course": {
+        "id": "architecture-os11",
+        "title": "Architecture OS11"
+      }
+    },
+    {
+      "id": "outsystems-reactive-os11-question-bank",
+      "title": "Question Bank",
+      "description": "50 questions extracted from data/Outystems Reactive OS11/data.json.",
+      "questionCount": 50,
+      "categories": [
+        "Outsystems Reactive OS11"
+      ],
+      "file": "data/Outystems Reactive OS11/outsystems-reactive-os11-question-bank.json",
+      "course": {
+        "id": "outsystems-reactive-os11",
+        "title": "Outsystems Reactive OS11"
       }
     }
   ]

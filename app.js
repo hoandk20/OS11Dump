@@ -36,6 +36,8 @@ const elements = {
   questionBadge: document.getElementById("question-badge"),
   questionCategory: document.getElementById("question-category"),
   questionText: document.getElementById("question-text"),
+  questionImageContainer: document.getElementById("question-image-container"),
+  questionImage: document.getElementById("question-image"),
   optionsForm: document.getElementById("options-form"),
   feedbackPanel: document.getElementById("feedback-panel"),
   previousButton: document.getElementById("previous-button"),
@@ -323,6 +325,13 @@ function renderExam() {
   elements.progressFill.style.width = `${progressPercent}%`;
   elements.questionBadge.textContent = `Question ${currentIndex + 1}`;
   elements.questionText.textContent = currentQuestion.question;
+  if (currentQuestion.image) {
+    elements.questionImage.src = currentQuestion.image;
+    elements.questionImageContainer.classList.remove("hidden");
+  } else {
+    elements.questionImage.removeAttribute("src");
+    elements.questionImageContainer.classList.add("hidden");
+  }
 
   if (currentQuestion.category) {
     elements.questionCategory.textContent = currentQuestion.category;
@@ -561,6 +570,11 @@ function renderResults() {
         ${item.question.category ? `<span class="chip">${escapeHtml(item.question.category)}</span>` : ""}
       </div>
       <h3>${escapeHtml(item.question.question)}</h3>
+      ${
+        item.question.image
+          ? `<div class="review-image-wrap"><img class="review-image" src="${item.question.image}" alt="Question illustration"></div>`
+          : ""
+      }
       <p class="review-answer">Your answer: ${
         item.selectedOption ? `${item.selectedOption.id.toUpperCase()} — ${escapeHtml(item.selectedOption.text)}` : "Not answered"
       }</p>

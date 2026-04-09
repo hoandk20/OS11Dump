@@ -1,10 +1,16 @@
 {
   "id": "dump-06",
   "title": "Dump 06",
-  "description": "60 questions extracted from Dump06.html. Explanations were not present in the source HTML.",
+  "description": "60 questions normalized from data/TechLeadOS11/techlead6.json.",
   "questionCount": 60,
-  "categories": [],
-  "sourceFile": "raw/Dump06.html",
+  "categories": [
+    "Outsystems"
+  ],
+  "sourceFile": "data/TechLeadOS11/techlead6.json",
+  "course": {
+    "id": "outsystems-techlead",
+    "title": "Outsystems TechLead"
+  },
   "questions": [
     {
       "id": "dump-06-q001",
@@ -29,10 +35,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 1
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 1",
+        "correctAnswerText": "All of the above is part of INVEST principle",
+        "imageCount": 0
       }
     },
     {
@@ -58,10 +67,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 2
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 2",
+        "correctAnswerText": "Generally follows a 4 line sequence of [Feature/Scenario - Given - When - So]",
+        "imageCount": 0
       }
     },
     {
@@ -79,10 +91,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 3
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 3",
+        "correctAnswerText": "FALSE",
+        "imageCount": 0
       }
     },
     {
@@ -104,10 +119,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 4
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 4",
+        "correctAnswerText": "Portal",
+        "imageCount": 0
       }
     },
     {
@@ -133,10 +151,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 5
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 5",
+        "correctAnswerText": "Operations (aka DevOps)",
+        "imageCount": 0
       }
     },
     {
@@ -162,10 +183,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 6
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 6",
+        "correctAnswerText": "User Testing",
+        "imageCount": 0
       }
     },
     {
@@ -191,10 +215,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 7
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 7",
+        "correctAnswerText": "Plan",
+        "imageCount": 0
       }
     },
     {
@@ -212,10 +239,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 8
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 8",
+        "correctAnswerText": "Testers/ QA Coordinator",
+        "imageCount": 0
       }
     },
     {
@@ -237,10 +267,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 9
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 9",
+        "correctAnswerText": "Foundation layer",
+        "imageCount": 0
       }
     },
     {
@@ -266,10 +299,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 10
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 10",
+        "correctAnswerText": "Post Production",
+        "imageCount": 0
       }
     },
     {
@@ -287,10 +323,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 11
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 11",
+        "correctAnswerText": "FALSE",
+        "imageCount": 0
       }
     },
     {
@@ -308,10 +347,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 12
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 12",
+        "correctAnswerText": "FALSE",
+        "imageCount": 0
       }
     },
     {
@@ -333,10 +375,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 13
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 13",
+        "correctAnswerText": "Service Center",
+        "imageCount": 0
       }
     },
     {
@@ -362,10 +407,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 14
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 14",
+        "correctAnswerText": "Solution Architect - Analyze, integrate and design",
+        "imageCount": 0
       }
     },
     {
@@ -391,10 +439,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 15
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 15",
+        "correctAnswerText": "Server Action",
+        "imageCount": 0
       }
     },
     {
@@ -420,10 +471,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 16
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 16",
+        "correctAnswerText": "Service Center",
+        "imageCount": 0
       }
     },
     {
@@ -449,10 +503,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 17
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 17",
+        "correctAnswerText": "This situation cannot happen as the same application cannot be added to two different teams",
+        "imageCount": 0
       }
     },
     {
@@ -474,10 +531,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 18
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 18",
+        "correctAnswerText": "Service Center",
+        "imageCount": 0
       }
     },
     {
@@ -495,10 +555,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 19
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 19",
+        "correctAnswerText": "TRUE",
+        "imageCount": 0
       }
     },
     {
@@ -524,10 +587,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 20
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 20",
+        "correctAnswerText": "IT Manager",
+        "imageCount": 0
       }
     },
     {
@@ -549,10 +615,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 21
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 21",
+        "correctAnswerText": "Service Center and Lifetime",
+        "imageCount": 0
       }
     },
     {
@@ -578,10 +647,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 22
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 22",
+        "correctAnswerText": "Be a communication Hub between DevOps and End Users regarding operational issue",
+        "imageCount": 0
       }
     },
     {
@@ -607,10 +679,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 23
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 23",
+        "correctAnswerText": "Team Lead - Advises what is technically possible and what is not technically possible",
+        "imageCount": 0
       }
     },
     {
@@ -632,10 +707,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 24
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 24",
+        "correctAnswerText": "End-User and Core Modules",
+        "imageCount": 0
       }
     },
     {
@@ -661,10 +739,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 25
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 25",
+        "correctAnswerText": "Improve performance and maintainability",
+        "imageCount": 0
       }
     },
     {
@@ -690,10 +771,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 26
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 26",
+        "correctAnswerText": "Iteration - Build Shape Accept",
+        "imageCount": 0
       }
     },
     {
@@ -719,10 +803,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 27
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 27",
+        "correctAnswerText": "Business Sponsor",
+        "imageCount": 0
       }
     },
     {
@@ -744,10 +831,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 28
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 28",
+        "correctAnswerText": "around a Strategic Business Concept that meets Businesses Needs",
+        "imageCount": 0
       }
     },
     {
@@ -773,10 +863,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 29
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 29",
+        "correctAnswerText": "Operations (aka DevOps)",
+        "imageCount": 0
       }
     },
     {
@@ -802,10 +895,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 30
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 30",
+        "correctAnswerText": "Logic",
+        "imageCount": 0
       }
     },
     {
@@ -831,10 +927,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 31
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 31",
+        "correctAnswerText": "Team Lead - Advises what is technically possible and what is not technically possible",
+        "imageCount": 0
       }
     },
     {
@@ -860,10 +959,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 32
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 32",
+        "correctAnswerText": "IT Manager",
+        "imageCount": 0
       }
     },
     {
@@ -889,10 +991,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 33
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 33",
+        "correctAnswerText": "Core modules should have public Read-only Entities",
+        "imageCount": 0
       }
     },
     {
@@ -918,10 +1023,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 34
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 34",
+        "correctAnswerText": "All of the above is part of Present the Business Vision",
+        "imageCount": 0
       }
     },
     {
@@ -947,10 +1055,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 35
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 35",
+        "correctAnswerText": "Plan",
+        "imageCount": 0
       }
     },
     {
@@ -976,10 +1087,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 36
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 36",
+        "correctAnswerText": "Logic",
+        "imageCount": 0
       }
     },
     {
@@ -1005,10 +1119,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 37
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 37",
+        "correctAnswerText": "Generally follows a 4 line sequence of [Feature/Scenario - Given - When - So]",
+        "imageCount": 0
       }
     },
     {
@@ -1034,10 +1151,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 38
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 38",
+        "correctAnswerText": "In the previous iteration(X-1)",
+        "imageCount": 0
       }
     },
     {
@@ -1063,10 +1183,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 39
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 39",
+        "correctAnswerText": "Service Center",
+        "imageCount": 0
       }
     },
     {
@@ -1092,10 +1215,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 40
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 40",
+        "correctAnswerText": "Complete documentation and structure",
+        "imageCount": 0
       }
     },
     {
@@ -1121,10 +1247,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 41
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 41",
+        "correctAnswerText": "The Log Mechanism logs by type into a multiple database table. The logs are written using internal ΑΡΙ",
+        "imageCount": 0
       }
     },
     {
@@ -1150,10 +1279,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 42
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 42",
+        "correctAnswerText": "Server Action",
+        "imageCount": 0
       }
     },
     {
@@ -1179,10 +1311,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 43
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 43",
+        "correctAnswerText": "Iteration - Build Shape Accept",
+        "imageCount": 0
       }
     },
     {
@@ -1208,10 +1343,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 44
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 44",
+        "correctAnswerText": "Be a communication Hub between DevOps and End Users regarding operational issue",
+        "imageCount": 0
       }
     },
     {
@@ -1237,10 +1375,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 45
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 45",
+        "correctAnswerText": "All of the above is part of INVEST principle",
+        "imageCount": 0
       }
     },
     {
@@ -1266,10 +1407,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 46
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 46",
+        "correctAnswerText": "Communication Hub - Put the right people in touch without being a bottleneck",
+        "imageCount": 0
       }
     },
     {
@@ -1295,10 +1439,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 47
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 47",
+        "correctAnswerText": "Business Sponsor",
+        "imageCount": 0
       }
     },
     {
@@ -1324,10 +1471,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 48
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 48",
+        "correctAnswerText": "Business Analyst",
+        "imageCount": 0
       }
     },
     {
@@ -1353,10 +1503,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 49
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 49",
+        "correctAnswerText": "Improve performance and maintainability",
+        "imageCount": 0
       }
     },
     {
@@ -1382,10 +1535,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 50
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 50",
+        "correctAnswerText": "Solution Architect - Analyze, integrate and design",
+        "imageCount": 0
       }
     },
     {
@@ -1411,10 +1567,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 51
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 51",
+        "correctAnswerText": "Theme, Epics, High Level Stories, User Stories",
+        "imageCount": 0
       }
     },
     {
@@ -1440,10 +1599,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 52
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 52",
+        "correctAnswerText": "Core modules should have public Read-only Entities",
+        "imageCount": 0
       }
     },
     {
@@ -1469,10 +1631,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 53
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 53",
+        "correctAnswerText": "Theme, Epics, High Level Stories, User Stories",
+        "imageCount": 0
       }
     },
     {
@@ -1498,10 +1663,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 54
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 54",
+        "correctAnswerText": "Post Production",
+        "imageCount": 0
       }
     },
     {
@@ -1523,10 +1691,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 55
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 55",
+        "correctAnswerText": "Service Center is inside the Application Server",
+        "imageCount": 0
       }
     },
     {
@@ -1548,10 +1719,13 @@
       ],
       "correctAnswer": "c",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 56
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 56",
+        "correctAnswerText": "Discovery only validates architecture rules at the module level",
+        "imageCount": 0
       }
     },
     {
@@ -1577,10 +1751,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 57
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 57",
+        "correctAnswerText": "Service Center",
+        "imageCount": 0
       }
     },
     {
@@ -1606,10 +1783,13 @@
       ],
       "correctAnswer": "d",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 58
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 58",
+        "correctAnswerText": "Enterprise Architect",
+        "imageCount": 0
       }
     },
     {
@@ -1635,10 +1815,13 @@
       ],
       "correctAnswer": "b",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 59
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 59",
+        "correctAnswerText": "Not only Delivering on time but also Meeting the market needs",
+        "imageCount": 0
       }
     },
     {
@@ -1664,10 +1847,13 @@
       ],
       "correctAnswer": "a",
       "explanation": null,
+      "image": null,
       "category": null,
       "source": {
-        "rawFile": "raw/Dump06.html",
-        "questionNumber": 60
+        "rawFile": "data/TechLeadOS11/techlead6.json",
+        "questionNumber": "Câu hỏi 60",
+        "correctAnswerText": "Service Center",
+        "imageCount": 0
       }
     }
   ]

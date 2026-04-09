@@ -91,6 +91,12 @@
               "null"
             ]
           },
+          "image": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "category": {
             "type": [
               "string",

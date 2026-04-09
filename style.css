@@ -401,6 +401,23 @@ select {
   margin-bottom: 0;
 }
 
+.question-image-container,
+.review-image-wrap {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface-elevated);
+}
+
+.question-image,
+.review-image {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  background: #fff;
+}
+
 .options-list {
   display: grid;
   gap: 12px;

@@ -1,0 +1,632 @@
+[
+  {
+    "index": 1,
+    "question": "What is a recommended naming convention for foreign keys in OutSystems? A. Use camelCase | B. Suffix with 'Key' | C. Suffix with 'Id' | D. Use lowercase",
+    "answer": "C. Suffix with 'Id'",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 2,
+    "question": "Which practice is advised for screen preparation to enhance performance? A. Minimize database queries | B. Use complex queries | C. Always use AJAX | D. Increase server variables",
+    "answer": "A. Minimize database queries",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 3,
+    "question": "How should large text attributes be managed in OutSystems? A. Keep in main entity | B. Use a separate entity | C. Store as binary | D. Use text fields",
+    "answer": "B. Use a separate entity",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 4,
+    "question": "What is the best practice for handling sensitive data in URLs? A. Encrypt the URL | B. Use plain text | C. Exclude sensitive data | D. Use HTTPS",
+    "answer": "C. Exclude sensitive data",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 5,
+    "question": "Which method is preferred for bulk operations on records? A. Use Aggregates | B. Use SQL statements | C. Use JavaScript | D. Use individual inserts",
+    "answer": "B. Use SQL statements",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 6,
+    "question": "What is the purpose of using Static Entities? A. To store dynamic data | B. Replace hard-coded values | C. Manage user roles | D. Define CSS styles",
+    "answer": "B. Replace hard-coded values",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 7,
+    "question": "How should you approach adding comments in JavaScript? A. Avoid comments | B. Comment only complex logic | C. Comment generously | D. Use comments sparingly",
+    "answer": "B. Comment only complex logic",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 8,
+    "question": "What is the recommended approach to database maintenance? A. Ignore maintenance | B. Setup regular plans | C. Backup occasionally | D. Optimize when needed",
+    "answer": "B. Setup regular plans",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 9,
+    "question": "How should you handle a module size larger than 4 MB? A. Ignore it | B. Split the module | C. Increase server capacity | D. Consider it a sign of poor architecture",
+    "answer": "D. Consider it a sign of poor architecture",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 10,
+    "question": "Why should you avoid creating custom HTML/JavaScript in OutSystems? A. Enhances performance | B. Increases maintainability | C. Reduces complexity | D. Makes it harder to change",
+    "answer": "D. Makes it harder to change",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 11,
+    "question": "What is a benefit of data archiving? A. Increases database size | B. Improves runtime performance | C. Reduces query performance | D. Slows down backups",
+    "answer": "B. Improves runtime performance",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 12,
+    "question": "How should you handle indexes for archived data? A. Disable indexes | B. Ignore indexes | C. Optimize indexes | D. Use default settings",
+    "answer": "C. Optimize indexes",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 13,
+    "question": "Which layer in the architecture is responsible for business processes? A. Connectors | B. Core Entities | C. Business Processes | D. Database",
+    "answer": "C. Business Processes",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 14,
+    "question": "What is an important consideration when using Advanced Queries? A. Easy to maintain | B. Use Parameters | C. Database-independent | D. Avoid SQL",
+    "answer": "B. Use Parameters",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 15,
+    "question": "How should logic be reused in OutSystems? A. Copy code | B. Use Server Actions | C. Separate modules | D. Avoid reusability",
+    "answer": "B. Use Server Actions",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 16,
+    "question": "What is a common pitfall in data archiving? A. Archiving too frequently | B. No archive strategy | C. Using too many indexes | D. Excessive purging",
+    "answer": "B. No archive strategy",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 17,
+    "question": "Which is a best practice for commenting unclear or complex logic? A. Avoid comments | B. Use minimal comments | C. Comment thoroughly | D. Document externally",
+    "answer": "C. Comment thoroughly",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 18,
+    "question": "Which approach minimizes the impact on the main catalog during archiving? A. Use the same database | B. Mirror data source modules | C. Archive infrequently | D. Use temporary storage",
+    "answer": "B. Mirror data source modules",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 19,
+    "question": "What should be used for versioning applications? A. Manual tracking | B. LifeTime | C. Random updates | D. Ignore versioning",
+    "answer": "B. LifeTime",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 20,
+    "question": "Which practice should be avoided during logic development? A. Remove unused code | B. Use duplicate code | C. Optimize logic flow | D. Comment code",
+    "answer": "B. Use duplicate code",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 21,
+    "question": "How should sensitive information be stored? A. In plain text | B. Use encrypted storage | C. In cookies | D. Without protection",
+    "answer": "B. Use encrypted storage",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 22,
+    "question": "What is a key practice for improving query performance? A. Avoid indexing | B. Index commonly used attributes | C. Use large indexes | D. Ignore query speed",
+    "answer": "B. Index commonly used attributes",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 23,
+    "question": "What is a recommended strategy for handling archived records? A. Keep indefinitely | B. Purge when no longer needed | C. Archive frequently | D. Ignore purging",
+    "answer": "B. Purge when no longer needed",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 24,
+    "question": "What should be done with unused references in modules? A. Keep them for future use | B. Remove them | C. Document them | D. Ignore them",
+    "answer": "B. Remove them",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 25,
+    "question": "How should roles be validated in Screen Actions? A. Ignore validation | B. Validate before execution | C. Use default roles | D. Validate after execution",
+    "answer": "B. Validate before execution",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 26,
+    "question": "What is the role of Timers in OutSystems? A. Run continuously | B. Trigger asynchronous processes | C. Replace real-time processes | D. Use for UI updates",
+    "answer": "B. Trigger asynchronous processes",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 27,
+    "question": "How should asynchronous processes be scheduled? A. Randomly | B. With conflict avoidance | C. During peak hours | D. Without monitoring",
+    "answer": "B. With conflict avoidance",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 28,
+    "question": "Which method optimizes queries in OutSystems? A. Use Aggregates | B. Use nested queries | C. Use complex joins | D. Use inline SQL",
+    "answer": "A. Use Aggregates",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 29,
+    "question": "How should large binary data be handled? A. Store in main entity | B. Isolate in separate entities | C. Use text fields | D. Ignore data size",
+    "answer": "B. Isolate in separate entities",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 30,
+    "question": "What is the impact of having too many site properties in a module? A. Improves performance | B. Indicates bad design | C. Enhances flexibility | D. Reduces complexity",
+    "answer": "B. Indicates bad design",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 31,
+    "question": "Which practice helps in creating user story driven interfaces? A. Focus on architecture only | B. Ignore user feedback | C. Integrate user feedback | D. Use default templates",
+    "answer": "C. Integrate user feedback",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 32,
+    "question": "What is the recommended practice for handling exceptions? A. Ignore them | B. Log and handle exceptions | C. Use try-catch everywhere | D. Avoid logging",
+    "answer": "B. Log and handle exceptions",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 33,
+    "question": "How can you ensure a timer is efficient? A. Run during peak hours | B. Use long durations | C. Schedule during off-peak hours | D. Ignore failures",
+    "answer": "C. Schedule during off-peak hours",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 34,
+    "question": "What is a benefit of using Internal Access Only for Web Flows? A. Increases exposure | B. Enhances security | C. Reduces security | D. Increases usability",
+    "answer": "B. Enhances security",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 35,
+    "question": "Which is an important consideration for module responsibilities? A. Define vaguely | B. Clearly define | C. Ignore responsibilities | D. Use generic roles",
+    "answer": "B. Clearly define",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 36,
+    "question": "What is a recommended strategy for handling troubleshooting? A. Ignore errors | B. Use logs and monitoring | C. Guesswork | D. Random checks",
+    "answer": "B. Use logs and monitoring",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 37,
+    "question": "How should you manage large Excel file processing? A. Process synchronously | B. Use background timers | C. Store in memory | D. Use direct insertion",
+    "answer": "B. Use background timers",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 38,
+    "question": "What is a consideration when applying a hotfix? A. Apply without testing | B. Test before applying | C. Apply during peak hours | D. Use outdated versions",
+    "answer": "B. Test before applying",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 39,
+    "question": "How should you avoid infinite recursion in logic development? A. Allow all recursive calls | B. Use recursion freely | C. Set recursion limits | D. Avoid recursion entirely",
+    "answer": "C. Set recursion limits",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 40,
+    "question": "How should you handle circular references between modules? A. Allow them freely | B. Avoid them | C. Use them for flexibility | D. Ignore them",
+    "answer": "B. Avoid them",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 41,
+    "question": "Which integration method is preferred for external data sources? A. Use manual imports | B. Use REST APIs | C. Use CSV files | D. Use direct database access",
+    "answer": "B. Use REST APIs",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 42,
+    "question": "What should be done to avoid data inconsistency with Delete Rules? A. Use Delete rule | B. Use Protect rule | C. Use Ignore rule | D. Avoid rules",
+    "answer": "B. Use Protect rule",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 43,
+    "question": "How should you approach manual deployment procedures? A. Do them ad-hoc | B. Create team processes | C. Avoid documentation | D. Use random scripts",
+    "answer": "B. Create team processes",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 44,
+    "question": "What is a best practice for managing database growth? A. Ignore growth | B. Archive old data | C. Store all data indefinitely | D. Use a single large database",
+    "answer": "B. Archive old data",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 45,
+    "question": "What is the benefit of using a 3-layer approach in architecture? A. Increases complexity | B. Simplifies responsibilities | C. Reduces maintainability | D. Increases redundancy",
+    "answer": "B. Simplifies responsibilities",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 46,
+    "question": "Which approach should be used for handling exceptions? A. Ignore them | B. Log and manage properly | C. Use try-catch everywhere | D. Avoid handling",
+    "answer": "B. Log and manage properly",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 47,
+    "question": "How can you improve integration performance? A. Use multiple calls | B. Optimize API endpoints | C. Use complex logic | D. Ignore performance",
+    "answer": "B. Optimize API endpoints",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 48,
+    "question": "What is the impact of having a single module for all data? A. Enhances performance | B. Indicates poor design | C. Simplifies architecture | D. Increases flexibility",
+    "answer": "B. Indicates poor design",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 49,
+    "question": "What is the recommended way to handle large session variables? A. Increase size | B. Store in database | C. Use more frequently | D. Ignore size",
+    "answer": "B. Store in database",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 50,
+    "question": "Which is a key aspect of optimizing screen Preparations? A. Use heavy operations | B. Pre-process data | C. Add redundant checks | D. Load everything",
+    "answer": "B. Pre-process data",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 51,
+    "question": "What is a consideration for asynchronous processes? A. Use single-threaded logic | B. Use multi-threaded processes | C. Avoid asynchronous logic | D. Use synchronous methods",
+    "answer": "B. Use multi-threaded processes",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 52,
+    "question": "How should business logic be handled in OutSystems? A. In UI components | B. In Server Actions | C. In Extensions | D. In database triggers",
+    "answer": "B. In Server Actions",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 53,
+    "question": "What should be done when deploying to Production? A. Deploy during business hours | B. Avoid testing | C. Avoid deploying during business hours | D. Deploy without approval",
+    "answer": "C. Avoid deploying during business hours",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 54,
+    "question": "How should permissions be managed for Web Screens? A. Ignore roles | B. Set roles for each screen | C. Use default roles | D. Set globally",
+    "answer": "B. Set roles for each screen",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 55,
+    "question": "How should you manage team members' access in a project? A. Share accounts | B. Use a single user per member | C. Allow guest access | D. Ignore roles",
+    "answer": "B. Use a single user per member",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 56,
+    "question": "What is a benefit of using Service Center for application monitoring? A. Increases overhead | B. Provides insights | C. Reduces monitoring | D. Limits visibility",
+    "answer": "B. Provides insights",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 57,
+    "question": "Which is a practice for transactional consistency? A. Use nested transactions | B. Handle transactions manually | C. Use built-in transaction management | D. Avoid transactions",
+    "answer": "C. Use built-in transaction management",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 58,
+    "question": "What is a key consideration in integration design? A. Use synchronous calls | B. Use asynchronous calls | C. Avoid using APIs | D. Use hard-coded values",
+    "answer": "B. Use asynchronous calls",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 59,
+    "question": "What should be done with unused code? A. Keep for reference | B. Remove it | C. Document it | D. Ignore it",
+    "answer": "B. Remove it",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 60,
+    "question": "What is a key benefit of encapsulating business logic? A. Reduces maintainability | B. Increases complexity | C. Enhances reusability | D. Limits functionality",
+    "answer": "C. Enhances reusability",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 61,
+    "question": "You have a screen with a complex query in the Preparation that fetches data from multiple related entities. Users complain about slow loading times. What's the best approach to optimize this? a) Use an Advanced Query to combine the data retrieval into a single database call. b) Create a Server Action to encapsulate the query and call it from the Preparation. c) Cache the Aggregate used in the Preparation to store the results temporarily. d) Optimize the database by adding indexes to the relevant attributes of the entities.",
+    "answer": "b) Creating a Server Action encapsulates the complex query logic and improves organization, making the Preparation cleaner and easier to maintain. While an Advanced Query might offer performance benefits, it's less maintainable in the long run. Caching could help, but optimizing the query itself is often the better first step. Indexing is crucial for database optimization but addresses the database itself rather than the OutSystems application structure.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 62,
+    "question": "A team of developers is working on a large application. They frequently encounter merge conflicts when publishing their changes. What's the best practice to minimize these conflicts? a) Have each developer work on a separate module. b) Use LifeTime to manage versioning and deployments. c) Communicate frequently and coordinate changes among team members. d) Publish changes more frequently to reduce the size of individual updates.",
+    "answer": "c) Communication and coordination are paramount to avoid merge conflicts. While working on separate modules can help, it doesn't eliminate the possibility of conflicts when integrating functionalities. LifeTime helps manage versions but doesn't prevent conflicts entirely. More frequent publishing reduces the scope of merges but requires more discipline and might disrupt other developers.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 63,
+    "question": "You are developing a mobile app that needs to consume a REST API. The API uses OAuth 2.0 for authentication. What's the most efficient way to handle this in OutSystems? a) Use the built-in OAuth 2.0 client credentials flow. b) Implement custom authentication logic using an extension. c) Store the access token in a session variable. d) Manually add the authorization header to each REST API call.",
+    "answer": "a) OutSystems provides built-in support for OAuth 2.0, making it the most efficient method. The other options are more complex and less maintainable.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 64,
+    "question": "An application uses several hardcoded values throughout the logic. What's the best practice to improve maintainability? a) Store the values in Site Properties. b) Create a Static Entity to hold the values. c) Use local variables within each action. d) Store the values in a separate database table.",
+    "answer": "b) Static Entities are designed for holding constant values, making them ideal for this purpose. Site Properties are for environment-specific settings, not application logic constants. Local variables are not suitable for globally accessible values. A separate database table is overkill for simple constants.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 65,
+    "question": "A web screen contains a large amount of JavaScript code that is slowing down the page load. How can you improve performance? a) Move the JavaScript code to a Server Action. b) Minify the JavaScript code and include it as a resource. c) Embed the JavaScript code directly into the HTML. d) Break the JavaScript code into smaller files and load them dynamically.",
+    "answer": "b) Minifying reduces file size, improving load times. Including it as a resource ensures it's managed within the module. Server Actions are for server-side logic, not client-side JavaScript. Embedding in HTML is less maintainable. Breaking into smaller files can be beneficial but adds complexity.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 66,
+    "question": "You are using an Advanced Query to retrieve data. How can you prevent SQL injection vulnerabilities? a) Use EncodeSql for inline parameters. b) Validate user inputs before including them in the query. c) Use parameterized queries instead of concatenating strings. d) All of the above.",
+    "answer": "d) All the options are crucial for preventing SQL injection.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 67,
+    "question": "You have an Entity with a large Text attribute that stores historical data. Users rarely need to access this data. What is the recommended approach for managing this data? a) Keep the data in the same Entity and add an index to the Text attribute. b) Move the historical data to a separate archive Entity. c) Compress the Text attribute to reduce storage space. d) Delete the historical data after a certain period.",
+    "answer": "b) Archiving to a separate Entity improves the performance of the main Entity. Indexing a large Text attribute might not significantly improve performance and can slow down writes. Compression can help but adds complexity. Deleting data might not be desirable for auditing.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 68,
+    "question": "You need to perform a bulk update operation on a large dataset. What's the most efficient method? a) Use a For Each loop and update each record individually. b) Use an Advanced Query with an UPDATE statement. c) Use a Server Action to iterate through the records and update them. d) Use a combination of Aggregates and Entity Actions.",
+    "answer": "b) Advanced Queries are optimized for bulk operations. For Each loops are less efficient. Server Actions adding a layer of abstraction don't provide the same level of performance as direct SQL. Aggregates combined with Entity Actions are also less efficient for bulk updates.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 69,
+    "question": "You are consuming a REST API that returns a large JSON response. You only need a few fields from the response. How can you optimize data retrieval? a) Parse the entire JSON response and extract the necessary fields. b) Use the OnAfterResponse callback to filter the response. c) Modify the REST API method to return only the required fields. d) Use a custom extension to handle the JSON parsing.",
+    "answer": "c) Modifying the API is the most efficient approach if feasible. Parsing the entire response is inefficient. OnAfterResponse can't filter before data is received. Custom extensions add complexity.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 70,
+    "question": "A Timer is taking longer than its allocated timeout to complete. What's the best approach to address this? a) Increase the timeout value for the Timer. b) Optimize the Timer's logic to reduce execution time. c) Break the Timer's logic into smaller chunks and reschedule. d) Run the Timer on a dedicated server.",
+    "answer": "c) Breaking down the logic allows the Timer to complete within the timeout, and rescheduling ensures all parts run. Increasing timeout might mask underlying performance issues. Optimizing is ideal but might not always be enough. A dedicated server can help but is a larger infrastructure change.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 71,
+    "question": "Your application uses several Extensions. How can you improve performance in a production environment? a) Disable auditing for the Extensions. b) Minimize the number of calls to Extension actions. c) Use asynchronous logic when calling Extension actions. d) All of the above.",
+    "answer": "d) All options contribute to optimizing Extension performance.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 72,
+    "question": "You have identified a performance bottleneck in a specific Screen Action. What's the first step you should take to investigate? a) Review the Service Center performance reports. b) Add logging to the Screen Action to track execution time. c) Profile the database queries used by the Screen Action. d) Refactor the Screen Action to simplify its logic.",
+    "answer": "a) Service Center reports pinpoint performance bottlenecks and provide a starting point for investigation.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 73,
+    "question": "A web screen is experiencing slow loading times due to a large number of images. What's the best practice to optimize this? a) Reduce the size of the images. b) Use CSS sprites to combine multiple images into one. c) Lazy load the images as they become visible. d) All of the above.",
+    "answer": "d) All options are valid ways to optimize images for web performance.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 74,
+    "question": "You are building a complex UI with repeated sections. What's the best way to promote reusability? a) Copy and paste the UI elements. b) Create Web Blocks for the repeated sections. c) Use a single Web Screen with conditional logic. d) Create separate Web Screens for each section.",
+    "answer": "b) Web Blocks promote reusability and maintainability. Copying and pasting lead to redundancy. Conditional logic within a single Screen can become complex. Separate Web Screens are less efficient for repeated sections.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 75,
+    "question": "You need to store sensitive information",
+    "answer": "such as passwords, in the database. What is the best practice? a) Store passwords in plain text. b) Encrypt the passwords before storing them. c) Use hashing algorithms to store the passwords. d) Store passwords in a separate file outside the database.\",\"b or c) Encrypting is generally preferred as it allows for decryption if needed (though this should be avoided unless absolutely necessary). Hashing is more secure for passwords as it's one-way, making it impossible to retrieve the original password. Plain text is highly insecure. Storing passwords outside the database doesn't inherently improve security.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 76,
+    "question": "You are developing a web application that requires frequent database access. How can you optimize database performance? a) Use indexes appropriately on frequently queried attributes. b) Minimize the number of database queries. c) Use caching mechanisms to store frequently accessed data. d) All of the above.",
+    "answer": "d) All options are standard database optimization techniques.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 77,
+    "question": "A team member is leaving the project. How should their user account be handled? a) Delete the user account. b) Deactivate the user account. c) Transfer ownership of the user's modules to another team member. d) Change the user's password.",
+    "answer": "b) Deactivating prevents access while preserving the user's contributions. Deleting loses history. Transferring might not be appropriate depending on the situation. Changing the password is insufficient as it doesn't prevent access through other means (e.g., if the user is still logged in elsewhere).",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 78,
+    "question": "You need to implement a complex business rule in your application. Where is the best place to implement this logic? a) In a Screen Action. b) In a Server Action. c) In an Extension. d) In a Client Action.",
+    "answer": "b) Server Actions are designed for reusable business logic. Screen Actions are tied to UI. Extensions are for lower-level integrations. Client Actions are for client-side logic.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 79,
+    "question": "You are using a linked server to access data from another database. How can you improve query performance? a) Use joins directly on the linked server tables. b) Retrieve the necessary data from the linked server first and then process it locally. c) Create a view on the linked server to simplify the query. d) Increase the timeout value for linked server queries.",
+    "answer": "b) Processing locally minimizes communication overhead. Joins on linked servers are inefficient. Views can help but might not be enough. Increasing timeout doesn't improve performance, just delays the inevitable.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 80,
+    "question": "You are experiencing deadlocks in your application. What might be a potential cause? a) Frequent changes to Site Property values. b) Long-running Timers. c) Complex database transactions. d) All of the above.",
+    "answer": "d) All listed options can contribute to deadlocks by locking resources for extended periods.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 81,
+    "question": "You need to implement a feature that requires complex calculations. What's the recommended approach? a) Use JavaScript to perform the calculations on the client-side. b) Create a Server Action to handle the calculations. c) Use an Extension to implement the calculations in .NET or Java. d) Use a combination of Client Actions and Server Actions.",
+    "answer": "b or c) Server Actions are generally preferred for complex logic due to maintainability and debugging advantages. Extensions provide more flexibility for highly specialized or performance-critical calculations but require more advanced skills. JavaScript is less suitable for complex server-side calculations. Mixing Client and Server Actions adds complexity.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 82,
+    "question": "How can you reduce the size of your module and improve maintainability? a) Remove unused references and elements. b) Combine multiple Screens into one. c) Minimize the use of comments. d) Use inline CSS and JavaScript.",
+    "answer": "a) Removing unused elements reduces module size and improves maintainability. Combining Screens can increase complexity. Comments are essential for maintainability. Inline CSS/JavaScript is less maintainable.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 83,
+    "question": "You are building a responsive web application. What's the recommended approach for handling different screen sizes? a) Create separate Web Screens for each screen size. b) Use CSS media queries to adapt the layout. c) Use JavaScript to detect screen size and adjust the UI. d) Use a combination of CSS and JavaScript.",
+    "answer": "b) CSS media queries are the standard approach for responsive design. Separate screens are redundant. JavaScript can supplement CSS but shouldn't be the primary method.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 84,
+    "question": "You are integrating with a third-party system that requires a client certificate. How can you handle this in OutSystems? a) Use the built-in client certificate support in REST and SOAP integrations. b) Use the OnBeforeRequestAdvanced callback in REST integrations. c) Use an Extension to implement custom certificate handling. d) Store the client certificate in a Site Property.",
+    "answer": "b or c) OnBeforeRequestAdvanced is the recommended approach. Extensions offer a lower-level solution but add complexity. Built-in support is typically for Basic authentication, not client certificates. Storing certificates in Site Properties is insecure.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 85,
+    "question": "You have a requirement to log all exceptions that occur in your application. How can you achieve this? a) Use the LogMessage action in Exception Handlers. b) Set the Log Error property of Exception Handlers to True. c) Use a centralized logging mechanism. d) All of the above.",
+    "answer": "d) All options can contribute to comprehensive exception logging.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 86,
+    "question": "How can you improve the performance of queries that use linked servers? a) Use inner joins on the linked server tables. b) Minimize the amount of data retrieved from the linked server. c) Create indexed views on the linked server. d) Increase the network bandwidth between the servers.",
+    "answer": "b and c) Minimizing retrieved data and using indexed views improve performance. Inner joins on linked servers are usually inefficient. Increasing bandwidth might not always be possible or sufficient.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 87,
+    "question": "Your application needs to send a large number of emails. What is the recommended approach? a) Send emails synchronously within the user's request. b) Use a Timer to send emails asynchronously. c) Use an external email service. d) Store the emails in a database table and send them manually.",
+    "answer": "b or c) Timers allow asynchronous processing, preventing blocking the user interface. External email services are often designed for high-volume sending. Synchronous sending can lead to timeouts. Storing and sending manually is less efficient.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 88,
+    "question": "You need to implement custom logic for authenticating users in a REST API. How can you achieve this? a) Use the OnAuthentication callback action. b) Use Basic Authentication. c) Use OAuth 2.0. d) Use an Extension to implement custom authentication.",
+    "answer": "a) OnAuthentication is the designated callback for custom authentication logic.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 89,
+    "question": "You are deploying your application to a new environment. What steps are necessary for integrations created with Integration Builder? a) Republish the integration in the new environment. b) Create or select a connection in Integration Manager for the new environment. c) Update the REST and SOAP API endpoints in the new environment. d) No further steps are required.",
+    "answer": "b) Integrations require a connection in each environment. Republishing isn't typically necessary. API endpoints should generally not change between environments.",
+    "questionImages": [],
+    "answerImages": []
+  },
+  {
+    "index": 90,
+    "question": "You are consuming a REST API and need to modify the response before it is processed by your application. How can you do this? a) Use the OnAfterResponse callback action. b) Modify the REST API method's output parameters. c) Use an Extension to intercept and modify the response. d) Use JavaScript to modify the response on the client-side",
+    "answer": "a) OnAfterResponse is designed for this purpose. Modifying output parameters in the REST method itself is less flexible. Extensions add complexity. Client-side JavaScript can't modify the server response before it's processed by OutSystems.",
+    "questionImages": [],
+    "answerImages": []
+  }
+]

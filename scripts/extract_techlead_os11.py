@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import base64
+import mimetypes
 import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -25,6 +27,7 @@ class ParsedQuestion:
     options: list[dict[str, str]]
     correct_answer: str
     category: str | None
+    image: str | None
 
 
 def strip_html(value: str) -> str:
@@ -42,10 +45,42 @@ def extract_first(pattern: str, text: str) -> str | None:
     return strip_html(match.group(1)) if match else None
 
 
-def parse_question(block: str) -> ParsedQuestion | None:
-    question_text = extract_first(r'id="question-prompt">(.*?)</div>', block)
+def extract_image_data_url(html_fragment: str, source_file: Path) -> str | None:
+    matches = re.findall(r'<img\b[^>]*src="([^"]+)"[^>]*>', html_fragment, flags=re.I)
+    seen = set()
+
+    for src in matches:
+        if src in seen:
+            continue
+        seen.add(src)
+
+        if src.startswith("data:"):
+            return src
+        if src.startswith("http://") or src.startswith("https://"):
+            continue
+
+        image_path = (source_file.parent / src).resolve()
+        if not image_path.is_file():
+            continue
+
+        mime_type, _ = mimetypes.guess_type(image_path.name)
+        if not mime_type:
+            mime_type = "application/octet-stream"
+
+        encoded = base64.b64encode(image_path.read_bytes()).decode("ascii")
+        return f"data:{mime_type};base64,{encoded}"
+
+    return None
+
+
+def parse_question(block: str, source_file: Path) -> ParsedQuestion | None:
+    prompt_match = re.search(r'id="question-prompt">(.*?)</div>', block, re.S)
+    question_text = strip_html(prompt_match.group(1)) if prompt_match else None
     if not question_text:
         return None
+
+    prompt_region = block.split('<div class="result-pane--question-result-pane-expanded-content--Og5Vc">', 1)[0]
+    image_data_url = extract_image_data_url(prompt_region, source_file)
 
     options: list[dict[str, str]] = []
     correct_answer: str | None = None
@@ -74,6 +109,7 @@ def parse_question(block: str) -> ParsedQuestion | None:
         options=options,
         correct_answer=correct_answer,
         category=category,
+        image=image_data_url,
     )
 
 
@@ -88,7 +124,7 @@ def parse_exam(source_file: Path) -> dict:
             continue
         question_blocks.append(block)
 
-    parsed_questions = [parse_question(block) for block in question_blocks]
+    parsed_questions = [parse_question(block, source_file) for block in question_blocks]
     parsed_questions = [question for question in parsed_questions if question is not None]
 
     exam_id = source_file.stem.lower().replace("dump", "dump-")
@@ -103,6 +139,7 @@ def parse_exam(source_file: Path) -> dict:
                 "options": question.options,
                 "correctAnswer": question.correct_answer,
                 "explanation": None,
+                "image": question.image,
                 "category": question.category,
                 "source": {
                     "rawFile": f"raw/{source_file.name}",
@@ -159,6 +196,7 @@ def write_schema() -> None:
                         },
                         "correctAnswer": {"type": "string"},
                         "explanation": {"type": ["string", "null"]},
+                        "image": {"type": ["string", "null"]},
                         "category": {"type": ["string", "null"]},
                         "source": {"type": "object"},
                     },
