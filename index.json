@@ -1,8 +1,8 @@
 {
   "id": "techlead-os11",
-  "title": "TechLead OS11 Exam Practice",
-  "generatedAt": "2026-04-07T04:46:17.651510+00:00",
-  "examCount": 6,
+  "title": "Course Practice Website",
+  "generatedAt": "2026-04-09T04:32:28.501171+00:00",
+  "examCount": 7,
   "exams": [
     {
       "id": "dump-01",
@@ -12,7 +12,11 @@
       "categories": [
         "Outsystems"
       ],
-      "file": "data/TechLeadOS11/dump-01.json"
+      "file": "data/TechLeadOS11/dump-01.json",
+      "course": {
+        "id": "outsystems-techlead",
+        "title": "Outsystems TechLead"
+      }
     },
     {
       "id": "dump-02",
@@ -22,7 +26,11 @@
       "categories": [
         "Outsystems"
       ],
-      "file": "data/TechLeadOS11/dump-02.json"
+      "file": "data/TechLeadOS11/dump-02.json",
+      "course": {
+        "id": "outsystems-techlead",
+        "title": "Outsystems TechLead"
+      }
     },
     {
       "id": "dump-03",
@@ -32,7 +40,11 @@
       "categories": [
         "Outsystems"
       ],
-      "file": "data/TechLeadOS11/dump-03.json"
+      "file": "data/TechLeadOS11/dump-03.json",
+      "course": {
+        "id": "outsystems-techlead",
+        "title": "Outsystems TechLead"
+      }
     },
     {
       "id": "dump-04",
@@ -40,7 +52,11 @@
       "description": "50 questions extracted from Dump04.html. Explanations were not present in the source HTML.",
       "questionCount": 50,
       "categories": [],
-      "file": "data/TechLeadOS11/dump-04.json"
+      "file": "data/TechLeadOS11/dump-04.json",
+      "course": {
+        "id": "outsystems-techlead",
+        "title": "Outsystems TechLead"
+      }
     },
     {
       "id": "dump-05",
@@ -48,7 +64,11 @@
       "description": "50 questions extracted from Dump05.html. Explanations were not present in the source HTML.",
       "questionCount": 50,
       "categories": [],
-      "file": "data/TechLeadOS11/dump-05.json"
+      "file": "data/TechLeadOS11/dump-05.json",
+      "course": {
+        "id": "outsystems-techlead",
+        "title": "Outsystems TechLead"
+      }
     },
     {
       "id": "dump-06",
@@ -56,7 +76,25 @@
       "description": "60 questions extracted from Dump06.html. Explanations were not present in the source HTML.",
       "questionCount": 60,
       "categories": [],
-      "file": "data/TechLeadOS11/dump-06.json"
+      "file": "data/TechLeadOS11/dump-06.json",
+      "course": {
+        "id": "outsystems-techlead",
+        "title": "Outsystems TechLead"
+      }
+    },
+    {
+      "id": "web-developers-special-list",
+      "title": "Special List",
+      "description": "208 questions extracted from data/Web developers/data.txt.",
+      "questionCount": 208,
+      "categories": [
+        "Web developers"
+      ],
+      "file": "data/Web developers/web-developers-special-list.json",
+      "course": {
+        "id": "web-developers",
+        "title": "Web developers"
+      }
     }
   ]
 }

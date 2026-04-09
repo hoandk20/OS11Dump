@@ -3,13 +3,6 @@
 const DATASET_URL = "index.json";
 const STORAGE_PREFIX = "techlead-os11";
 const THEME_KEY = `${STORAGE_PREFIX}:theme`;
-const EXAM_GROUPS = [
-  {
-    id: "outsystems-techlead",
-    title: "Outsystems TechLead",
-    match: () => true,
-  },
-];
 
 const state = {
   manifest: null,
@@ -153,7 +146,7 @@ function renderHome() {
     const folderHeader = document.createElement("button");
     folderHeader.type = "button";
     folderHeader.className = "folder-header";
-    folderHeader.setAttribute("aria-expanded", "true");
+    folderHeader.setAttribute("aria-expanded", "false");
     folderHeader.innerHTML = `
       <div>
         <div class="folder-title-row">
@@ -166,7 +159,7 @@ function renderHome() {
     `;
 
     const folderContent = document.createElement("div");
-    folderContent.className = "folder-content exam-list";
+    folderContent.className = "folder-content exam-list collapsed";
 
     folderHeader.addEventListener("click", () => {
       const isCollapsed = folderContent.classList.toggle("collapsed");
@@ -196,19 +189,34 @@ function renderHome() {
 }
 
 function buildExamGroups(exams) {
-  return EXAM_GROUPS.map((group) => {
-    const groupedExams = exams.filter(group.match);
-    return {
-      ...group,
-      exams: groupedExams,
-      questionTotal: groupedExams.reduce((total, exam) => total + exam.questionCount, 0),
-    };
-  }).filter((group) => group.exams.length > 0);
+  const groups = new Map();
+
+  exams.forEach((exam) => {
+    const course = exam.course || {};
+    const groupId = course.id || "default-course";
+    const groupTitle = course.title || "All courses";
+
+    if (!groups.has(groupId)) {
+      groups.set(groupId, {
+        id: groupId,
+        title: groupTitle,
+        exams: [],
+        questionTotal: 0,
+      });
+    }
+
+    const group = groups.get(groupId);
+    group.exams.push(exam);
+    group.questionTotal += exam.questionCount;
+  });
+
+  return Array.from(groups.values());
 }
 
 function createExamCard(exam) {
     const lastResult = readLastResult(exam.id);
     const hasResume = Boolean(readSession(exam.id));
+    const isAvailable = exam.questionCount > 0;
 
     const article = document.createElement("article");
     article.className = "exam-card";
@@ -222,12 +230,12 @@ function createExamCard(exam) {
       ${
         lastResult
           ? `<p class="muted">Last result: ${lastResult.correct}/${lastResult.total} correct (${lastResult.score}%).</p>`
-          : `<p class="muted">No saved result yet.</p>`
+          : `<p class="muted">${isAvailable ? "No saved result yet." : "No questions loaded yet."}</p>`
       }
       <div class="card-actions">
-        <button class="primary-button" type="button" data-action="start" data-exam-id="${exam.id}">Start exam</button>
+        <button class="primary-button" type="button" data-action="start" data-exam-id="${exam.id}" ${isAvailable ? "" : "disabled"}>${isAvailable ? "Start exam" : "Unavailable"}</button>
         ${
-          hasResume
+          hasResume && isAvailable
             ? `<button class="ghost-button" type="button" data-action="resume" data-exam-id="${exam.id}">Resume</button>`
             : ""
         }

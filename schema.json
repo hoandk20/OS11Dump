@@ -21,7 +21,7 @@
     },
     "questionCount": {
       "type": "integer",
-      "minimum": 1
+      "minimum": 0
     },
     "categories": {
       "type": "array",
@@ -31,6 +31,21 @@
     },
     "sourceFile": {
       "type": "string"
+    },
+    "course": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
     },
     "questions": {
       "type": "array",

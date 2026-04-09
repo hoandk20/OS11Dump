@@ -1,0 +1,6049 @@
+{
+  "id": "web-developers-special-list",
+  "title": "Special List",
+  "description": "208 questions extracted from data/Web developers/data.txt.",
+  "questionCount": 208,
+  "categories": [
+    "Web developers"
+  ],
+  "course": {
+    "id": "web-developers",
+    "title": "Web developers"
+  },
+  "sourceFile": "data/Web developers/data.txt",
+  "questions": [
+    {
+      "id": "web-developers-special-list-q001",
+      "question": "You have a screen with a complex query in the Preparation that fetches data from multiple related entities. Users complain about slow loading times. What's the best approach to optimize this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use an Advanced Query to combine the data retrieval into a single database call."
+        },
+        {
+          "id": "b",
+          "text": "Create a Server Action to encapsulate the query and call it from the Preparation."
+        },
+        {
+          "id": "c",
+          "text": "Cache the Aggregate used in the Preparation to store the results temporarily."
+        },
+        {
+          "id": "d",
+          "text": "Optimize the database by adding indexes to the relevant attributes of the entities."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Creating a Server Action encapsulates the complex query logic and improves organization, making the Preparation cleaner and easier to maintain. While an Advanced Query might offer performance benefits, it's less maintainable in the long run. Caching could help, but optimizing the query itself is often the better first step. Indexing is crucial for database optimization but addresses the database itself rather than the OutSystems application structure.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q002",
+      "question": "A team of developers is working on a large application. They frequently encounter merge conflicts when publishing their changes. What's the best practice to minimize these conflicts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Have each developer work on a separate module."
+        },
+        {
+          "id": "b",
+          "text": "Use LifeTime to manage versioning and deployments."
+        },
+        {
+          "id": "c",
+          "text": "Communicate frequently and coordinate changes among team members."
+        },
+        {
+          "id": "d",
+          "text": "Publish changes more frequently to reduce the size of individual updates."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Communication and coordination are paramount to avoid merge conflicts. While working on separate modules can help, it doesn't eliminate the possibility of conflicts when integrating functionalities. LifeTime helps manage versions but doesn't prevent conflicts entirely. More frequent publishing reduces the scope of merges but requires more discipline and might disrupt other developers.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q003",
+      "question": "You are developing a mobile app that needs to consume a REST API. The API uses OAuth 2.0 for authentication. What's the most efficient way to handle this in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the built-in OAuth 2.0 client credentials flow."
+        },
+        {
+          "id": "b",
+          "text": "Implement custom authentication logic using an extension."
+        },
+        {
+          "id": "c",
+          "text": "Store the access token in a session variable."
+        },
+        {
+          "id": "d",
+          "text": "Manually add the authorization header to each REST API call."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "OutSystems provides built-in support for OAuth 2.0, making it the most efficient method. The other options are more complex and less maintainable.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q004",
+      "question": "An application uses several hardcoded values throughout the logic. What's the best practice to improve maintainability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store the values in Site Properties."
+        },
+        {
+          "id": "b",
+          "text": "Create a Static Entity to hold the values."
+        },
+        {
+          "id": "c",
+          "text": "Use local variables within each action."
+        },
+        {
+          "id": "d",
+          "text": "Store the values in a separate database table."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Static Entities are designed for holding constant values, making them ideal for this purpose. Site Properties are for environment-specific settings, not application logic constants. Local variables are not suitable for globally accessible values. A separate database table is overkill for simple constants.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q005",
+      "question": "A web screen contains a large amount of JavaScript code that is slowing down the page load. How can you improve performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Move the JavaScript code to a Server Action."
+        },
+        {
+          "id": "b",
+          "text": "Minify the JavaScript code and include it as a resource."
+        },
+        {
+          "id": "c",
+          "text": "Embed the JavaScript code directly into the HTML."
+        },
+        {
+          "id": "d",
+          "text": "Break the JavaScript code into smaller files and load them dynamically."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Minifying reduces file size, improving load times. Including it as a resource ensures it's managed within the module. Server Actions are for server-side logic, not client-side JavaScript. Embedding in HTML is less maintainable. Breaking into smaller files can be beneficial but adds complexity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q006",
+      "question": "You are using an Advanced Query to retrieve data. How can you prevent SQL injection vulnerabilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use EncodeSql for inline parameters."
+        },
+        {
+          "id": "b",
+          "text": "Validate user inputs before including them in the query."
+        },
+        {
+          "id": "c",
+          "text": "Use parameterized queries instead of concatenating strings."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All the options are crucial for preventing SQL injection.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q007",
+      "question": "You have an Entity with a large Text attribute that stores historical data. Users rarely need to access this data. What is the recommended approach for managing this data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep the data in the same Entity and add an index to the Text attribute."
+        },
+        {
+          "id": "b",
+          "text": "Move the historical data to a separate archive Entity."
+        },
+        {
+          "id": "c",
+          "text": "Compress the Text attribute to reduce storage space."
+        },
+        {
+          "id": "d",
+          "text": "Delete the historical data after a certain period."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Archiving to a separate Entity improves the performance of the main Entity. Indexing a large Text attribute might not significantly improve performance and can slow down writes. Compression can help but adds complexity. Deleting data might not be desirable for auditing.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q008",
+      "question": "You need to perform a bulk update operation on a large dataset. What's the most efficient method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a For Each loop and update each record individually."
+        },
+        {
+          "id": "b",
+          "text": "Use an Advanced Query with an UPDATE statement."
+        },
+        {
+          "id": "c",
+          "text": "Use a Server Action to iterate through the records and update them."
+        },
+        {
+          "id": "d",
+          "text": "Use a combination of Aggregates and Entity Actions."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Advanced Queries are optimized for bulk operations. For Each loops are less efficient. Server Actions adding a layer of abstraction don't provide the same level of performance as direct SQL. Aggregates combined with Entity Actions are also less efficient for bulk updates.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q009",
+      "question": "You are consuming a REST API that returns a large JSON response. You only need a few fields from the response. How can you optimize data retrieval?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parse the entire JSON response and extract the necessary fields."
+        },
+        {
+          "id": "b",
+          "text": "Use the OnAfterResponse callback to filter the response."
+        },
+        {
+          "id": "c",
+          "text": "Modify the REST API method to return only the required fields."
+        },
+        {
+          "id": "d",
+          "text": "Use a custom extension to handle the JSON parsing."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Modifying the API is the most efficient approach if feasible. Parsing the entire response is inefficient. OnAfterResponse can't filter before data is received. Custom extensions add complexity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q010",
+      "question": "A Timer is taking longer than its allocated timeout to complete. What's the best approach to address this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase the timeout value for the Timer."
+        },
+        {
+          "id": "b",
+          "text": "Optimize the Timer's logic to reduce execution time."
+        },
+        {
+          "id": "c",
+          "text": "Break the Timer's logic into smaller chunks and reschedule."
+        },
+        {
+          "id": "d",
+          "text": "Run the Timer on a dedicated server."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Breaking down the logic allows the Timer to complete within the timeout, and rescheduling ensures all parts run. Increasing timeout might mask underlying performance issues. Optimizing is ideal but might not always be enough. A dedicated server can help but is a larger infrastructure change.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q011",
+      "question": "Your application uses several Extensions. How can you improve performance in a production environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable auditing for the Extensions."
+        },
+        {
+          "id": "b",
+          "text": "Minimize the number of calls to Extension actions."
+        },
+        {
+          "id": "c",
+          "text": "Use asynchronous logic when calling Extension actions."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options contribute to optimizing Extension performance.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q012",
+      "question": "You have identified a performance bottleneck in a specific Screen Action. What's the first step you should take to investigate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the Service Center performance reports."
+        },
+        {
+          "id": "b",
+          "text": "Add logging to the Screen Action to track execution time."
+        },
+        {
+          "id": "c",
+          "text": "Profile the database queries used by the Screen Action."
+        },
+        {
+          "id": "d",
+          "text": "Refactor the Screen Action to simplify its logic."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Service Center reports pinpoint performance bottlenecks and provide a starting point for investigation.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q013",
+      "question": "A web screen is experiencing slow loading times due to a large number of images. What's the best practice to optimize this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduce the size of the images."
+        },
+        {
+          "id": "b",
+          "text": "Use CSS sprites to combine multiple images into one."
+        },
+        {
+          "id": "c",
+          "text": "Lazy load the images as they become visible."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are valid ways to optimize images for web performance.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q014",
+      "question": "You are building a complex UI with repeated sections. What's the best way to promote reusability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copy and paste the UI elements."
+        },
+        {
+          "id": "b",
+          "text": "Create Web Blocks for the repeated sections."
+        },
+        {
+          "id": "c",
+          "text": "Use a single Web Screen with conditional logic."
+        },
+        {
+          "id": "d",
+          "text": "Create separate Web Screens for each section."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Web Blocks promote reusability and maintainability. Copying and pasting lead to redundancy. Conditional logic within a single Screen can become complex. Separate Web Screens are less efficient for repeated sections.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q015",
+      "question": "You need to store sensitive information, such as passwords, in the database. What is the best practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store passwords in plain text."
+        },
+        {
+          "id": "b",
+          "text": "Encrypt the passwords before storing them."
+        },
+        {
+          "id": "c",
+          "text": "Use hashing algorithms to store the passwords."
+        },
+        {
+          "id": "d",
+          "text": "Store passwords in a separate file outside the database."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Encrypting is generally preferred as it allows for decryption if needed (though this should be avoided unless absolutely necessary). Hashing is more secure for passwords as it's one-way, making it impossible to retrieve the original password. Plain text is highly insecure. Storing passwords outside the database doesn't inherently improve security.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q016",
+      "question": "You are developing a web application that requires frequent database access. How can you optimize database performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use indexes appropriately on frequently queried attributes."
+        },
+        {
+          "id": "b",
+          "text": "Minimize the number of database queries."
+        },
+        {
+          "id": "c",
+          "text": "Use caching mechanisms to store frequently accessed data."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are standard database optimization techniques.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q017",
+      "question": "A team member is leaving the project. How should their user account be handled?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete the user account."
+        },
+        {
+          "id": "b",
+          "text": "Deactivate the user account."
+        },
+        {
+          "id": "c",
+          "text": "Transfer ownership of the user's modules to another team member."
+        },
+        {
+          "id": "d",
+          "text": "Change the user's password."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Deactivating prevents access while preserving the user's contributions. Deleting loses history. Transferring might not be appropriate depending on the situation. Changing the password is insufficient as it doesn't prevent access through other means (e.g., if the user is still logged in elsewhere).",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q018",
+      "question": "You need to implement a complex business rule in your application. Where is the best place to implement this logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In a Screen Action."
+        },
+        {
+          "id": "b",
+          "text": "In a Server Action."
+        },
+        {
+          "id": "c",
+          "text": "In an Extension."
+        },
+        {
+          "id": "d",
+          "text": "In a Client Action."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Server Actions are designed for reusable business logic. Screen Actions are tied to UI. Extensions are for lower-level integrations. Client Actions are for client-side logic.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q019",
+      "question": "You are using a linked server to access data from another database. How can you improve query performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use joins directly on the linked server tables."
+        },
+        {
+          "id": "b",
+          "text": "Retrieve the necessary data from the linked server first and then process it locally."
+        },
+        {
+          "id": "c",
+          "text": "Create a view on the linked server to simplify the query."
+        },
+        {
+          "id": "d",
+          "text": "Increase the timeout value for linked server queries."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Processing locally minimizes communication overhead. Joins on linked servers are inefficient. Views can help but might not be enough. Increasing timeout doesn't improve performance, just delays the inevitable.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q020",
+      "question": "You are experiencing deadlocks in your application. What might be a potential cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frequent changes to Site Property values."
+        },
+        {
+          "id": "b",
+          "text": "Long-running Timers."
+        },
+        {
+          "id": "c",
+          "text": "Complex database transactions."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All listed options can contribute to deadlocks by locking resources for extended periods.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q021",
+      "question": "You need to implement a feature that requires complex calculations. What's the recommended approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use JavaScript to perform the calculations on the client-side."
+        },
+        {
+          "id": "b",
+          "text": "Create a Server Action to handle the calculations."
+        },
+        {
+          "id": "c",
+          "text": "Use an Extension to implement the calculations in .NET or Java."
+        },
+        {
+          "id": "d",
+          "text": "Use a combination of Client Actions and Server Actions."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Server Actions are generally preferred for complex logic due to maintainability and debugging advantages. Extensions provide more flexibility for highly specialized or performance-critical calculations but require more advanced skills. JavaScript is less suitable for complex server-side calculations. Mixing Client and Server Actions adds complexity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q022",
+      "question": "How can you reduce the size of your module and improve maintainability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove unused references and elements."
+        },
+        {
+          "id": "b",
+          "text": "Combine multiple Screens into one."
+        },
+        {
+          "id": "c",
+          "text": "Minimize the use of comments."
+        },
+        {
+          "id": "d",
+          "text": "Use inline CSS and JavaScript."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Removing unused elements reduces module size and improves maintainability. Combining Screens can increase complexity. Comments are essential for maintainability. Inline CSS/JavaScript is less maintainable.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q023",
+      "question": "You are building a responsive web application. What's the recommended approach for handling different screen sizes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create separate Web Screens for each screen size."
+        },
+        {
+          "id": "b",
+          "text": "Use CSS media queries to adapt the layout."
+        },
+        {
+          "id": "c",
+          "text": "Use JavaScript to detect screen size and adjust the UI."
+        },
+        {
+          "id": "d",
+          "text": "Use a combination of CSS and JavaScript."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "CSS media queries are the standard approach for responsive design. Separate screens are redundant. JavaScript can supplement CSS but shouldn't be the primary method.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q024",
+      "question": "You are integrating with a third-party system that requires a client certificate. How can you handle this in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the built-in client certificate support in REST and SOAP integrations."
+        },
+        {
+          "id": "b",
+          "text": "Use the OnBeforeRequestAdvanced callback in REST integrations."
+        },
+        {
+          "id": "c",
+          "text": "Use an Extension to implement custom certificate handling."
+        },
+        {
+          "id": "d",
+          "text": "Store the client certificate in a Site Property."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "OnBeforeRequestAdvanced is the recommended approach. Extensions offer a lower-level solution but add complexity. Built-in support is typically for Basic authentication, not client certificates. Storing certificates in Site Properties is insecure.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q025",
+      "question": "You have a requirement to log all exceptions that occur in your application. How can you achieve this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the LogMessage action in Exception Handlers."
+        },
+        {
+          "id": "b",
+          "text": "Set the Log Error property of Exception Handlers to True."
+        },
+        {
+          "id": "c",
+          "text": "Use a centralized logging mechanism."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options can contribute to comprehensive exception logging.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q026",
+      "question": "How can you improve the performance of queries that use linked servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use inner joins on the linked server tables."
+        },
+        {
+          "id": "b",
+          "text": "Minimize the amount of data retrieved from the linked server."
+        },
+        {
+          "id": "c",
+          "text": "Create indexed views on the linked server."
+        },
+        {
+          "id": "d",
+          "text": "Increase the network bandwidth between the servers."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Minimizing retrieved data and using indexed views improve performance. Inner joins on linked servers are usually inefficient. Increasing bandwidth might not always be possible or sufficient.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b and c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q027",
+      "question": "Your application needs to send a large number of emails. What is the recommended approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Send emails synchronously within the user's request."
+        },
+        {
+          "id": "b",
+          "text": "Use a Timer to send emails asynchronously."
+        },
+        {
+          "id": "c",
+          "text": "Use an external email service."
+        },
+        {
+          "id": "d",
+          "text": "Store the emails in a database table and send them manually."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Timers allow asynchronous processing, preventing blocking the user interface. External email services are often designed for high-volume sending. Synchronous sending can lead to timeouts. Storing and sending manually is less efficient.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q028",
+      "question": "You need to implement custom logic for authenticating users in a REST API. How can you achieve this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the OnAuthentication callback action."
+        },
+        {
+          "id": "b",
+          "text": "Use Basic Authentication."
+        },
+        {
+          "id": "c",
+          "text": "Use OAuth 2.0."
+        },
+        {
+          "id": "d",
+          "text": "Use an Extension to implement custom authentication."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "OnAuthentication is the designated callback for custom authentication logic.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q029",
+      "question": "You are deploying your application to a new environment. What steps are necessary for integrations created with Integration Builder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Republish the integration in the new environment."
+        },
+        {
+          "id": "b",
+          "text": "Create or select a connection in Integration Manager for the new environment."
+        },
+        {
+          "id": "c",
+          "text": "Update the REST and SOAP API endpoints in the new environment."
+        },
+        {
+          "id": "d",
+          "text": "No further steps are required."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Integrations require a connection in each environment. Republishing isn't typically necessary. API endpoints should generally not change between environments.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q030",
+      "question": "You are consuming a REST API and need to modify the response before it is processed by your application. How can you do this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the OnAfterResponse callback action."
+        },
+        {
+          "id": "b",
+          "text": "Modify the REST API method's output parameters."
+        },
+        {
+          "id": "c",
+          "text": "Use an Extension to intercept and modify the response."
+        },
+        {
+          "id": "d",
+          "text": "Use JavaScript to modify the response on the client-side"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "OnAfterResponse is designed for this purpose. Modifying output parameters in the REST method itself is less flexible. Extensions add complexity. Client-side JavaScript can't modify the server response before it's processed by OutSystems.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q031",
+      "question": "You notice a Server Action in your module exceeds 4MB. What is the best approach to address this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refactor the Server Action into smaller, more focused Server Actions."
+        },
+        {
+          "id": "b",
+          "text": "Compress the Server Action using a zip utility."
+        },
+        {
+          "id": "c",
+          "text": "Increase the server's memory allocation."
+        },
+        {
+          "id": "d",
+          "text": "Ignore the size, as it has no impact on performance."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Refactoring promotes better organization and maintainability, addressing the root issue of excessive size.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q032",
+      "question": "How can you effectively use Site Properties in your application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store frequently changing configuration values."
+        },
+        {
+          "id": "b",
+          "text": "Store complex JSON structures."
+        },
+        {
+          "id": "c",
+          "text": "Store sensitive data like passwords."
+        },
+        {
+          "id": "d",
+          "text": "Store unchanging configuration values that might vary across environments."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Site Properties are for environment-specific, static configurations.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q033",
+      "question": "What is the recommended way to handle large text data in your entities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store them directly as Text attributes within the entity."
+        },
+        {
+          "id": "b",
+          "text": "Store them in separate entities linked by a one-to-one relationship."
+        },
+        {
+          "id": "c",
+          "text": "Store them as binary data attributes."
+        },
+        {
+          "id": "d",
+          "text": "Store them in a separate text file and reference the file path in the entity."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Separate entities prevent performance issues with the main entity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q034",
+      "question": "What naming convention is recommended for foreign key attributes in entities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CamelCase (e.g., customerId)"
+        },
+        {
+          "id": "b",
+          "text": "PascalCase suffixed with \"\"Id\"\" (e.g., CustomerId)"
+        },
+        {
+          "id": "c",
+          "text": "Underscore separated (e.g., customer_id)"
+        },
+        {
+          "id": "d",
+          "text": "All lowercase (e.g., customerid)."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "PascalCase with \"\"Id\"\" suffix is the OutSystems standard.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q035",
+      "question": "How should you handle warnings generated by Service Studio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore them as they don't affect application functionality."
+        },
+        {
+          "id": "b",
+          "text": "Suppress them all to keep the error list clean."
+        },
+        {
+          "id": "c",
+          "text": "Investigate each warning and fix or justify them appropriately."
+        },
+        {
+          "id": "d",
+          "text": "Fix only the warnings related to performance."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Warnings often point to potential issues and should be addressed.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q036",
+      "question": "What's the best practice for managing JavaScript code in your OutSystems applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Embed JavaScript code directly into the HTML of your web screens."
+        },
+        {
+          "id": "b",
+          "text": "Use JavaScript widgets whenever possible."
+        },
+        {
+          "id": "c",
+          "text": "Include JavaScript code as resources within your modules and minimize them."
+        },
+        {
+          "id": "d",
+          "text": "Use inline JavaScript within expressions."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "This approach optimizes loading times and keeps code organized.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q037",
+      "question": "You need to display a list of records on a web screen. What is the recommended widget?",
+      "options": [
+        {
+          "id": "a",
+          "text": "List Records"
+        },
+        {
+          "id": "b",
+          "text": "Table Records"
+        },
+        {
+          "id": "c",
+          "text": "Show Records"
+        },
+        {
+          "id": "d",
+          "text": "Data Grid."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Table Records is generally recommended for lists of data, offering better performance and features than List Records. Show Records is for displaying a single record. Data Grid is a more advanced component with extra functionality.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q038",
+      "question": "What's the recommended way to format data for display in a web or mobile application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use format strings directly in expressions."
+        },
+        {
+          "id": "b",
+          "text": "Create User Functions to encapsulate formatting logic."
+        },
+        {
+          "id": "c",
+          "text": "Format the data in the database."
+        },
+        {
+          "id": "d",
+          "text": "Use Screen Actions to format the data before displaying."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "User Functions improve code reusability and maintainability.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q039",
+      "question": "How should you manage dependencies between modules in a large OutSystems application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create circular dependencies for tight integration."
+        },
+        {
+          "id": "b",
+          "text": "Minimize dependencies and ensure a clear separation of concerns."
+        },
+        {
+          "id": "c",
+          "text": "Include all modules as dependencies in each module to avoid compilation errors."
+        },
+        {
+          "id": "d",
+          "text": "Only use dependencies for core modules."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Minimizing dependencies is key for maintainability and scalability.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q040",
+      "question": "You need to implement a complex integration with an external system. Which is the most appropriate approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a combination of Server Actions and Client Actions."
+        },
+        {
+          "id": "b",
+          "text": "Use an Extension to implement the integration logic."
+        },
+        {
+          "id": "c",
+          "text": "Use JavaScript to communicate directly with the external system."
+        },
+        {
+          "id": "d",
+          "text": "Use a Screen Action to manage the integration."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Extensions are suitable for complex integrations involving custom code.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q041",
+      "question": "When should you use an Advanced Query?",
+      "options": [
+        {
+          "id": "a",
+          "text": "For all database interactions."
+        },
+        {
+          "id": "b",
+          "text": "Only when absolutely necessary for performance or complex queries not possible with Aggregates."
+        },
+        {
+          "id": "c",
+          "text": "To implement business logic."
+        },
+        {
+          "id": "d",
+          "text": "When you need to bypass OutSystems security measures."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Advanced Queries should be used judiciously when Aggregates are insufficient.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q042",
+      "question": "Which is the recommended approach for handling large Excel file uploads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Process the entire file in a single request."
+        },
+        {
+          "id": "b",
+          "text": "Upload the file to a temporary location and process it asynchronously using a Timer."
+        },
+        {
+          "id": "c",
+          "text": "Limit the number of rows that can be uploaded."
+        },
+        {
+          "id": "d",
+          "text": "Use a JavaScript library to process the Excel file on the client-side."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Asynchronous processing prevents blocking the user interface.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q043",
+      "question": "How should you handle sensitive information in screen parameters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Include sensitive information directly in the URL."
+        },
+        {
+          "id": "b",
+          "text": "Encrypt the sensitive information before passing it as a parameter."
+        },
+        {
+          "id": "c",
+          "text": "Avoid passing sensitive information in screen parameters altogether."
+        },
+        {
+          "id": "d",
+          "text": "Encode the sensitive information using Base64."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Avoid sensitive data in URLs or parameters whenever possible.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q044",
+      "question": "What's the recommended way to handle user roles and permissions in your application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rely on the visibility properties of widgets to control access."
+        },
+        {
+          "id": "b",
+          "text": "Validate user roles before executing sensitive logic."
+        },
+        {
+          "id": "c",
+          "text": "Use public actions for all sensitive operations."
+        },
+        {
+          "id": "d",
+          "text": "Store user roles in session variables."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Server-side role validation ensures proper security.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q045",
+      "question": "What should you consider when designing a user interface?",
+      "options": [
+        {
+          "id": "a",
+          "text": "User experience and usability"
+        },
+        {
+          "id": "b",
+          "text": "Performance and responsiveness"
+        },
+        {
+          "id": "c",
+          "text": "Accessibility and internationalization"
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All aspects are crucial for good UI design.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q046",
+      "question": "You are debugging a mobile app and noticing inconsistent date and time values. What is the likely cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Incorrect timezone settings on the server."
+        },
+        {
+          "id": "b",
+          "text": "The debugger displays UTC, while the UI shows client-side time."
+        },
+        {
+          "id": "c",
+          "text": "The mobile device's clock is not synchronized."
+        },
+        {
+          "id": "d",
+          "text": "The OutSystems platform doesn't handle timezones correctly."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The debugger shows UTC. Always be mindful of time zone differences.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q047",
+      "question": "You encounter an error when consuming a REST API. How can you investigate the issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check the Service Center Integrations logs."
+        },
+        {
+          "id": "b",
+          "text": "Use a network monitoring tool to capture the HTTP requests and responses."
+        },
+        {
+          "id": "c",
+          "text": "Examine the REST API documentation for error codes."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are valuable troubleshooting steps for REST API issues.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q048",
+      "question": "You are unable to publish your module due to a \"\"Modified version detected\"\" message. What's the safest way to proceed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Click \"\"Publish My Version\"\" to overwrite the server version."
+        },
+        {
+          "id": "b",
+          "text": "Click \"\"Compare\"\" to review the differences and merge the changes manually."
+        },
+        {
+          "id": "c",
+          "text": "Click \"\"Merge and Publish\"\" and hope for the best."
+        },
+        {
+          "id": "d",
+          "text": "Restart Service Studio and try again."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Comparing and merging manually ensures you understand the changes and avoids unintended overwrites.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q049",
+      "question": "Your application is experiencing slow performance. What tool can help you identify the bottleneck?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service Center performance monitoring tools"
+        },
+        {
+          "id": "b",
+          "text": "Database profiler"
+        },
+        {
+          "id": "c",
+          "text": "Browser developer tools"
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All listed tools can provide valuable insights into performance bottlenecks.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q050",
+      "question": "When using Integration Builder, what module is generated for managing authentication?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The library module (_DRV)"
+        },
+        {
+          "id": "b",
+          "text": "The service module (_IS)"
+        },
+        {
+          "id": "c",
+          "text": "The Integration Manager application"
+        },
+        {
+          "id": "d",
+          "text": "The Integration Builder Utils module."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Integration Manager application manages connections and authentication.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q051",
+      "question": "You are integrating with a REST API that requires custom headers. How should you add these headers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modify the REST API method definition in Service Studio."
+        },
+        {
+          "id": "b",
+          "text": "Use the OnBeforeRequest callback action."
+        },
+        {
+          "id": "c",
+          "text": "Add the headers directly in the REST API URL."
+        },
+        {
+          "id": "d",
+          "text": "Use an extension to modify the HTTP request."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The OnBeforeRequest callback is the standard way to customize REST requests.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q052",
+      "question": "You want to expose a set of operations as a REST API. What is the first step in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create a REST API method."
+        },
+        {
+          "id": "b",
+          "text": "Create a REST API service."
+        },
+        {
+          "id": "c",
+          "text": "Define the input and output parameters for the methods."
+        },
+        {
+          "id": "d",
+          "text": "Implement the logic for the methods."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "You must create the service container before adding methods.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q053",
+      "question": "Which Integration Builder generated module should you use in your application logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The library module (_DRV)"
+        },
+        {
+          "id": "b",
+          "text": "The service module (_IS)"
+        },
+        {
+          "id": "c",
+          "text": "Both the library and service modules"
+        },
+        {
+          "id": "d",
+          "text": "Neither, you should access the external system directly."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The service module (_IS) provides an abstraction layer and handles authentication, making it the recommended module to use.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q054",
+      "question": "You want to handle a specific type of exception in your application. What is the recommended approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use an Exception Handler for \"\"All Exceptions\"\"."
+        },
+        {
+          "id": "b",
+          "text": "Create a User Exception and a corresponding Exception Handler."
+        },
+        {
+          "id": "c",
+          "text": "Use a generic Exception Handler and check the exception message."
+        },
+        {
+          "id": "d",
+          "text": "Handle the exception in the Screen Action where it occurs."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "User Exceptions provide a structured way to handle specific application errors.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q055",
+      "question": "You need to ensure that a series of database operations either complete successfully together or are all rolled back in case of failure. How do you achieve this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a single database query."
+        },
+        {
+          "id": "b",
+          "text": "Use the CommitTransaction and AbortTransaction actions to manage the transaction explicitly."
+        },
+        {
+          "id": "c",
+          "text": "Rely on OutSystems automatic transaction handling."
+        },
+        {
+          "id": "d",
+          "text": "Use a Server Action with the \"\"Transactional\"\" property set to True."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Explicit transaction management is needed for atomic operations. While automatic handling usually suffices, complex situations might require manual CommitTransaction and AbortTransaction or a transactional Server Action. A single query is atomic, but sometimes you need multiple queries within a transaction.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or d",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q056",
+      "question": "You need to execute a long-running process in the background without impacting the user experience. What's the best approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a Screen Action with a long timeout."
+        },
+        {
+          "id": "b",
+          "text": "Use a Timer."
+        },
+        {
+          "id": "c",
+          "text": "Use a BPT process."
+        },
+        {
+          "id": "d",
+          "text": "Use a Server Action with the \"\"Asynchronous\"\" property set to True."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "BPT processes are designed for long-running, potentially complex asynchronous operations. Timers are also asynchronous but are better for scheduled or simpler tasks.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q057",
+      "question": "A timer is consistently failing due to errors. How can you investigate the issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check the Service Center Error logs."
+        },
+        {
+          "id": "b",
+          "text": "Check the Service Center Timer logs."
+        },
+        {
+          "id": "c",
+          "text": "Enable debugging for the Timer action."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are helpful for troubleshooting Timer issues.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q058",
+      "question": "You want a Timer to execute immediately after publishing a new version of the module. Which schedule should you use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Daily"
+        },
+        {
+          "id": "b",
+          "text": "When Published"
+        },
+        {
+          "id": "c",
+          "text": "On Demand"
+        },
+        {
+          "id": "d",
+          "text": "Immediately\"\"."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "When Published\"\" is a special schedule trigger for Timers.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q059",
+      "question": "What happens to session variables when a Timer executes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Session variables are preserved from the user's session."
+        },
+        {
+          "id": "b",
+          "text": "Session variables are initialized with their default values."
+        },
+        {
+          "id": "c",
+          "text": "Session variables are not available within Timers."
+        },
+        {
+          "id": "d",
+          "text": "Session variables are shared across all running Timers."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Timers run in their own isolated sessions.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q060",
+      "question": "Multiple developers are working on the same module. What tool is essential for managing versions and resolving conflicts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service Studio's built-in merge tool"
+        },
+        {
+          "id": "b",
+          "text": "LifeTime"
+        },
+        {
+          "id": "c",
+          "text": "A version control system like Git"
+        },
+        {
+          "id": "d",
+          "text": "A shared file storage system."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "LifeTime is the central tool for managing versions, deployments, and team collaboration in OutSystems. While Service Studio has some merge capabilities, LifeTime offers more comprehensive version control features. Git is a general-purpose VCS, not specifically integrated with OutSystems. Shared file storage is prone to conflicts and is not a recommended approach.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q061",
+      "question": "What's the best practice for structuring a large OutSystems application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Place all logic in a single module for easier access."
+        },
+        {
+          "id": "b",
+          "text": "Use a layered architecture with separate modules for different functionalities (e.g., Core Services, UI, Integrations)."
+        },
+        {
+          "id": "c",
+          "text": "Create a module for each entity in the data model."
+        },
+        {
+          "id": "d",
+          "text": "Organize modules based on development team structure."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Layered architecture promotes modularity, maintainability, and scalability.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q062",
+      "question": "How should you handle external libraries in your OutSystems applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Include the library files directly in the module's resources."
+        },
+        {
+          "id": "b",
+          "text": "Reference the libraries from a CDN whenever possible."
+        },
+        {
+          "id": "c",
+          "text": "Create an Extension to wrap the external library."
+        },
+        {
+          "id": "d",
+          "text": "Copy the library code into a Server Action."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Extensions provide a structured and managed way to integrate external code.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q063",
+      "question": "You need to implement a search functionality that allows users to search across multiple attributes. What's the most efficient approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use separate queries for each attribute."
+        },
+        {
+          "id": "b",
+          "text": "Use an Advanced Query with OR conditions."
+        },
+        {
+          "id": "c",
+          "text": "Use an Aggregate with filter conditions on multiple attributes."
+        },
+        {
+          "id": "d",
+          "text": "Use a Full-Text Search index."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "If feasible, Full-Text Search is often the most efficient for multi-attribute searches, especially on large datasets.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q064",
+      "question": "How can you reduce the amount of data transmitted between the server and the client in a Traditional Web App?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use AJAX requests for partial page updates."
+        },
+        {
+          "id": "b",
+          "text": "Minimize the use of Screen Actions."
+        },
+        {
+          "id": "c",
+          "text": "Compress the HTML and JavaScript code."
+        },
+        {
+          "id": "d",
+          "text": "Use smaller images."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "AJAX minimizes data transfer by updating only portions of the page.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q065",
+      "question": "What is the recommended way to handle default values for entity attributes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Set the default values in the database."
+        },
+        {
+          "id": "b",
+          "text": "Set the default values in the entity's properties."
+        },
+        {
+          "id": "c",
+          "text": "Use an OnCreate action to set the default values."
+        },
+        {
+          "id": "d",
+          "text": "Assign default values in Screen Actions."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Setting defaults in entity properties ensures consistency.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q066",
+      "question": "You need to display a large dataset in a table on a web screen. How can you optimize performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use pagination to load data in chunks."
+        },
+        {
+          "id": "b",
+          "text": "Use infinite scrolling to load data as the user scrolls."
+        },
+        {
+          "id": "c",
+          "text": "Display all records at once."
+        },
+        {
+          "id": "d",
+          "text": "Use a List Records widget instead of Table Records."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Pagination or infinite scrolling offer better performance than loading or displaying an entire large dataset at once.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a or b",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q067",
+      "question": "What's the best practice for managing application configurations that vary between environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hardcode the configurations in the application logic."
+        },
+        {
+          "id": "b",
+          "text": "Use Site Properties."
+        },
+        {
+          "id": "c",
+          "text": "Store configurations in a separate database table."
+        },
+        {
+          "id": "d",
+          "text": "Use environment variables."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Site properties are specifically for environment-specific configurations.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q068",
+      "question": "How can you prevent infinite recursion in your application logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a counter variable to track the recursion depth."
+        },
+        {
+          "id": "b",
+          "text": "Ensure that each recursive call has a base case."
+        },
+        {
+          "id": "c",
+          "text": "Use a timer to interrupt the recursion after a certain time."
+        },
+        {
+          "id": "d",
+          "text": "Both a) and b)."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Both a counter and a base case are essential to prevent stack overflow errors.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q069",
+      "question": "What's the purpose of the \"\"Is Mandatory\"\" property for entity attributes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To enforce data validation at the database level."
+        },
+        {
+          "id": "b",
+          "text": "To prevent null values in the attribute."
+        },
+        {
+          "id": "c",
+          "text": "To indicate that the attribute is required when creating or updating a record."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Is Mandatory\"\" refers to application-level data validation, not database constraints. While it often prevents nulls, that's not its primary purpose.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q070",
+      "question": "When should you consider using a cache in your application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "For all data to improve performance."
+        },
+        {
+          "id": "b",
+          "text": "For frequently accessed data that changes infrequently."
+        },
+        {
+          "id": "c",
+          "text": "For rarely accessed data to reduce database load."
+        },
+        {
+          "id": "d",
+          "text": "For sensitive data that needs to be protected."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Caching frequently accessed, static data improves performance.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q071",
+      "question": "What's a good practice for choosing between Local and Public web services in your modules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always use Public web services for maximum accessibility."
+        },
+        {
+          "id": "b",
+          "text": "Use Local web services for internal module communication and Public web services for external access."
+        },
+        {
+          "id": "c",
+          "text": "Use Local web services for all web service calls."
+        },
+        {
+          "id": "d",
+          "text": "Avoid using web services altogether."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "This approach balances accessibility and encapsulation.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q072",
+      "question": "How can you improve the performance of screen loading times?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimize the logic in Screen Preparations."
+        },
+        {
+          "id": "b",
+          "text": "Use asynchronous logic where appropriate."
+        },
+        {
+          "id": "c",
+          "text": "Optimize database queries."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options contribute to faster screen loading.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q073",
+      "question": "What should you avoid when designing logic within Timers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Long-running operations."
+        },
+        {
+          "id": "b",
+          "text": "Accessing session variables."
+        },
+        {
+          "id": "c",
+          "text": "Making changes to Site Properties."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All listed actions are generally discouraged within Timers.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q074",
+      "question": "What's the best practice for working with large binary data in your application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store the binary data directly in the entity."
+        },
+        {
+          "id": "b",
+          "text": "Store the binary data in a separate entity and link it to the main entity."
+        },
+        {
+          "id": "c",
+          "text": "Store the binary data in an external file system."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c) can be appropriate depending on the use case."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Both storing separately in the database or in an external file system are valid, depending on the size and use case of the binary data.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q075",
+      "question": "What's the main purpose of using Blocks in OutSystems UI development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To create custom widgets."
+        },
+        {
+          "id": "b",
+          "text": "To encapsulate reusable UI elements."
+        },
+        {
+          "id": "c",
+          "text": "To implement complex JavaScript functionality."
+        },
+        {
+          "id": "d",
+          "text": "To improve the performance of screen loading."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Blocks are fundamental for UI reusability in OutSystems.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q076",
+      "question": "You're debugging a Reactive Web App and need to inspect network requests. What tool should you use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service Studio debugger."
+        },
+        {
+          "id": "b",
+          "text": "Browser developer tools (Network tab)."
+        },
+        {
+          "id": "c",
+          "text": "OutSystems Service Center logs."
+        },
+        {
+          "id": "d",
+          "text": "A network packet analyzer."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Browser developer tools are essential for debugging Reactive Web Apps.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q077",
+      "question": "You've published a new version of your application, but the changes are not reflected in the running application. What might be the problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The browser cache needs to be cleared."
+        },
+        {
+          "id": "b",
+          "text": "The application server might need to be restarted."
+        },
+        {
+          "id": "c",
+          "text": "The deployment might have failed. Check Service Center logs."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are potential causes for deployment issues.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q078",
+      "question": "You encounter a database error related to a foreign key constraint. What's the first thing you should check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Delete Rule of the foreign key relationship."
+        },
+        {
+          "id": "b",
+          "text": "The data types of the related attributes."
+        },
+        {
+          "id": "c",
+          "text": "The indexes on the related tables."
+        },
+        {
+          "id": "d",
+          "text": "The database connection string."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Incorrect delete rules are a common cause of foreign key constraint errors.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q079",
+      "question": "You see an error \"\"Communication Exception\"\" in your mobile app. What is the likely cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A problem with the server-side logic."
+        },
+        {
+          "id": "b",
+          "text": "A network connectivity issue."
+        },
+        {
+          "id": "c",
+          "text": "A problem with the mobile device's operating system."
+        },
+        {
+          "id": "d",
+          "text": "A syntax error in the client-side action."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Communication Exception\"\" usually signals a problem with network connectivity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q080",
+      "question": "You're consuming a SOAP web service and need to handle specific error codes returned by the service. How should you do this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a generic Exception Handler."
+        },
+        {
+          "id": "b",
+          "text": "Use a specific Exception Handler for the SOAP web service method."
+        },
+        {
+          "id": "c",
+          "text": "Check the web service response code in the logic."
+        },
+        {
+          "id": "d",
+          "text": "Use the OnAfterResponse action of the web service."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "You need to check the response code and handle errors accordingly. Exception handlers are for exceptions, not for regular responses, even if they are error responses.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q081",
+      "question": "What is the recommended approach for handling authentication in integrations built with Integration Builder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create custom authentication logic using extensions."
+        },
+        {
+          "id": "b",
+          "text": "Use Integration Manager to manage connections and authentication."
+        },
+        {
+          "id": "c",
+          "text": "Handle authentication directly in the application logic."
+        },
+        {
+          "id": "d",
+          "text": "Store credentials in Site Properties."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Integration Manager centralizes connection and authentication management.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q082",
+      "question": "You need to consume a REST API that is not compliant with the OpenAPI specification. How should you proceed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the \"\"Add Multiple Methods\"\" option in Service Studio."
+        },
+        {
+          "id": "b",
+          "text": "Use the \"\"Add Single Method\"\" option in Service Studio."
+        },
+        {
+          "id": "c",
+          "text": "Create a custom extension to consume the API."
+        },
+        {
+          "id": "d",
+          "text": "Use a third-party REST client library."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "For non-OpenAPI compliant APIs, use \"\"Add Single Method\"\" or create a custom Extension for more complex scenarios.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q083",
+      "question": "When exposing a REST API, how can you implement custom logic to handle requests before they reach your application logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the OnRequest callback action."
+        },
+        {
+          "id": "b",
+          "text": "Use the OnAuthentication callback action."
+        },
+        {
+          "id": "c",
+          "text": "Use the OnResponse callback action."
+        },
+        {
+          "id": "d",
+          "text": "Use a Screen Action."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "OnRequest is the callback for pre-processing REST requests.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q084",
+      "question": "What's the purpose of the \"\"Abort Transaction\"\" property in an Exception Handler?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To prevent the exception from being logged."
+        },
+        {
+          "id": "b",
+          "text": "To roll back any database changes made within the current transaction."
+        },
+        {
+          "id": "c",
+          "text": "To terminate the user's session."
+        },
+        {
+          "id": "d",
+          "text": "To redirect the user to an error page."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Abort Transaction\"\" ensures data consistency by rolling back changes.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q085",
+      "question": "In a scenario using multiple databases, how does OutSystems manage transactions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It uses distributed transactions to ensure data consistency across all databases."
+        },
+        {
+          "id": "b",
+          "text": "It creates separate transactions for each database, which are committed independently."
+        },
+        {
+          "id": "c",
+          "text": "It uses a two-phase commit protocol."
+        },
+        {
+          "id": "d",
+          "text": "It doesn't support transactions across multiple databases."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "OutSystems manages independent transactions for each database. There's no built-in distributed transaction support.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q086",
+      "question": "How can you dynamically change the schedule of a timer during runtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By modifying the timer's properties in Service Center."
+        },
+        {
+          "id": "b",
+          "text": "By updating the NextRun attribute of the respective Cyclic Job entity."
+        },
+        {
+          "id": "c",
+          "text": "By restarting the OutSystems Scheduler Service."
+        },
+        {
+          "id": "d",
+          "text": "Timers schedules cannot be changed during runtime."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Updating the NextRun attribute directly controls the timer's next execution.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q087",
+      "question": "What is the best practice for implementing error handling within a Timer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use Exception Handlers to catch and handle potential errors."
+        },
+        {
+          "id": "b",
+          "text": "Ignore errors as they will be automatically retried."
+        },
+        {
+          "id": "c",
+          "text": "Log errors to a separate file."
+        },
+        {
+          "id": "d",
+          "text": "Send an email notification to the administrator for each error."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Exception Handlers ensure robust error management.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q088",
+      "question": "You have a Timer that needs to run every weekday at 9:00 AM. How would you configure the schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "09:00 Mon-Fri"
+        },
+        {
+          "id": "b",
+          "text": "Daily at 09:00"
+        },
+        {
+          "id": "c",
+          "text": "Weekly at 09:00"
+        },
+        {
+          "id": "d",
+          "text": "09:00 1-5"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "09:00 Mon-Fri\" is the intended weekday schedule.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false,
+        "inferred": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q089",
+      "question": "What's the role of the OutSystems Scheduler Service?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To execute Timers according to their schedules."
+        },
+        {
+          "id": "b",
+          "text": "To manage BPT processes."
+        },
+        {
+          "id": "c",
+          "text": "To handle asynchronous requests."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The Scheduler Service specifically manages Timer execution. BPTs have their own engine. While it handles some asynchronous tasks (Timers), that's not its overall role.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q090",
+      "question": "What is the best practice for multiple developers working on the same application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Have all developers work directly on the same environment."
+        },
+        {
+          "id": "b",
+          "text": "Use a shared development environment and merge changes frequently."
+        },
+        {
+          "id": "c",
+          "text": "Use personal environments and merge changes through LifeTime."
+        },
+        {
+          "id": "d",
+          "text": "Develop the application in separate parts and combine them at the end."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Personal environments and LifeTime promote isolated development and controlled merging.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q091",
+      "question": "What is the recommended approach for implementing complex business logic that needs to be reused across multiple screens and modules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Screen Actions"
+        },
+        {
+          "id": "b",
+          "text": "Server Actions"
+        },
+        {
+          "id": "c",
+          "text": "Client Actions"
+        },
+        {
+          "id": "d",
+          "text": "Business Processes"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Server Actions are designed for reusable business logic.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q092",
+      "question": "You are designing a data model for an e-commerce application. Where should you define entities related to products, orders, and customers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In a single module called \"\"DataModel."
+        },
+        {
+          "id": "b",
+          "text": "In separate modules according to their functional area (e.g., \"\"Products,\"\" \"\"Orders,\"\" \"\"Customers\"\")."
+        },
+        {
+          "id": "c",
+          "text": "In the UI modules where they are used."
+        },
+        {
+          "id": "d",
+          "text": "In an extension module."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Separate modules promote better organization and separation of concerns.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q093",
+      "question": "What data type should you use to store a phone number?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Integer"
+        },
+        {
+          "id": "b",
+          "text": "Decimal"
+        },
+        {
+          "id": "c",
+          "text": "Text"
+        },
+        {
+          "id": "d",
+          "text": "Phone Number"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Text is the most flexible and appropriate data type for phone numbers. While there's a \"\"Phone Number\"\" data type, it's for user input validation, not database storage.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q094",
+      "question": "How can you improve the maintainability of your CSS code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Write all CSS rules in a single file."
+        },
+        {
+          "id": "b",
+          "text": "Use inline styles for better control."
+        },
+        {
+          "id": "c",
+          "text": "Use meaningful class names and organize rules logically."
+        },
+        {
+          "id": "d",
+          "text": "Minimize comments to reduce file size."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Organized CSS with clear naming conventions improves maintainability.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q095",
+      "question": "What is the purpose of the \"\"Example\"\" property in Expressions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To provide a sample value for testing."
+        },
+        {
+          "id": "b",
+          "text": "To document the expected data type."
+        },
+        {
+          "id": "c",
+          "text": "To improve the performance of the expression."
+        },
+        {
+          "id": "d",
+          "text": "Both a) and b)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "The \"\"Example\"\" property aids both testing and documentation.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q096",
+      "question": "You need to implement input validation for a form on a web screen. Where should you perform the validation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In the client-side logic using JavaScript."
+        },
+        {
+          "id": "b",
+          "text": "In the server-side logic using Screen Actions or Server Actions."
+        },
+        {
+          "id": "c",
+          "text": "Both client-side and server-side for optimal validation."
+        },
+        {
+          "id": "d",
+          "text": "Rely on the built-in validation capabilities of input widgets."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Both client-side and server-side validation are necessary for robust input validation.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q097",
+      "question": "How can you minimize the number of database queries executed by your application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use caching mechanisms for frequently accessed data."
+        },
+        {
+          "id": "b",
+          "text": "Combine multiple queries into a single query where possible."
+        },
+        {
+          "id": "c",
+          "text": "Use efficient filtering and sorting techniques."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All listed options contribute to optimizing database interactions.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q098",
+      "question": "What's the best practice for handling error messages displayed to the end-user?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use technical error messages for accurate debugging information."
+        },
+        {
+          "id": "b",
+          "text": "Use user-friendly messages that guide the user towards a solution."
+        },
+        {
+          "id": "c",
+          "text": "Hide error messages to avoid confusing the user."
+        },
+        {
+          "id": "d",
+          "text": "Display all error details, including stack traces."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "User-friendly messages improve user experience.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q099",
+      "question": "You need to implement a complex calculation that involves external libraries. What's the best practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use JavaScript on the client-side."
+        },
+        {
+          "id": "b",
+          "text": "Create a Server Action and use built-in functions."
+        },
+        {
+          "id": "c",
+          "text": "Create an Extension and implement the calculation in C# or Java."
+        },
+        {
+          "id": "d",
+          "text": "Use an Advanced Query."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Extensions are best suited for integrating external libraries.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q100",
+      "question": "How can you optimize images for faster loading times?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use high-resolution images for better quality."
+        },
+        {
+          "id": "b",
+          "text": "Use appropriate image formats (e.g., JPEG for photos, PNG for graphics)."
+        },
+        {
+          "id": "c",
+          "text": "Compress images to reduce file size."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Using suitable formats and compression minimizes image sizes without excessive quality loss.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q101",
+      "question": "How should you organize Screen Actions within a Web Screen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Place all Screen Actions in a single large flow."
+        },
+        {
+          "id": "b",
+          "text": "Create separate flows for different actions, grouped logically."
+        },
+        {
+          "id": "c",
+          "text": "Use a single Screen Action for all UI interactions."
+        },
+        {
+          "id": "d",
+          "text": "Place all logic in the Preparation action."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Separate flows enhance organization and readability.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q102",
+      "question": "What is the recommended way to handle date and time values in your application logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use text data type for easier manipulation."
+        },
+        {
+          "id": "b",
+          "text": "Use built-in date and time functions and consider time zones."
+        },
+        {
+          "id": "c",
+          "text": "Store dates and times as integers representing Unix timestamps."
+        },
+        {
+          "id": "d",
+          "text": "Avoid using date and time values altogether."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Built-in functions provide timezone support and proper handling.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q103",
+      "question": "You need to implement logging in your application. Where should you add LogMessage actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only in Server Actions."
+        },
+        {
+          "id": "b",
+          "text": "In both Server Actions and Screen Actions, as needed."
+        },
+        {
+          "id": "c",
+          "text": "Only in the OnException action of the exception handler."
+        },
+        {
+          "id": "d",
+          "text": "Only in Timers."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "LogMessage actions can be useful in both Server and Screen Actions for debugging and auditing.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q104",
+      "question": "How can you ensure your application is secure against cross-site scripting (XSS) attacks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the EncodeHtml function to sanitize user inputs."
+        },
+        {
+          "id": "b",
+          "text": "Validate user inputs on the server-side."
+        },
+        {
+          "id": "c",
+          "text": "Use HTTPS for all web traffic."
+        },
+        {
+          "id": "d",
+          "text": "Both a) and b)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Encoding HTML and server-side validation are crucial for preventing XSS. HTTPS improves overall security but is not sufficient to prevent XSS on its own.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q105",
+      "question": "What's the best practice for managing application dependencies in Service Studio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Add all modules as dependencies to avoid compilation errors."
+        },
+        {
+          "id": "b",
+          "text": "Only include necessary dependencies to minimize module size and complexity."
+        },
+        {
+          "id": "c",
+          "text": "Remove all dependencies to improve performance."
+        },
+        {
+          "id": "d",
+          "text": "Use circular dependencies for tighter integration."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Only include necessary dependencies to keep modules lean.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q106",
+      "question": "How can you improve the performance of aggregates that fetch large amounts of data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the \"\"Max Records\"\" property to limit the number of records retrieved."
+        },
+        {
+          "id": "b",
+          "text": "Avoid using filter conditions."
+        },
+        {
+          "id": "c",
+          "text": "Use \"\"Get All Records\"\" instead of specifying attributes."
+        },
+        {
+          "id": "d",
+          "text": "Use Advanced Queries instead of aggregates."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Max Records limits retrieved data. Filters improve performance, and \"\"Get All Records\"\" can be inefficient. Advanced Queries are more complex solutions.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q107",
+      "question": "What's the recommended practice for naming web screens?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use short, generic names (e.g., \"\"Screen1,\"\" \"\"Screen2\"\")."
+        },
+        {
+          "id": "b",
+          "text": "Use descriptive names that indicate the screen's purpose (e.g., \"\"ProductDetails,\"\" \"\"OrderList\"\")."
+        },
+        {
+          "id": "c",
+          "text": "Use names based on the entity they interact with (e.g., \"\"Product_Screen,\"\" \"\"Order_Screen\"\")."
+        },
+        {
+          "id": "d",
+          "text": "Use random names to prevent conflicts."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Descriptive names improve readability and maintainability.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q108",
+      "question": "How can you prevent SQL injection vulnerabilities when using Advanced Queries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use input sanitization techniques."
+        },
+        {
+          "id": "b",
+          "text": "Use parameterized queries."
+        },
+        {
+          "id": "c",
+          "text": "Validate user inputs."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options contribute to preventing SQL injection vulnerabilities.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q109",
+      "question": "What is the recommended way to handle default values for input parameters in REST API methods?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Set the default values in the REST API method definition."
+        },
+        {
+          "id": "b",
+          "text": "Use the OnBeforeRequest callback action to set default values."
+        },
+        {
+          "id": "c",
+          "text": "Set default values in the consuming logic."
+        },
+        {
+          "id": "d",
+          "text": "Rely on the external REST API to provide default values."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Default values are ideally handled in the REST API definition itself or, if not possible, using the OnBeforeRequest callback. They shouldn't be handled downstream.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a or b",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q110",
+      "question": "You observe that your web pages are loading slowly due to a large number of HTTP requests. What optimization technique could you use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Combine multiple CSS and JavaScript files into single files."
+        },
+        {
+          "id": "b",
+          "text": "Use inline CSS and JavaScript."
+        },
+        {
+          "id": "c",
+          "text": "Increase the number of concurrent connections to the web server."
+        },
+        {
+          "id": "d",
+          "text": "Disable caching."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Combining files reduces HTTP requests, improving loading speed. Inline CSS/JS can increase page size. Increasing connections has limited benefits. Caching improves performance.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q111",
+      "question": "How should you handle confidential data, such as API keys, in your OutSystems applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store them directly in your application code."
+        },
+        {
+          "id": "b",
+          "text": "Store them in encrypted Site Properties."
+        },
+        {
+          "id": "c",
+          "text": "Store them in an external secrets management service and access them securely at runtime."
+        },
+        {
+          "id": "d",
+          "text": "Store them in client-side local storage."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A secrets management service offers the best security and separation of concerns.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q112",
+      "question": "What's the recommended way to manage JavaScript code that is only needed on specific web screens?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Include the JavaScript in a global JavaScript file."
+        },
+        {
+          "id": "b",
+          "text": "Include the JavaScript as a resource in the specific web screen's module."
+        },
+        {
+          "id": "c",
+          "text": "Embed the JavaScript directly in the web screen's HTML."
+        },
+        {
+          "id": "d",
+          "text": "Use a Server Action to generate the JavaScript code dynamically."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Including the JavaScript as a resource in the specific module keeps the code organized and minimizes unnecessary loading on other pages.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q113",
+      "question": "When designing a data model, how can you ensure data consistency and prevent orphaned records?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use appropriate Delete Rules for foreign key relationships."
+        },
+        {
+          "id": "b",
+          "text": "Use database triggers to enforce data integrity."
+        },
+        {
+          "id": "c",
+          "text": "Rely on application logic to manage data relationships."
+        },
+        {
+          "id": "d",
+          "text": "Avoid using foreign keys altogether."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Correctly configured Delete Rules maintain data integrity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q114",
+      "question": "What's the benefit of using a three-layer architecture in OutSystems applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Improved code organization and maintainability."
+        },
+        {
+          "id": "b",
+          "text": "Enhanced security."
+        },
+        {
+          "id": "c",
+          "text": "Increased performance."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "A three-layer architecture offers numerous benefits, including maintainability, security, and performance improvements.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q115",
+      "question": "How can you efficiently update or delete a large number of records in an external database?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a For Each loop and perform the operations record by record."
+        },
+        {
+          "id": "b",
+          "text": "Use an Advanced Query or an appropriate bulk operation mechanism provided by the external database's API or driver."
+        },
+        {
+          "id": "c",
+          "text": "Use a combination of Aggregates and Entity Actions."
+        },
+        {
+          "id": "d",
+          "text": "Use a Timer to perform the operations in batches."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Bulk operations are significantly more efficient than looping through records individually.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q116",
+      "question": "When designing mobile apps, how can you handle offline scenarios?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use local storage to store data that can be accessed offline."
+        },
+        {
+          "id": "b",
+          "text": "Implement synchronization mechanisms to update data when the device is online."
+        },
+        {
+          "id": "c",
+          "text": "Provide clear feedback to the user about the app's offline status."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are crucial for a good offline user experience.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q117",
+      "question": "How can you improve the accessibility of your web applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use semantic HTML."
+        },
+        {
+          "id": "b",
+          "text": "Provide alternative text for images."
+        },
+        {
+          "id": "c",
+          "text": "Ensure sufficient color contrast."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options contribute to better web accessibility.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q118",
+      "question": "What is the purpose of using the \"\"Internal Access Only\"\" property for Web Flows and Web Services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To improve performance by skipping security checks."
+        },
+        {
+          "id": "b",
+          "text": "To restrict access to internal network requests only."
+        },
+        {
+          "id": "c",
+          "text": "To prevent external access to sensitive functionalities."
+        },
+        {
+          "id": "d",
+          "text": "To hide the Web Flows and Web Services from the module tree."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Internal Access Only\"\" protects sensitive actions from external access.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q119",
+      "question": "How should you handle unused references in your modules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep them as they might be needed later."
+        },
+        {
+          "id": "b",
+          "text": "Comment them out in case they are needed again."
+        },
+        {
+          "id": "c",
+          "text": "Remove them to reduce module size and complexity."
+        },
+        {
+          "id": "d",
+          "text": "Move them to a separate module."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Removing unused references improves maintainability and reduces module size.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q120",
+      "question": "What's the recommended approach for implementing custom logic that is executed before a REST API request is sent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the OnBeforeRequest callback action."
+        },
+        {
+          "id": "b",
+          "text": "Modify the REST API method definition."
+        },
+        {
+          "id": "c",
+          "text": "Use a Server Action that calls the REST API method."
+        },
+        {
+          "id": "d",
+          "text": "Use JavaScript to intercept the request."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The OnBeforeRequest callback is designed for pre-processing REST requests.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q121",
+      "question": "You are implementing a form that allows users to upload files. What is the recommended way to handle file uploads in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store the file content directly in a database entity."
+        },
+        {
+          "id": "b",
+          "text": "Store the files in the file system and store the file path in a database entity."
+        },
+        {
+          "id": "c",
+          "text": "Use an external file storage service and store a reference to the file in a database entity."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c) can be suitable depending on the application's requirements."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Storing files externally, either in the file system or a dedicated service, is generally preferred for better scalability and performance.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q122",
+      "question": "What are the benefits of using Static Entities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Improved application performance."
+        },
+        {
+          "id": "b",
+          "text": "Easier maintenance of static data."
+        },
+        {
+          "id": "c",
+          "text": "Reduced database load."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Static Entities simplify maintenance of unchanging data within OutSystems. While they can indirectly contribute to performance and reduce database load, that's not their primary benefit.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q123",
+      "question": "What's the best practice for implementing data validation in OutSystems applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rely solely on client-side validation."
+        },
+        {
+          "id": "b",
+          "text": "Perform validation on both the client-side and server-side."
+        },
+        {
+          "id": "c",
+          "text": "Perform validation only on the server-side."
+        },
+        {
+          "id": "d",
+          "text": "Avoid data validation altogether."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Both client-side and server-side validation provide a robust approach to data integrity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q124",
+      "question": "How can you ensure your application is internationalized and supports multiple languages?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hardcode translations directly in the application logic."
+        },
+        {
+          "id": "b",
+          "text": "Use the built-in localization features of OutSystems."
+        },
+        {
+          "id": "c",
+          "text": "Use a third-party translation service."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c) can be suitable depending on the application's requirements."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Both OutSystems's built-in features and third-party services can facilitate internationalization.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q125",
+      "question": "You encounter a situation where you need to bypass the standard data retrieval mechanisms provided by OutSystems. How should you proceed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use an Advanced Query."
+        },
+        {
+          "id": "b",
+          "text": "Modify the OutSystems platform code."
+        },
+        {
+          "id": "c",
+          "text": "Use an extension to implement custom data access logic."
+        },
+        {
+          "id": "d",
+          "text": "Both a) and c) can be appropriate depending on the specific requirements."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Both Advanced Queries and Extensions provide ways to bypass standard mechanisms, but the best approach depends on the specific use case.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q126",
+      "question": "How can you prevent cross-site request forgery (CSRF) attacks in your OutSystems applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use HTTPS for all web traffic."
+        },
+        {
+          "id": "b",
+          "text": "Implement CSRF tokens in web forms."
+        },
+        {
+          "id": "c",
+          "text": "Validate user inputs on the server-side."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "CSRF tokens are the primary defense against CSRF attacks. While HTTPS and input validation are good security practices, they don't specifically protect against CSRF.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q127",
+      "question": "What is the purpose of using Aggregates in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To retrieve data from the database."
+        },
+        {
+          "id": "b",
+          "text": "To perform calculations on data."
+        },
+        {
+          "id": "c",
+          "text": "To execute custom SQL queries."
+        },
+        {
+          "id": "d",
+          "text": "Both a) and b)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Aggregates are used for both data retrieval and simple calculations/aggregations.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q128",
+      "question": "How can you improve the reusability of logic across multiple applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copy and paste the logic into each application."
+        },
+        {
+          "id": "b",
+          "text": "Create a library module and reference it in the applications."
+        },
+        {
+          "id": "c",
+          "text": "Use extensions to implement shared logic."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c) can be appropriate depending on the complexity and type of logic."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Library modules and extensions promote code reuse across applications.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q129",
+      "question": "What is the recommended approach for handling exceptions in web services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Throw generic exceptions to simplify error handling."
+        },
+        {
+          "id": "b",
+          "text": "Throw specific exceptions with meaningful error messages."
+        },
+        {
+          "id": "c",
+          "text": "Handle all exceptions within the web service itself."
+        },
+        {
+          "id": "d",
+          "text": "Avoid throwing exceptions altogether."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Specific exceptions provide detailed information about the error.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q130",
+      "question": "When designing a user interface, how should you handle user input errors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore errors to avoid interrupting the user's workflow."
+        },
+        {
+          "id": "b",
+          "text": "Display clear and concise error messages near the relevant input fields."
+        },
+        {
+          "id": "c",
+          "text": "Use pop-up messages for all error notifications."
+        },
+        {
+          "id": "d",
+          "text": "Redirect the user to a separate error page."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Clear, context-specific error messages enhance user experience.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q131",
+      "question": "How can you ensure your application's user interface is responsive and performs well on different devices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a single layout that adapts to different screen sizes."
+        },
+        {
+          "id": "b",
+          "text": "Create separate layouts for different devices."
+        },
+        {
+          "id": "c",
+          "text": "Use responsive design techniques such as media queries."
+        },
+        {
+          "id": "d",
+          "text": "Both a) and c)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Single, adaptive layouts with media queries are the foundation of responsive design.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q132",
+      "question": "What is the recommended way to handle large volumes of log data in your OutSystems applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store all logs in the same database table."
+        },
+        {
+          "id": "b",
+          "text": "Use a dedicated logging database or service."
+        },
+        {
+          "id": "c",
+          "text": "Implement log rotation to manage disk space."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Dedicated logging resources and log rotation help manage large log volumes.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q133",
+      "question": "When should you consider using an extension in your OutSystems application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "For simple calculations and data manipulations."
+        },
+        {
+          "id": "b",
+          "text": "For integrating with external systems or implementing custom logic that is not possible with built-in functions."
+        },
+        {
+          "id": "c",
+          "text": "For designing user interfaces."
+        },
+        {
+          "id": "d",
+          "text": "For managing application dependencies."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Extensions handle platform integrations and custom code beyond built-in functionalities.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q134",
+      "question": "What's the best approach for handling background processes that involve complex logic and potentially long execution times?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use Timers."
+        },
+        {
+          "id": "b",
+          "text": "Use BPT processes."
+        },
+        {
+          "id": "c",
+          "text": "Use Screen Actions with long timeouts."
+        },
+        {
+          "id": "d",
+          "text": "Use Server Actions with the \"\"Asynchronous\"\" property set to True."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "BPT processes are specifically designed for complex, long-running background tasks.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q135",
+      "question": "What's the recommended approach for testing the logic in your OutSystems applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rely on manual testing by end-users."
+        },
+        {
+          "id": "b",
+          "text": "Create unit tests to test individual components and functionalities."
+        },
+        {
+          "id": "c",
+          "text": "Use automated UI testing tools."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Both unit tests and UI tests are important for comprehensive testing.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q136",
+      "question": "You are trying to publish your module, but you receive an error message about a missing dependency. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore the error and publish again."
+        },
+        {
+          "id": "b",
+          "text": "Remove the dependency from the module."
+        },
+        {
+          "id": "c",
+          "text": "Add the missing dependency in Manage Dependencies."
+        },
+        {
+          "id": "d",
+          "text": "Restart Service Studio."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Adding the missing dependency is the correct solution.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q137",
+      "question": "You have published a new version of your mobile app, but users are still seeing the old version. What is a likely cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mobile app store's caching mechanism."
+        },
+        {
+          "id": "b",
+          "text": "The users haven't updated the app on their devices."
+        },
+        {
+          "id": "c",
+          "text": "A problem with the OutSystems build process."
+        },
+        {
+          "id": "d",
+          "text": "Both a) and b)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Cached versions on app stores or devices can cause users to see outdated versions.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q138",
+      "question": "You encounter the error message \"\"Read-only transaction violated.\"\" What is a potential cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Attempting to update data in a read-only database."
+        },
+        {
+          "id": "b",
+          "text": "Running a query that modifies data within a read-only transaction."
+        },
+        {
+          "id": "c",
+          "text": "Using an incorrect isolation level for the database connection."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options can lead to a \"\"Read-only transaction violated\"\" error.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q139",
+      "question": "You are debugging a Server Action and need to inspect the values of variables during execution. What tool should you use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service Center logs."
+        },
+        {
+          "id": "b",
+          "text": "Service Studio debugger."
+        },
+        {
+          "id": "c",
+          "text": "Browser developer tools."
+        },
+        {
+          "id": "d",
+          "text": "Database profiler."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Service Studio debugger is the tool for inspecting variables during execution.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q140",
+      "question": "You notice that a Timer is not running as scheduled. What should you check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Timer's schedule configuration."
+        },
+        {
+          "id": "b",
+          "text": "The status of the OutSystems Scheduler Service."
+        },
+        {
+          "id": "c",
+          "text": "The Service Center error logs."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are relevant troubleshooting steps for Timer issues.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q141",
+      "question": "Your application is throwing an \"\"Invalid Login\"\" exception. What is the most likely cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Incorrect username or password."
+        },
+        {
+          "id": "b",
+          "text": "The user's account is locked."
+        },
+        {
+          "id": "c",
+          "text": "A problem with the authentication system."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All listed options are potential reasons for an \"\"Invalid Login\"\" exception.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q142",
+      "question": "You are unable to debug your mobile app on a physical device. What should you check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "USB debugging is enabled on the device (Android)."
+        },
+        {
+          "id": "b",
+          "text": "The device is properly connected to your development machine."
+        },
+        {
+          "id": "c",
+          "text": "The correct debugging target is selected in Service Studio."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are essential for mobile app debugging on physical devices.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q143",
+      "question": "You observe unexpected behavior in a REST API integration. How can you trace the HTTP requests and responses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the Service Center Integration logs."
+        },
+        {
+          "id": "b",
+          "text": "Use a network monitoring tool such as Fiddler or browser developer tools."
+        },
+        {
+          "id": "c",
+          "text": "Check the REST API provider's documentation."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options can help in troubleshooting REST API integration issues.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q144",
+      "question": "You encounter an \"\"Access Denied\"\" error when trying to access a web screen. What might be the cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Incorrect roles assigned to the user."
+        },
+        {
+          "id": "b",
+          "text": "The user is not logged in."
+        },
+        {
+          "id": "c",
+          "text": "The web screen's security settings are too restrictive."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are potential causes of \"\"Access Denied\"\" errors.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q145",
+      "question": "You receive an error message \"\"Entity not found\"\" when trying to access data from an external database. What should you check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The database connection string."
+        },
+        {
+          "id": "b",
+          "text": "The entity name and schema in the integration configuration."
+        },
+        {
+          "id": "c",
+          "text": "The permissions granted to the database user."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options could lead to an \"\"Entity not found\"\" error with external databases.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q146",
+      "question": "A web screen is taking a long time to load. How can you identify the specific elements that are causing the delay?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the browser's developer tools (Performance tab)."
+        },
+        {
+          "id": "b",
+          "text": "Check the Service Center screen performance logs."
+        },
+        {
+          "id": "c",
+          "text": "Add log messages to the screen's logic."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Various tools can pinpoint performance bottlenecks on web screens.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q147",
+      "question": "You're using a proxy server and experiencing issues with debugging. What should you check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ensure the proxy server's IP address is added to the trusted proxy addresses in Service Center."
+        },
+        {
+          "id": "b",
+          "text": "Disable the proxy server during debugging."
+        },
+        {
+          "id": "c",
+          "text": "Check the proxy server's logs for errors."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Trusted proxy addresses are essential for debugging through a proxy.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q148",
+      "question": "When consuming a REST API, how can you handle different response codes (e.g., 200 OK, 400 Bad Request, 500 Internal Server Error)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a single exception handler for all responses."
+        },
+        {
+          "id": "b",
+          "text": "Use specific exception handlers for each possible response code or a general exception handler combined with checking the response code in logic."
+        },
+        {
+          "id": "c",
+          "text": "Check the HTTP status code in the OnAfterResponse callback and handle accordingly."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c)."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Both specific exception handlers or checking status codes in the OnAfterResponse are valid.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q149",
+      "question": "You are integrating with an external system that requires OAuth 2.0 authentication with the authorization code grant flow. How can you implement this in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the built-in OAuth 2.0 client credentials flow."
+        },
+        {
+          "id": "b",
+          "text": "Use an OAuth 2.0 connector from the Forge."
+        },
+        {
+          "id": "c",
+          "text": "Implement the authorization code grant flow using custom code in an extension or by leveraging a suitable library if available."
+        },
+        {
+          "id": "d",
+          "text": "Use Basic Authentication."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Forge components or custom extensions can handle the authorization code grant flow. Client credentials and Basic Authentication are different flows.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q150",
+      "question": "You need to consume a SOAP web service with complex data structures. How should you define the data structures in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Manually create structures that match the web service's XSD schema."
+        },
+        {
+          "id": "b",
+          "text": "Use the \"\"Consume SOAP Web Service\"\" feature in Service Studio, which generates the necessary structures automatically."
+        },
+        {
+          "id": "c",
+          "text": "Use REST instead of SOAP."
+        },
+        {
+          "id": "d",
+          "text": "Use JSON to define the data structures."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Service Studio automates SOAP structure generation from the WSDL/XSD.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q151",
+      "question": "You have created an integration with an external database using Integration Builder. How can you manage the connection credentials for different environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store the credentials in Site Properties."
+        },
+        {
+          "id": "b",
+          "text": "Create separate integration modules for each environment."
+        },
+        {
+          "id": "c",
+          "text": "Use Integration Manager to define connections for each environment."
+        },
+        {
+          "id": "d",
+          "text": "Hardcode the credentials in the application logic."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Integration Manager manages environment-specific connections.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q152",
+      "question": "You want to expose a REST API that requires authentication. What built-in authentication mechanism does OutSystems provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Basic Authentication."
+        },
+        {
+          "id": "b",
+          "text": "OAuth 2.0."
+        },
+        {
+          "id": "c",
+          "text": "Custom Authentication using callback actions."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "OutSystems provides multiple authentication mechanisms for exposed REST APIs.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q153",
+      "question": "You are consuming a REST API and receiving large responses. How can you optimize data retrieval and improve performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retrieve all data and filter it in your application logic."
+        },
+        {
+          "id": "b",
+          "text": "Use query parameters to request only the necessary data."
+        },
+        {
+          "id": "c",
+          "text": "Implement pagination or limit the number of results requested."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c)."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Query parameters and pagination/limits optimize REST data retrieval.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q154",
+      "question": "When exposing a REST API, how can you define custom response headers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the OnResponse callback action."
+        },
+        {
+          "id": "b",
+          "text": "Modify the HTTP response directly in the application logic."
+        },
+        {
+          "id": "c",
+          "text": "Use an extension to manipulate the HTTP headers."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "OnResponse is the correct place to customize REST response headers.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q155",
+      "question": "What is the purpose of the REST Extensibility API?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To consume REST APIs."
+        },
+        {
+          "id": "b",
+          "text": "To expose REST APIs."
+        },
+        {
+          "id": "c",
+          "text": "To implement custom logic for handling REST requests and responses."
+        },
+        {
+          "id": "d",
+          "text": "To manage authentication for REST APIs."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The REST Extensibility API allows deeper customization of REST integrations.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q156",
+      "question": "You need to integrate with a system that doesn't provide a REST or SOAP API. What approach should you consider?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use an extension to implement the integration using custom code."
+        },
+        {
+          "id": "b",
+          "text": "Persuade the external system provider to create an API."
+        },
+        {
+          "id": "c",
+          "text": "Use robotic process automation (RPA) to interact with the system's user interface."
+        },
+        {
+          "id": "d",
+          "text": "All of the above could be valid options depending on the context."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are potential approaches for systems lacking APIs.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q157",
+      "question": "How can you ensure the security of data transmitted during integrations with external systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use HTTPS for all communication."
+        },
+        {
+          "id": "b",
+          "text": "Encrypt sensitive data before sending it."
+        },
+        {
+          "id": "c",
+          "text": "Validate data received from external systems."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are important for secure integrations.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q158",
+      "question": "When consuming a REST API, how can you ensure idempotency for operations like PUT and DELETE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use unique request identifiers."
+        },
+        {
+          "id": "b",
+          "text": "Implement appropriate error handling."
+        },
+        {
+          "id": "c",
+          "text": "Design the REST API methods to handle duplicate requests."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Idempotency requires unique identifiers and server-side handling of duplicate requests. Error handling is important but not directly related to idempotency.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a and c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q159",
+      "question": "You need to monitor the performance of your integrations. What tools can you use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service Center Integration logs."
+        },
+        {
+          "id": "b",
+          "text": "Performance monitoring tools for the external systems."
+        },
+        {
+          "id": "c",
+          "text": "Network monitoring tools."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Various tools can monitor integration performance from different perspectives.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q160",
+      "question": "You have a long-running server action that involves multiple database operations. How can you prevent locking issues and improve concurrency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use optimistic locking."
+        },
+        {
+          "id": "b",
+          "text": "Use pessimistic locking."
+        },
+        {
+          "id": "c",
+          "text": "Optimize database queries to reduce execution time."
+        },
+        {
+          "id": "d",
+          "text": "Both a) and c)."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Optimistic locking and query optimization are strategies to reduce locking issues. Pessimistic locking can exacerbate them.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q161",
+      "question": "You need to implement a retry mechanism for handling transient errors in a REST API integration. Where should you implement the retry logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In the REST API method definition."
+        },
+        {
+          "id": "b",
+          "text": "In the OnBeforeRequest callback action."
+        },
+        {
+          "id": "c",
+          "text": "In the logic that consumes the REST API method."
+        },
+        {
+          "id": "d",
+          "text": "In the OnAfterResponse callback action."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The retry logic should be in the consuming logic to handle failures gracefully.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q162",
+      "question": "What happens to a database transaction when an unhandled exception occurs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The transaction is committed."
+        },
+        {
+          "id": "b",
+          "text": "The transaction is rolled back."
+        },
+        {
+          "id": "c",
+          "text": "The transaction is suspended."
+        },
+        {
+          "id": "d",
+          "text": "The transaction is ignored."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Unhandled exceptions trigger automatic transaction rollback.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q163",
+      "question": "How can you customize the error message displayed to the user when a database exception occurs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modify the exception message in the database server's configuration."
+        },
+        {
+          "id": "b",
+          "text": "Catch the database exception in an exception handler and define a custom error message."
+        },
+        {
+          "id": "c",
+          "text": "Use the On Exception action of a web block."
+        },
+        {
+          "id": "d",
+          "text": "Database exception messages cannot be customized."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Exception handlers allow custom error messages for a better user experience.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q164",
+      "question": "You have a BPT process that needs to interact with an external system. Where should you implement the integration logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In the BPT process itself."
+        },
+        {
+          "id": "b",
+          "text": "In a Server Action called by the BPT process."
+        },
+        {
+          "id": "c",
+          "text": "In an extension."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c) are suitable depending on the complexity of the integration."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Both Server Actions and Extensions can be used, depending on the integration's complexity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q165",
+      "question": "You have a long-running process that needs to be executed asynchronously. What's the recommended approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a Timer."
+        },
+        {
+          "id": "b",
+          "text": "Use a BPT process."
+        },
+        {
+          "id": "c",
+          "text": "Use a Server Action with a long timeout."
+        },
+        {
+          "id": "d",
+          "text": "Use a Screen Action with the \"\"Asynchronous\"\" property set to True."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "BPT processes are best for long-running asynchronous tasks.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q166",
+      "question": "How can you manage and monitor the execution of BPT processes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use Service Center's process monitoring capabilities."
+        },
+        {
+          "id": "b",
+          "text": "Use custom logging mechanisms."
+        },
+        {
+          "id": "c",
+          "text": "Use the BPT API to access process information."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options provide ways to manage and monitor BPT processes.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q167",
+      "question": "You want to implement a scalable database queueing mechanism for processing a high volume of events. What's the recommended approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a Timer to poll the database for new events."
+        },
+        {
+          "id": "b",
+          "text": "Use a message queue service like RabbitMQ or Kafka."
+        },
+        {
+          "id": "c",
+          "text": "Use Light BPT processes triggered by database events."
+        },
+        {
+          "id": "d",
+          "text": "Use a combination of Timers and Server Actions."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Light BPT processes offer a scalable solution for database event-driven queueing.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q168",
+      "question": "How can you ensure your Timers are fault-tolerant and can recover from errors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Implement error handling and retry mechanisms."
+        },
+        {
+          "id": "b",
+          "text": "Use transactions to ensure data consistency."
+        },
+        {
+          "id": "c",
+          "text": "Monitor timer execution and investigate errors promptly."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options contribute to fault-tolerant Timers.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q169",
+      "question": "You need to schedule a Timer to run on the last day of every month. How would you configure the schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Last day of month"
+        },
+        {
+          "id": "b",
+          "text": "Monthly, last day"
+        },
+        {
+          "id": "c",
+          "text": "Use a custom schedule expression."
+        },
+        {
+          "id": "d",
+          "text": "This is not possible with standard Timer scheduling. You'd need to calculate the last day of the month programmatically."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Standard timers don't have a \"\"last day of the month\"\" option. You need custom logic.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q170",
+      "question": "How can you ensure that multiple Timers don't interfere with each other and cause conflicts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schedule Timers to run at different times."
+        },
+        {
+          "id": "b",
+          "text": "Use proper synchronization mechanisms (e.g., locks) when accessing shared resources."
+        },
+        {
+          "id": "c",
+          "text": "Monitor Timer execution for potential overlaps and conflicts."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Careful scheduling, synchronization, and monitoring are key for managing multiple Timers.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q171",
+      "question": "How can you prevent a Timer from running indefinitely if an error occurs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Set the Timer's timeout property."
+        },
+        {
+          "id": "b",
+          "text": "Implement error handling within the Timer action."
+        },
+        {
+          "id": "c",
+          "text": "Use a try-catch block around the Timer action."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Timeouts and internal error handling prevent infinite loops. Try-catch is useful, but the timeout provides an outer limit.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a and b",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q172",
+      "question": "What's the recommended approach for passing data to a BPT process when it's launched?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use input parameters."
+        },
+        {
+          "id": "b",
+          "text": "Use session variables."
+        },
+        {
+          "id": "c",
+          "text": "Use Site Properties."
+        },
+        {
+          "id": "d",
+          "text": "Use a database entity to store the data."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Input parameters are the standard way to pass data to BPT processes.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q173",
+      "question": "You need to execute a Timer only once at a specific time in the future. How should you configure the timer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Set the schedule to \"\"When Published\"\"."
+        },
+        {
+          "id": "b",
+          "text": "Set the schedule to a specific date and time."
+        },
+        {
+          "id": "c",
+          "text": "Use a Timer with the \"\"On Demand\"\" property enabled."
+        },
+        {
+          "id": "d",
+          "text": "Use a Server Action scheduled with a delayed execution."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "You can schedule a Timer for a one-time execution in the future. \"\"When Published\"\" is tied to publishing events. \"\"On Demand\"\" requires manual triggering. Server Actions don't have a built-in delay mechanism (you would use a timer to trigger them).",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q174",
+      "question": "How can you pause and resume a BPT process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the built-in pause and resume actions in the BPT process flow."
+        },
+        {
+          "id": "b",
+          "text": "Use the BPT API to control the process execution."
+        },
+        {
+          "id": "c",
+          "text": "Modify the process's status directly in the database."
+        },
+        {
+          "id": "d",
+          "text": "BPT processes cannot be paused and resumed."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The BPT API provides methods for controlling process execution, including pausing and resuming.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q175",
+      "question": "What should you consider when designing the logic for asynchronous processes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Potential race conditions and concurrency issues."
+        },
+        {
+          "id": "b",
+          "text": "Error handling and retry mechanisms."
+        },
+        {
+          "id": "c",
+          "text": "Resource utilization and potential bottlenecks."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All listed considerations are crucial for designing robust asynchronous processes.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q176",
+      "question": "What's the best practice for managing merges of complex logic flows in Service Studio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Merge changes directly in the visual editor."
+        },
+        {
+          "id": "b",
+          "text": "Merge changes in the text editor."
+        },
+        {
+          "id": "c",
+          "text": "Use a diff tool to compare and merge changes."
+        },
+        {
+          "id": "d",
+          "text": "All of the above can be valid approaches depending on the complexity of the logic."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "The best merge approach depends on the specific situation; all are valid options.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q177",
+      "question": "How can you ensure that all team members are using the same version of Service Studio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rely on individual developers to install the correct version."
+        },
+        {
+          "id": "b",
+          "text": "Use a centralized installation process."
+        },
+        {
+          "id": "c",
+          "text": "Enforce version checks in LifeTime."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Centralized installation and LifeTime version checks promote consistency.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q178",
+      "question": "What's the recommended branching strategy for managing parallel development in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a single development branch for all changes."
+        },
+        {
+          "id": "b",
+          "text": "Use feature branches for developing new features and bug fixes."
+        },
+        {
+          "id": "c",
+          "text": "Use release branches for preparing and deploying releases."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c)"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Feature and release branches are common best practices for managing parallel development and releases.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q179",
+      "question": "You're creating a list screen to display products. What's the most efficient way to fetch and display the data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a For Each loop to iterate over all products and display them individually."
+        },
+        {
+          "id": "b",
+          "text": "Use an Aggregate to fetch the products and a Table Records widget to display them."
+        },
+        {
+          "id": "c",
+          "text": "Use a SQL query to fetch the products and a List Records widget to display them."
+        },
+        {
+          "id": "d",
+          "text": "Use separate aggregates for each product attribute."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Aggregates and Table Records are the most efficient for displaying lists of data.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q180",
+      "question": "You have a common piece of user interface that needs to be displayed on multiple screens. What's the best way to implement this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copy and paste the UI elements onto each screen."
+        },
+        {
+          "id": "b",
+          "text": "Create a Web Block and reuse it on the different screens."
+        },
+        {
+          "id": "c",
+          "text": "Create a separate web screen for the common UI and use an IFrame to embed it."
+        },
+        {
+          "id": "d",
+          "text": "Use a single large web screen with all the UI elements."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Web Blocks promote reusability and maintainability.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q181",
+      "question": "You need to calculate the total price of items in a shopping cart. Where should you perform this calculation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In a Screen Action."
+        },
+        {
+          "id": "b",
+          "text": "In a Client Action."
+        },
+        {
+          "id": "c",
+          "text": "In a Server Action."
+        },
+        {
+          "id": "d",
+          "text": "In a JavaScript snippet embedded in the web screen."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Server Actions are best suited for calculations and business logic.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q182",
+      "question": "What's the recommended way to implement client-side validations in a Reactive Web App?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use JavaScript directly in the web screen."
+        },
+        {
+          "id": "b",
+          "text": "Use built-in input validation properties and patterns in the UI widgets."
+        },
+        {
+          "id": "c",
+          "text": "Use a combination of JavaScript and OutSystems validations."
+        },
+        {
+          "id": "d",
+          "text": "Use Server Actions for all validations."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Built-in validations improve maintainability. While JavaScript can be used, it's generally best to avoid it if possible.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q183",
+      "question": "You need to implement a custom UI widget with complex behavior. What's the recommended approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create a Web Block."
+        },
+        {
+          "id": "b",
+          "text": "Develop a JavaScript widget using the OutSystems UI framework."
+        },
+        {
+          "id": "c",
+          "text": "Use an existing JavaScript library and integrate it using an extension."
+        },
+        {
+          "id": "d",
+          "text": "All of the above could be appropriate depending on the complexity and requirements of the widget."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "The approach depends on the complexity of the widget, but all are valid options.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q184",
+      "question": "You have a large amount of static data that needs to be accessed frequently by your application. What's the most efficient way to manage this data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store the data in a database table."
+        },
+        {
+          "id": "b",
+          "text": "Create a Static Entity to store the data."
+        },
+        {
+          "id": "c",
+          "text": "Store the data in Site Properties."
+        },
+        {
+          "id": "d",
+          "text": "Hardcode the data in your application logic."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Static Entities are designed for managing static data.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q185",
+      "question": "How should you format data for display on a screen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use FormatDateTime and other built-in functions in expressions directly on the screen."
+        },
+        {
+          "id": "b",
+          "text": "Create wrapper User Functions to encapsulate formatting logic and reuse it across screens."
+        },
+        {
+          "id": "c",
+          "text": "Format the data in the database using SQL functions."
+        },
+        {
+          "id": "d",
+          "text": "Handle all formatting using JavaScript on the client-side."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "User functions are best for reusable formatting logic.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q186",
+      "question": "What's the recommended approach for implementing input masks (e.g., for phone numbers or credit card numbers)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use regular expressions in input validation."
+        },
+        {
+          "id": "b",
+          "text": "Use the \"\"Input Mask\"\" property of Input widgets where applicable."
+        },
+        {
+          "id": "c",
+          "text": "Use JavaScript libraries for masking."
+        },
+        {
+          "id": "d",
+          "text": "All of the above could be suitable depending on the complexity of the mask."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Input Masks or JavaScript libraries are good options; Regular Expressions would be less maintainable.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q187",
+      "question": "How should you manage CSS for different screen sizes in a Reactive Web App?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create separate CSS files for each screen size."
+        },
+        {
+          "id": "b",
+          "text": "Use media queries in your CSS."
+        },
+        {
+          "id": "c",
+          "text": "Use JavaScript to dynamically adjust styles based on screen size."
+        },
+        {
+          "id": "d",
+          "text": "Use inline styles for better control."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Media queries are the standard approach for responsive CSS.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q188",
+      "question": "How can you improve the performance of a web screen that uses a large aggregate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fetch all attributes of the entity in the aggregate."
+        },
+        {
+          "id": "b",
+          "text": "Use a SQL query instead of an aggregate."
+        },
+        {
+          "id": "c",
+          "text": "Limit the number of records fetched using the \"\"Max Records\"\" property and fetch only necessary attributes."
+        },
+        {
+          "id": "d",
+          "text": "Disable pagination for the aggregate."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Limiting records and attributes optimizes the aggregate's performance.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q189",
+      "question": "What's the best practice for organizing the logic in a complex Screen Action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a single, long, and linear flow."
+        },
+        {
+          "id": "b",
+          "text": "Break down the logic into smaller, reusable sub-flows using Server Actions."
+        },
+        {
+          "id": "c",
+          "text": "Use comments sparingly to avoid cluttering the action flow."
+        },
+        {
+          "id": "d",
+          "text": "Avoid using variables to keep the logic simple."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Smaller, focused server actions improve readability and maintainability.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q190",
+      "question": "What's the recommended way to handle exceptions in a Screen Action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore exceptions to avoid interrupting the user flow."
+        },
+        {
+          "id": "b",
+          "text": "Use an Exception Handler to catch and handle exceptions gracefully."
+        },
+        {
+          "id": "c",
+          "text": "Let all exceptions propagate to the top level."
+        },
+        {
+          "id": "d",
+          "text": "Use JavaScript's try-catch blocks to handle exceptions."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Exception Handlers provide structured error handling.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q191",
+      "question": "How should you use comments in your OutSystems code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid comments altogether as they clutter the code."
+        },
+        {
+          "id": "b",
+          "text": "Comment every line of code for detailed documentation."
+        },
+        {
+          "id": "c",
+          "text": "Use comments to explain complex logic, non-obvious code, and the purpose of actions and variables."
+        },
+        {
+          "id": "d",
+          "text": "Only comment code written by other developers."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Comments should be used strategically to explain complex or non-obvious parts of the code.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q192",
+      "question": "What is the best practice for implementing custom business logic that involves platform-specific code or libraries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a Server Action."
+        },
+        {
+          "id": "b",
+          "text": "Use an Extension."
+        },
+        {
+          "id": "c",
+          "text": "Use a Client Action."
+        },
+        {
+          "id": "d",
+          "text": "Use JavaScript."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Extensions are meant for platform-specific code.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q193",
+      "question": "How can you improve the reusability of data formatting logic across your application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copy and paste the formatting code into each screen or action."
+        },
+        {
+          "id": "b",
+          "text": "Create User Functions to encapsulate the formatting logic."
+        },
+        {
+          "id": "c",
+          "text": "Format the data in the database."
+        },
+        {
+          "id": "d",
+          "text": "Use JavaScript to format data on the client-side."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "User Functions are designed for reusable formatting logic.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q194",
+      "question": "A user reports that a specific button on a web screen is not working. How can you debug this issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check the browser's console for JavaScript errors."
+        },
+        {
+          "id": "b",
+          "text": "Use the Service Studio debugger to step through the button's OnClick action."
+        },
+        {
+          "id": "c",
+          "text": "Check the Service Center logs for error messages."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options offer valuable debugging techniques.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q195",
+      "question": "Your application is deployed on multiple front-end servers. You are having trouble debugging because breakpoints are not hit consistently. What could be the problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The debugger is not properly configured."
+        },
+        {
+          "id": "b",
+          "text": "The application server needs to be restarted."
+        },
+        {
+          "id": "c",
+          "text": "Session affinity is not configured on the load balancer."
+        },
+        {
+          "id": "d",
+          "text": "The debug token is invalid."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Inconsistent breakpoints on multiple servers often point to session affinity issues on the load balancer.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q196",
+      "question": "You are consuming a REST API, but the response is not what you expect. How can you troubleshoot this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the debugger to inspect the request and response data."
+        },
+        {
+          "id": "b",
+          "text": "Use a tool like Postman or the browser's network inspector to examine the raw HTTP requests and responses."
+        },
+        {
+          "id": "c",
+          "text": "Check the REST API's documentation."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All listed methods are valuable for troubleshooting REST API issues.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q197",
+      "question": "A screen in your application is taking a long time to load. How can you identify the performance bottleneck?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check the Service Center performance logs."
+        },
+        {
+          "id": "b",
+          "text": "Use the browser's developer tools to profile the page load time."
+        },
+        {
+          "id": "c",
+          "text": "Add logging to the screen action's logic."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are useful for identifying performance bottlenecks in web screens.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q198",
+      "question": "You're integrating with a REST API that returns XML data. How should you handle this in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parse the XML data using string manipulation functions."
+        },
+        {
+          "id": "b",
+          "text": "Use a dedicated XML parsing library/extension."
+        },
+        {
+          "id": "c",
+          "text": "Convert the XML data to JSON on the API provider's side."
+        },
+        {
+          "id": "d",
+          "text": "OutSystems automatically handles XML responses."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A dedicated XML parsing library is recommended for handling XML responses.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q199",
+      "question": "You need to consume a SOAP web service that requires WS-Security. How can you achieve this in OutSystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Configure WS-Security settings directly in the SOAP integration."
+        },
+        {
+          "id": "b",
+          "text": "Use a dedicated SOAP extension that supports WS-Security."
+        },
+        {
+          "id": "c",
+          "text": "Implement WS-Security using custom code in an extension."
+        },
+        {
+          "id": "d",
+          "text": "OutSystems automatically handles WS-Security."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Pre-built extensions or custom code can handle WS-Security.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b or c",
+        "ambiguous": true
+      }
+    },
+    {
+      "id": "web-developers-special-list-q200",
+      "question": "You have an integration with an external database. How can you ensure that database connections are efficiently managed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open a new database connection for each query."
+        },
+        {
+          "id": "b",
+          "text": "Use connection pooling to reuse connections."
+        },
+        {
+          "id": "c",
+          "text": "Manually close connections after each operation."
+        },
+        {
+          "id": "d",
+          "text": "Use a dedicated database server for integrations."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Connection pooling is essential for efficient database connection management.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q201",
+      "question": "You're exposing a REST API and want to implement rate limiting to prevent abuse. How can you achieve this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the built-in rate limiting features of OutSystems."
+        },
+        {
+          "id": "b",
+          "text": "Use an API gateway or implement custom rate limiting logic in your REST API methods."
+        },
+        {
+          "id": "c",
+          "text": "Use a Timer to track API requests."
+        },
+        {
+          "id": "d",
+          "text": "Rate limiting is not possible in OutSystems."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Rate limiting is typically implemented with an API gateway or custom logic within the exposed API itself.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "b",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q202",
+      "question": "You need to ensure that a sequence of database operations is treated as a single unit of work. How can you implement this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a Server Action and set its \"\"Transactional\"\" property to True."
+        },
+        {
+          "id": "b",
+          "text": "Use a Screen Action and wrap the database operations in a transaction."
+        },
+        {
+          "id": "c",
+          "text": "Use the CommitTransaction action after each database operation."
+        },
+        {
+          "id": "d",
+          "text": "Use a single Advanced Query to perform all database operations."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The \"\"Transactional\"\" property on a Server Action guarantees atomicity.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "a",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q203",
+      "question": "You want to log all database exceptions that occur in your application. How can you achieve this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the LogMessage action within an Exception Handler specifically for database exceptions."
+        },
+        {
+          "id": "b",
+          "text": "Set the \"\"Log Error\"\" property of the Database Exception Handler to True."
+        },
+        {
+          "id": "c",
+          "text": "Use a generic Exception Handler and check the exception type."
+        },
+        {
+          "id": "d",
+          "text": "All of the above can work, but b) is the most direct approach."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All are valid options but using a dedicated Database Exception Handler and setting \"\"Log Error\"\" to true is the most direct method.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q204",
+      "question": "You have a Timer that executes a long-running task. How can you prevent the Timer from exceeding its timeout limit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase the timeout value in Service Center."
+        },
+        {
+          "id": "b",
+          "text": "Break down the task into smaller chunks and use a loop and rescheduling to process each chunk iteratively."
+        },
+        {
+          "id": "c",
+          "text": "Use a BPT process instead of a Timer."
+        },
+        {
+          "id": "d",
+          "text": "Both b) and c) are suitable options depending on the nature of the task."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Rescheduling in smaller chunks within a timer or using a BPT are solutions for managing long tasks. Simply increasing the timeout could lead to other problems.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q205",
+      "question": "You need to execute a Timer immediately after a specific entity record is created. How can you achieve this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Call the Timer's associated Server Action directly from the entity's OnCreate action."
+        },
+        {
+          "id": "b",
+          "text": "Set the Timer's schedule to \"\"When Published."
+        },
+        {
+          "id": "c",
+          "text": "Use a BPT process triggered by the entity's creation event."
+        },
+        {
+          "id": "d",
+          "text": "Use a database trigger to call the Timer's associated Server Action. This is generally NOT recommended as it violates OutSystems best practices."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "BPT processes can be triggered by entity creation events. Calling Timer actions directly from OnCreate actions is not recommended.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q206",
+      "question": "How can you monitor the health and performance of your Timers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check the Service Center Timer logs."
+        },
+        {
+          "id": "b",
+          "text": "Use the Service Center performance monitoring tools."
+        },
+        {
+          "id": "c",
+          "text": "Implement custom logging within the Timer logic."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are useful for monitoring Timer health.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q207",
+      "question": "You have a BPT process that includes a human activity. How can you notify the user that a task is assigned to them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the built-in notification mechanisms of the BPT process."
+        },
+        {
+          "id": "b",
+          "text": "Send an email notification using the Send Email action."
+        },
+        {
+          "id": "c",
+          "text": "Use a custom notification system."
+        },
+        {
+          "id": "d",
+          "text": "All of the above could be appropriate depending on the application's requirements."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All options are potential ways to notify users of assigned tasks.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "d",
+        "ambiguous": false
+      }
+    },
+    {
+      "id": "web-developers-special-list-q208",
+      "question": "Multiple developers are working on different modules of a large application. What's the best practice to ensure smooth integration and avoid conflicts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Have all developers work on the same environment."
+        },
+        {
+          "id": "b",
+          "text": "Use a shared development environment and merge changes regularly."
+        },
+        {
+          "id": "c",
+          "text": "Use personal or isolated development environments and promote and deploy changes to shared environments through LifeTime."
+        },
+        {
+          "id": "d",
+          "text": "Develop the application independently and combine the modules at the end."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Personal environments with LifeTime for deployments and version control provide better isolation and prevent conflicts.",
+      "category": "Web developers",
+      "source": {
+        "rawAnswerKey": "c",
+        "ambiguous": false
+      }
+    }
+  ]
+}
