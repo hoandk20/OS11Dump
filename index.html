@@ -96,8 +96,14 @@
 
             <section class="panel question-panel">
               <div class="question-topbar">
-                <span id="question-badge" class="badge">Question 1</span>
-                <span id="question-category" class="badge subtle hidden"></span>
+                <div class="question-meta">
+                  <span id="question-badge" class="badge">Question 1</span>
+                  <span id="question-category" class="badge subtle hidden"></span>
+                </div>
+                <div class="inline-actions top-actions">
+                  <button id="check-answer-button" class="secondary-button hidden" type="button">Check answer</button>
+                  <button id="next-button" class="primary-button" type="button">Next</button>
+                </div>
               </div>
 
               <h3 id="question-text" class="question-text"></h3>
@@ -110,10 +116,6 @@
 
               <div class="question-actions">
                 <button id="previous-button" class="ghost-button" type="button">Previous</button>
-                <div class="inline-actions">
-                  <button id="check-answer-button" class="secondary-button hidden" type="button">Check answer</button>
-                  <button id="next-button" class="primary-button" type="button">Next</button>
-                </div>
               </div>
             </section>
           </div>

@@ -391,8 +391,20 @@ select {
 
 .question-topbar {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.question-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.top-actions {
+  margin-left: auto;
 }
 
 .question-text {
@@ -479,7 +491,7 @@ select {
 }
 
 .question-actions {
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: auto;
 }
 
@@ -584,6 +596,17 @@ select {
   .question-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .question-topbar,
+  .question-meta,
+  .top-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .top-actions {
+    margin-left: 0;
   }
 
   .primary-button,
