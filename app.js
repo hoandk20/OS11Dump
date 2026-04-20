@@ -74,6 +74,7 @@ async function init() {
 
 function bindEvents() {
   elements.themeToggleButton.addEventListener("click", toggleTheme);
+  document.addEventListener("keydown", handleKeyboardNavigation);
 
   elements.backHomeButton.addEventListener("click", () => {
     state.session = null;
@@ -88,6 +89,41 @@ function bindEvents() {
   elements.submitExamButton.addEventListener("click", finishSession);
   elements.retryExamButton.addEventListener("click", retryCurrentExam);
   elements.retryResultButton.addEventListener("click", retryCurrentExam);
+}
+
+function handleKeyboardNavigation(event) {
+  if (!state.session || !elements.examScreen.classList.contains("active") || isTypingTarget(event.target)) {
+    return;
+  }
+
+  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) {
+    event.preventDefault();
+    moveSelectedAnswer(event.key === "ArrowUp" || event.key === "ArrowLeft" ? -1 : 1);
+    return;
+  }
+
+  if (event.key === "Enter") {
+    event.preventDefault();
+    handleEnterKey();
+  }
+}
+
+function isTypingTarget(target) {
+  return ["INPUT", "SELECT", "TEXTAREA", "BUTTON"].includes(target?.tagName) || target?.isContentEditable;
+}
+
+function handleEnterKey() {
+  if (state.session.mode !== "practice") {
+    handleNext();
+    return;
+  }
+
+  const question = state.session.questions[state.session.currentIndex];
+  if (state.session.checked[question.id]) {
+    handleNext();
+  } else {
+    handleCheckAnswer();
+  }
 }
 
 function readTheme() {
@@ -449,6 +485,26 @@ function handleCheckAnswer() {
 
   clearBanner();
   state.session.checked[question.id] = true;
+  persistSession();
+  renderExam();
+}
+
+function moveSelectedAnswer(delta) {
+  const question = state.session.questions[state.session.currentIndex];
+  const isChecked = Boolean(state.session.checked[question.id]);
+
+  if (state.session.mode === "practice" && isChecked) {
+    return;
+  }
+
+  const options = question.options;
+  const selected = state.session.answers[question.id];
+  const currentIndex = options.findIndex((option) => option.id === selected);
+  const fallbackIndex = delta > 0 ? 0 : options.length - 1;
+  const nextIndex = currentIndex === -1 ? fallbackIndex : (currentIndex + delta + options.length) % options.length;
+
+  state.session.answers[question.id] = options[nextIndex].id;
+  clearBanner();
   persistSession();
   renderExam();
 }
